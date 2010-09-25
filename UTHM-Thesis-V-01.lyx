@@ -1,0 +1,618 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass scrbook
+\begin_preamble
+%======================
+% Written by Waluyo Adi Siswanto
+% You are allowed to modify this
+% in order to meet your requirements
+%======================
+% this command prints empty date in title page
+\date{}
+
+% this command set the paragraph indentation
+% if you want to modify change the value 1.5cm to your preference
+\setlength{\parindent}{1.5cm}
+
+%This command will change the default Bibliography to References
+\AtBeginDocument{\renewcommand{\bibname}{References}}
+
+%The following comands center the heading of chapters and
+% chapter entries, the default is on the left
+\addtokomafont{chapterentry}{\centering}
+\addtokomafont{chapter}{\centering}
+
+% The following commands set the page numbers on the top right
+% except in the beginning of chapters
+% using fancyhdr package (page layout>heading style->fancy)
+\lhead{}
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+
+% The following commands set the vertical space before and after 
+% every chapter entry
+\renewcommand*{\chapterheadendvskip}{\vspace{3cm}}
+\renewcommand*{\chapterheadstartvskip}{\vspace{3cm}}
+\end_preamble
+\options liststotoc,chapterprefix,tablecaptionabove,bibtotoc,parskip=full
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman lmodern
+\font_sans lmss
+\font_typewriter lmtt
+\font_default_family rmdefault
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Write the title of the thesis here"
+\pdf_author "Write the student's name here"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue, citecolor=blue, urlcolor=blue, pdfstartview=XYZ, plainpages=false, pdfpagelabels "
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+frontmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is UTHM thesis template version 0.1 (23-Sep-2010)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+INFLUENCE OF DRAWBEADS ON THE SPRINGBACK BEHAVIOUR
+\end_layout
+
+\begin_layout Author
+Waluyo Adi Siswanto
+\end_layout
+
+\begin_layout Publishers
+UTHM
+\end_layout
+
+\begin_layout Addchap
+Acknowlegement
+\end_layout
+
+\begin_layout Standard
+Here is the acknowledgement must be written
+\end_layout
+
+\begin_layout Addchap
+Abstract
+\end_layout
+
+\begin_layout Standard
+Numisheet 2008 Conference attracts international participation from the
+ metal forming industry and university professors interested in sheet metal
+ forming technology, with a strong emphasis on forming simulation.
+ The Numisheet 2008 Conference include the latest developments in metal
+ forming technology, which is a rapidly growing and challenging opportunity
+ for application of science to industry.
+ One of the hallmarks of the conference is the Numisheet Benchmark Study
+\end_layout
+
+\begin_layout Addchap
+Abstrak
+\end_layout
+
+\begin_layout Standard
+Here is the abstract in Malay
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mainmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introduction
+\end_layout
+
+\begin_layout Standard
+The Numisheet Conferences occur once every three in location between North
+ America, Europe and Asia.
+ The conference attracts international participation from the metal forming
+ industry and university professors interested in sheet metal forming technology
+, with a strong emphasis on forming simulation.
+ The Numisheet Conference Proceedings include the latest developments in
+ metal forming technology, which is a rapidly growing and challenging opportunit
+y for application of science to industry
+\end_layout
+
+\begin_layout Standard
+One of the hallmarks of the conference is the Numisheet Benchmark Study,
+ which is a set of three blind tests prepared one year prior to the conference.
+ Numisheet 2008 Benchmark Problem II is provided by Daimler AG.
+ For this benchmark, the well known S-Rail geometry as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:R-rail-geometry"
+
+\end_inset
+
+ was chosen.
+ In this benchmark, study the influence of different drawbeads geometries;
+ smooth bead and locking bead on the springback behavior for steel is to
+ be examined using numerical simulation.
+ The illustrations of the drawbeads are shown in.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rodriguez2009,Morvidone2010"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Background of Study
+\end_layout
+
+\begin_layout Standard
+Sheet metal forming is one of the most widely used manufacturing processes
+ for the fabrication of a wide range of products in many industries.
+ The reason behind sheet metal forming gaining a lot attention in modern
+ technology is due to the ease with which metal may be formed into useful
+ shapes by plastic deformation processes in which the volume and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename sample.png
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+R-rail geometry
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:R-rail-geometry"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Literature Review
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Literature-Review"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The sheet metal forming process, in theory, can be viewed as relatively
+ straight forward operation where a sheet of material is plastically deformed
+ into desired shape.
+ In practice, however, variations in blank dimensions, material properties
+ and environmental conditions make the predictability and reproducibility
+ of a sheet metal forming process difficult.
+ Apart from this, springback properties of sheet metal make it extremely
+ tedious to design appropriate tooling for a given process.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Poirson2007"
+
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Data-structure"
+
+\end_inset
+
+ shows.....
+\end_layout
+
+\begin_layout Standard
+The explanation of the Hubolt formula
+\begin_inset Formula \begin{equation}
+f(t)=\intop_{s0}^{s1}d\left(x\right)\label{eq:hubolt}\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $x$
+\end_inset
+
+ is the displacement.
+\end_layout
+
+\begin_layout Standard
+In Eq.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:hubolt"
+
+\end_inset
+
+ can be derived from another equation as written by
+\begin_inset Formula \begin{equation}
+ffdfd\label{eq:fdfdfd}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is another example 
+\begin_inset Formula \begin{equation}
+dsd\nabla f\label{eq:ddssdd}\end{equation}
+
+\end_inset
+
+as mention in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cha:Literature-Review"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+dded
+\end_layout
+
+\begin_layout Subsection
+dddd
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Data structure
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Data-structure"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features booktabs="true">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+node
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+z
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Methodology
+\end_layout
+
+\begin_layout Standard
+dsds
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+ff\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+setlength{
+\backslash
+parskip}{0.3cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "acxs"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
