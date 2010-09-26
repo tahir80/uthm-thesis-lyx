@@ -76,9 +76,10 @@
 \cite_engine basic
 \use_bibtopic false
 \paperorientation portrait
-\leftmargin 3cm
+\leftmargin 4cm
 \topmargin 3cm
 \rightmargin 2.5cm
+\bottommargin 3.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -116,24 +117,184 @@ frontmatter
 status open
 
 \begin_layout Plain Layout
-This is UTHM thesis template version 0.1 (23-Sep-2010)
+This is UTHM thesis template version 0.2 (date here)
 \end_layout
 
+\end_inset
+
+
+\begin_inset VSpace 2.5cm
 \end_inset
 
 
 \end_layout
 
 \begin_layout Title
-The Thesis Title
+The Thesis Title Line 1
+\begin_inset Newline newline
+\end_inset
+
+Thesis Title Line 2
+\begin_inset VSpace 1.8cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Author
 The Author
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size normal
+A thesis submitted in
+\begin_inset Newline newline
+\end_inset
+
+fulfillment of the requirement for the award of the 
+\begin_inset Newline newline
+\end_inset
+
+Degree of Doctor of Philosophy / Bachelor of.../ Master of ...
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Faculty of Mechanical and Manufacturing Engineering
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size normal
+Universiti Tun Hussein Onn Malaysia
+\begin_inset VSpace 3cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Publishers
-UTHM
+
+\size normal
+SEPTEMBER 2010
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{plain}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+I hereby declare that the work in this thesis is my own except for quotations
+ and summaries which have been duly acknowledged
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Student
+\begin_inset Formula $\hphantom{Date1}$
+\end_inset
+
+: Write the name of the student here
+\end_layout
+
+\begin_layout Standard
+Date
+\begin_inset Formula $\hphantom{Student1}$
+\end_inset
+
+: Write the date here
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Supervisor
+\begin_inset Formula $\hphantom{Co}\,$
+\end_inset
+
+: Write supervisor's name here
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Co-Supervisor: Write co-supervisor's name here
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{plain}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+For my beloved mother and father 
 \end_layout
 
 \begin_layout Addchap
@@ -183,10 +344,8 @@ Abstract
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing single
 The abstract should be brief, written in one paragraph and not exceed 300
  words.
- The abstract is written in single spacing line.
  This template already set in single spacing.
  This only demonstrates the paragraph in the abstract: Numisheet 2011 Conference
  attracts international participation from the metal forming industry and
@@ -203,9 +362,8 @@ Abstrak
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing single
 Here is the abstract in Malay.
- Please write the abstract in Malay, also in single spacing.
+ Please write the abstract in Malay.
  This template has already set in single spacing for Abstrak.
 \end_layout
 
