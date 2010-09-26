@@ -37,7 +37,7 @@
 
 % The following commands set the vertical space before and after 
 % every chapter entry
-\renewcommand*{\chapterheadendvskip}{\vspace{3cm}}
+\renewcommand*{\chapterheadendvskip}{\vspace{2.5cm}}
 \renewcommand*{\chapterheadstartvskip}{\vspace{3cm}}
 \end_preamble
 \options liststotoc,chapterprefix,tablecaptionabove,bibtotoc,parskip=full
@@ -77,9 +77,11 @@
 \use_bibtopic false
 \paperorientation portrait
 \leftmargin 4cm
-\topmargin 3cm
+\topmargin 2.5cm
 \rightmargin 2.5cm
-\bottommargin 3.5cm
+\bottommargin 2.5cm
+\headsep 0.5cm
+\footskip 1cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
