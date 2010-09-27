@@ -132,11 +132,27 @@ This is UTHM thesis template version 0.2 (date here)
 \end_layout
 
 \begin_layout Title
+
+\family roman
+\series medium
+\size larger
 The Thesis Title Line 1
+\family default
+\series default
+\size default
+
 \begin_inset Newline newline
 \end_inset
 
+
+\family roman
+\series medium
+\size larger
 Thesis Title Line 2
+\family default
+\series default
+\size default
+
 \begin_inset VSpace 1.8cm
 \end_inset
 
@@ -145,7 +161,7 @@ Thesis Title Line 2
 
 \begin_layout Author
 The Author
-\begin_inset VSpace 2cm
+\begin_inset VSpace 2.5cm
 \end_inset
 
 
@@ -163,7 +179,7 @@ fulfillment of the requirement for the award of the
 \end_inset
 
 Degree of Doctor of Philosophy / Bachelor of.../ Master of ...
-\begin_inset VSpace 3cm
+\begin_inset VSpace 3.1cm
 \end_inset
 
 
@@ -179,7 +195,7 @@ Faculty of Mechanical and Manufacturing Engineering
 
 \size normal
 Universiti Tun Hussein Onn Malaysia
-\begin_inset VSpace 3cm
+\begin_inset VSpace 3.1cm
 \end_inset
 
 
@@ -205,6 +221,19 @@ status open
 
 \backslash
 thispagestyle{plain}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Declaration}
 \end_layout
 
 \end_inset
@@ -288,6 +317,19 @@ thispagestyle{plain}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Dedication}
+\end_layout
+
+\end_inset
+
+
 \begin_inset VSpace 2cm
 \end_inset
 
@@ -300,11 +342,11 @@ For my beloved mother and father
 \end_layout
 
 \begin_layout Addchap
-Acknowlegement
+Acknowledgment
 \end_layout
 
 \begin_layout Standard
-Here is the acknowledgement must be written.
+Here is the acknowledgment must be written.
 \end_layout
 
 \begin_layout Standard
@@ -415,6 +457,17 @@ Introduction
 \end_layout
 
 \begin_layout Standard
+The specific use of the word “thesis” in this guide refers to the academic
+ writings submitted in fulfillment for the award of the doctoral degree
+ or the masters by research degree.
+ The word “thesis” is also used in general to refer to the master’s project
+ report and research dissertation, which are the documents submitted in
+ partial fulfillment for the award of the degree of master by coursework
+ or by coursework and research as well as the undergraduate project reports.
+ 
+\end_layout
+
+\begin_layout Standard
 The Numisheet Conferences occur once every three in location between North
  America, Europe and Asia.
  The conference attracts international participation from the metal forming
@@ -423,6 +476,10 @@ The Numisheet Conferences occur once every three in location between North
  The Numisheet Conference Proceedings include the latest developments in
  metal forming technology, which is a rapidly growing and challenging opportunit
 y for application of science to industry
+\end_layout
+
+\begin_layout Section
+Background of Study
 \end_layout
 
 \begin_layout Standard
@@ -440,18 +497,14 @@ reference "fig:R-rail-geometry"
  In this benchmark, study the influence of different drawbeads geometries;
  smooth bead and locking bead on the springback behavior for steel is to
  be examined using numerical simulation.
- The illustrations of the drawbeads are shown in.
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Rodriguez2009,Morvidone2010"
+key "Rodriguez2009,Poirson2007"
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Background of Study
 \end_layout
 
 \begin_layout Standard
@@ -459,7 +512,7 @@ Sheet metal forming is one of the most widely used manufacturing processes
  for the fabrication of a wide range of products in many industries.
  The reason behind sheet metal forming gaining a lot attention in modern
  technology is due to the ease with which metal may be formed into useful
- shapes by plastic deformation processes in which the volume and 
+ shapes by plastic deformation processes in which the volume and etc.
 \end_layout
 
 \begin_layout Standard
@@ -523,7 +576,22 @@ name "cha:Literature-Review"
 The sheet metal forming process, in theory, can be viewed as relatively
  straight forward operation where a sheet of material is plastically deformed
  into desired shape.
- In practice, however, variations in blank dimensions, material properties
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Schell2002"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Practical Usage
+\end_layout
+
+\begin_layout Standard
+In practice, however, variations in blank dimensions, material properties
  and environmental conditions make the predictability and reproducibility
  of a sheet metal forming process difficult.
  Apart from this, springback properties of sheet metal make it extremely
@@ -788,6 +856,18 @@ ff\end{equation}
 
 \end_layout
 
+\begin_layout Chapter
+Title of Chapter 4
+\end_layout
+
+\begin_layout Standard
+bla bla bla
+\end_layout
+
+\begin_layout Chapter
+Title of Chapter 5
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -810,7 +890,7 @@ parskip}{0.3cm}
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "thesis"
-options "plain"
+options "klunum"
 
 \end_inset
 
