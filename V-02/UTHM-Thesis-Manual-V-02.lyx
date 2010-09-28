@@ -4,7 +4,7 @@
 \begin_header
 \textclass article
 \begin_preamble
-\date{Released 23-Sep-2010}
+\date{Released xx-Sep-2010}
 \end_preamble
 \use_default_options true
 \language english
@@ -135,7 +135,7 @@ fancy
 \family default
 hdr, 
 \family typewriter
-caption.
+caption, kluwer.
 
 \family default
  The installation of any LaTeX package should be done from the LaTeX distributio
@@ -993,6 +993,144 @@ vspace{3cm}}
 \end_layout
 
 \begin_layout Section
+Bibliography
+\end_layout
+
+\begin_layout Standard
+There are two template versions available.
+ One has numeric bibliography style (
+\family typewriter
+UTHM-Thesis-V-xx.lyx
+\family default
+) and another one uses author-year style (
+\family typewriter
+UTHM-Thesis-authoryear-V-xx.lyx
+\family default
+)
+\end_layout
+
+\begin_layout Subsection
+Numerical bibliography style
+\end_layout
+
+\begin_layout Itemize
+When you insert the bibliography in the first time and attaching bibliography
+ database file (*.bib), from the menu 
+\family sans
+Insert
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+List/TOC\SpecialChar \menuseparator
+BibTe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+X Bibliography
+\family default
+, you have to select 
+\family typewriter
+klunum
+\family default
+ as the bibliography style.
+ The package 
+\family typewriter
+klunum
+\family default
+ is provided by Kluwer international publisher for numeric citation and
+ bibliography styles.
+\end_layout
+
+\begin_layout Itemize
+For Ubuntu users, 
+\family typewriter
+kluwer
+\family default
+ and other publishers styles can be made available if you are installing
+ 
+\family typewriter
+texlive-publishers
+\family default
+.
+ If you are using Windows, 
+\family typewriter
+kluwer
+\family default
+ package must be installed from MikTek package manager.
+\end_layout
+
+\begin_layout Subsection
+Author-year bibliography style
+\end_layout
+
+\begin_layout Itemize
+When you insert the bibliography in the first time and attaching bibliography
+ database file (*.bib), from the menu 
+\family sans
+Insert
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+List/TOC\SpecialChar \menuseparator
+BibTe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+X Bibliography
+\family default
+, you have to use klun
+\family typewriter
+amed
+\family default
+ as the bibliography style.
+ The package 
+\family typewriter
+klunamed
+\family default
+ is provided by Kluwer international publisher for author-year citation
+ and bibliography styles.
+\end_layout
+
+\begin_layout Itemize
+The citation style must be consistent with author-year style.
+ Go to menu 
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Settings
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Bibliography
+\family default
+, then change the 
+\family sans
+default (numerical)
+\family default
+ to 
+\family sans
+Natbib (author-year).
+\end_layout
+
+\begin_layout Section
 Modification records
 \begin_inset CommandInset label
 LatexCommand label
@@ -1028,7 +1166,15 @@ Version 0.2: (write the date when it is released)
 \end_layout
 
 \begin_layout Itemize
-<was.uthm> add students declaration page
+<was.uthm> add students declaration page, dedication page
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> create author-year version (
+\family typewriter
+UTHM-Thesis-authoryear-V-xx.lyx
+\family default
+)
 \end_layout
 
 \begin_layout Section
