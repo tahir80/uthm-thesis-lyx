@@ -467,7 +467,7 @@ Settings
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename manual-figures/pasted5.png
+	filename manual-figures/pasted5a.png
 	scale 80
 
 \end_inset
@@ -1024,7 +1024,7 @@ Version 0.2: (write the date when it is released)
 \end_layout
 
 \begin_layout Itemize
-<was.uthm> page margin: Change Inner margin 4cm
+<was.uthm> page margin: change margins
 \end_layout
 
 \begin_layout Itemize
