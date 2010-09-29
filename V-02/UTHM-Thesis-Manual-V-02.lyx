@@ -4,7 +4,7 @@
 \begin_header
 \textclass article
 \begin_preamble
-\date{Released xx-Sep-2010}
+\date{Released 29-Sep-2010}
 \end_preamble
 \use_default_options true
 \language english
@@ -135,7 +135,7 @@ fancy
 \family default
 hdr, 
 \family typewriter
-caption, kluwer.
+caption, kluwer, tocloft.
 
 \family default
  The installation of any LaTeX package should be done from the LaTeX distributio
@@ -227,6 +227,10 @@ bibtotoc
 , 
 \family typewriter
 parskip=full
+\family default
+, 
+\family typewriter
+headings=small
 \family default
 .
  
@@ -323,6 +327,27 @@ parskip=full
 1cm
 \family default
  to any space measurement as you wish.
+\end_layout
+
+\begin_layout Description
+headings=small defines as 
+\family typewriter
+small
+\family default
+ headings style.
+ In book
+\begin_inset space \thinspace{}
+\end_inset
+
+(KOMA-Script), other available styles are 
+\family typewriter
+normal
+\family default
+ and 
+\family typewriter
+big
+\family default
+.
 \end_layout
 
 \begin_layout Subsection
@@ -673,9 +698,436 @@ Document
 Settings, LaTeX preamble
 \family default
 .
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The complete commands written in LaTeX preamble are as follows:
+\lyxline
+
 \end_layout
 
 \begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small},breaklines=true,tabsize=1"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+% ==================================
+\end_layout
+
+\begin_layout Plain Layout
+
+% Written by Waluyo Adi Siswanto 
+\end_layout
+
+\begin_layout Plain Layout
+
+% You are allowed to modify this 
+\end_layout
+
+\begin_layout Plain Layout
+
+% in order to meet your requirements 
+\end_layout
+
+\begin_layout Plain Layout
+
+% ==================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% this command prints empty date in title page 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+date{}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% this command set the paragraph indentation
+\end_layout
+
+\begin_layout Plain Layout
+
+% if you want to modify change the value 1.5cm to your preference 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+parindent}{1.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% This command will change the default Bibliography to References
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginDocument{
+\backslash
+renewcommand{
+\backslash
+bibname}{References}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% The following comands center the heading of chapters and 
+\end_layout
+
+\begin_layout Plain Layout
+
+% chapter entries, the default is on the left
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtokomafont{chapterentry}{
+\backslash
+centering} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtokomafont{chapter}{
+\backslash
+centering}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% The following commands set the page numbers on the top right 
+\end_layout
+
+\begin_layout Plain Layout
+
+% except in the beginning of chapters 
+\end_layout
+
+\begin_layout Plain Layout
+
+% using fancyhdr package (page layout>heading style->fancy) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chead{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cfoot{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rfoot{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+headrulewidth}{0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% The following commands set the vertical space before and after 
+\end_layout
+
+\begin_layout Plain Layout
+
+% every chapter entry 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadendvskip}{
+\backslash
+vspace{2cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadstartvskip}{
+\backslash
+vspace{2.5cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% The following commands set the TOC, LOT and LOF 
+\end_layout
+
+\begin_layout Plain Layout
+
+% this employs tocloft package 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{tocloft}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftdot}{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cfttoctitlefont}{
+\backslash
+hfill
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftaftertoctitle}{
+\backslash
+hfill} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftaftertoctitleskip}{2.5cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftbeforetoctitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftloftitlefont}{
+\backslash
+hfill
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterloftitle}{
+\backslash
+hfill}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterloftitleskip}{2.5cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftbeforeloftitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftlottitlefont}{
+\backslash
+hfill
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterlottitle}{
+\backslash
+hfill} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterlottitleskip}{2.5cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftbeforelottitleskip}{2.5cm} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lyxline
 By default the document class book
 \begin_inset space \thinspace{}
 \end_inset
@@ -869,17 +1321,6 @@ bibname}{References}
 \end_layout
 
 \begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename manual-figures/pasted6.png
-	width 80col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 In UTHM thesis the page number should be located on the top-right except
  in the beginning of every chapter and chapter like pages the page number
  are located at the bottom of the page and centered.
@@ -961,11 +1402,15 @@ headrulewidth}{0pt}
 \begin_layout Standard
 Another style appeared in UTHM thesis is before and chapter entry, the vertical
  space is wider then the space between paragraphs.
- Assuming this vertical space is 
-\begin_inset Formula $\unit[3]{cm}$
+ Assuming this vertical space before chapter heading is 
+\begin_inset Formula $\unit[2.5]{cm}$
 \end_inset
 
-, the following commands will set it accurately.
+ and after chapter heading is 
+\begin_inset Formula $\unit[2]{cm}$
+\end_inset
+
+ , the following commands will set it accurately.
 \end_layout
 
 \begin_layout Standard
@@ -977,7 +1422,7 @@ renewcommand*{
 \backslash
 chapterheadendvskip}{
 \backslash
-vspace{3cm}}
+vspace{2cm}}
 \end_layout
 
 \begin_layout Standard
@@ -989,7 +1434,15 @@ renewcommand*{
 \backslash
 chapterheadstartvskip}{
 \backslash
-vspace{3cm}}
+vspace{2.5cm}}
+\end_layout
+
+\begin_layout Standard
+The settings of TOC, LOF and LOT are controlled by 
+\family typewriter
+tocloft
+\family default
+ package.
 \end_layout
 
 \begin_layout Section
@@ -1150,7 +1603,7 @@ Version 0.1: (23-September-2010)
 \end_layout
 
 \begin_layout Standard
-Version 0.2: (write the date when it is released)
+Version 0.2: (29-September-2010)
 \end_layout
 
 \begin_layout Itemize
@@ -1173,6 +1626,14 @@ Version 0.2: (write the date when it is released)
 <was.uthm> create author-year version (
 \family typewriter
 UTHM-Thesis-authoryear-V-xx.lyx
+\family default
+)
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> modify TOC, LOF and LOT without leader dots (employing 
+\family typewriter
+tocloft
 \family default
 )
 \end_layout
