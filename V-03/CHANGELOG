@@ -1,0 +1,10 @@
+Version 0.2: (29-September-2010)
+<was.uthm> Updated manual
+<was.uthm> title page updated
+<was.uthm> change margins
+<was.uthm> add students declaration page, dedication page
+<was.uthm> available two versions: numeric and author-year
+<was.uthm> modify TOC, LOF, LOT without leader dots (employing tocloft)
+
+Version 0.1: (23-September-2010)
+<was.uthm> The first version is released to public
