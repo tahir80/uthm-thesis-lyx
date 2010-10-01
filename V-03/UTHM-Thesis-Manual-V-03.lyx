@@ -4,7 +4,7 @@
 \begin_header
 \textclass article
 \begin_preamble
-\date{Released 29-Sep-2010}
+\date{Released date here}
 \end_preamble
 \use_default_options true
 \language english
@@ -12,7 +12,7 @@
 \font_roman lmodern
 \font_sans lmss
 \font_typewriter lmtt
-\font_default_family default
+\font_default_family rmdefault
 \font_sc false
 \font_osf false
 \font_sf_scale 100
@@ -22,7 +22,7 @@
 \paperfontsize default
 \spacing single
 \use_hyperref true
-\pdf_title "Thesis UTHM V-0.1"
+\pdf_title "User Manual - UTHM thesis template"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
 \pdf_bookmarksopen false
@@ -61,7 +61,7 @@
 \begin_body
 
 \begin_layout Title
-Manual - UTHM thesis template Version 0.2
+Manual - UTHM thesis template Version 0.3
 \begin_inset Newline newline
 \end_inset
 
@@ -119,9 +119,9 @@ LaTeX package requirement
 \end_layout
 
 \begin_layout Standard
-To be able to write your thesis using LyX have to make sure your LaTeX distribut
-ion already include several packages which is not the standard LaTeX packages
- in LyX.
+To be able to write your thesis using LyX, you have to make sure your LaTeX
+ distribution already include several packages which are not the standard
+ LaTeX packages in LyX.
 \end_layout
 
 \begin_layout Standard
@@ -143,6 +143,22 @@ n.
  If you are running Ubuntu, you can install from Synaptic package manager
  where TexLive optional packages can be selected.
  For Windows users, you should install from MikTek package manager.
+ 
+\end_layout
+
+\begin_layout Standard
+After installing new package, LyX must be reconfigured to use newly installed
+ packages.
+ Reconfiguring LyX from the menu 
+\family sans
+Tools
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Reconfigure
+\family default
+.
  
 \end_layout
 
@@ -232,6 +248,10 @@ parskip=full
 \family typewriter
 headings=small
 \family default
+, 
+\family typewriter
+numbers=noenddot
+\family default
 .
  
 \end_layout
@@ -267,8 +287,7 @@ Chapter
 \begin_inset Quotes erd
 \end_inset
 
- prefix in front of chapter number in every chapter or in every chapter
- environment.
+ prefix in front of chapter number in every chapter.
 \end_layout
 
 \begin_layout Description
@@ -302,7 +321,7 @@ parskip=full
  This is important since in the thesis every paragraph must be visible and
  separated by a vertical space which is higher than the line space.
  In case an exact space between paragraphs is required, then you have to
- write a commad 
+ write a command 
 \family typewriter
 
 \backslash
@@ -322,11 +341,7 @@ reference "sec:LaTeX-Preamble"
 parskip=full
 \family default
 .
- You may change the 
-\family typewriter
-1cm
-\family default
- to any space measurement as you wish.
+ 
 \end_layout
 
 \begin_layout Description
@@ -348,6 +363,15 @@ normal
 big
 \family default
 .
+\end_layout
+
+\begin_layout Description
+numbers=noenddot the numbering of sectional units should have no dot at
+ the end if only arabic numbers are used.
+ On the other hand, if roman numerals or letters are appear in the numbering,
+ then a dot should appear at the end of the numbering.
+ If this optional command is not included, when appendix is inserted, then
+ unnecessary dot appears after the chapter number.
 \end_layout
 
 \begin_layout Subsection
@@ -1149,37 +1173,55 @@ The indentation of the paragraph is set
 \end_inset
 
 .
- This definition should be controlled by the command 
+ This definition should be controlled by the command
 \family typewriter
+
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
 
 \backslash
 setlength{
 \backslash
 parindent}{1.5cm}
-\family default
-.
- If you want to set the vertical space in exact measurement (for example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you want to set the vertical space in exact measurement (for example
  
 \begin_inset Formula $\unit[1]{cm}$
 \end_inset
 
 ), then you need to insert an additional command 
-\family typewriter
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
 
 \backslash
 setlength{
 \backslash
 parskip}{1cm}
-\family default
-.
- See another explanation in section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Document-class"
+\end_layout
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -1203,12 +1245,17 @@ References
 .
  In this case you need to change the default name defined by 
 \backslash
-bibname, by using the following command:
+bibname, by using the following command
 \end_layout
 
 \begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily}"
+inline false
+status open
 
-\family typewriter
+\begin_layout Plain Layout
+
 
 \backslash
 AtBeginDocument{
@@ -1216,6 +1263,11 @@ AtBeginDocument{
 renewcommand{
 \backslash
 bibname}{References}}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1231,93 +1283,53 @@ babel
 \begin_inset space \thinspace{}
 \end_inset
 
-(UK), then the command above should be modified to :
+(UK), then the command above should be modified to
 \end_layout
 
 \begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
 
-\family typewriter
+\begin_layout Plain Layout
+
 
 \backslash
 AtBeginDocument{
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-\family typewriter
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
+	
 \backslash
 addto
 \backslash
 captionsbritish{
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-\family typewriter
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
+	
 \backslash
 renewcommand{
 \backslash
 bibname}{References}
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-\family typewriter
 }
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-\family typewriter
 }
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1337,27 +1349,29 @@ reference "sub:Page-layout"
 
 ).
  Write the following commands:
-\end_layout
-
-\begin_layout Standard
-
 \family typewriter
+
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
 
 \backslash
 lhead{}
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-\family typewriter
 
 \backslash
 chead{}
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-\family typewriter
 
 \backslash
 rhead{
@@ -1365,38 +1379,39 @@ rhead{
 thepage}
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-\family typewriter
 
 \backslash
 lfoot{}
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-\family typewriter
 
 \backslash
 cfoot{}
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-\family typewriter
 
 \backslash
 rfoot{}
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-\family typewriter
 
 \backslash
 renewcommand{
 \backslash
 headrulewidth}{0pt}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1411,11 +1426,15 @@ Another style appeared in UTHM thesis is before and chapter entry, the vertical
 \end_inset
 
  , the following commands will set it accurately.
-\end_layout
-
-\begin_layout Standard
-
 \family typewriter
+
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
 
 \backslash
 renewcommand*{
@@ -1425,9 +1444,8 @@ chapterheadendvskip}{
 vspace{2cm}}
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
-\family typewriter
 
 \backslash
 renewcommand*{
@@ -1437,12 +1455,80 @@ chapterheadstartvskip}{
 vspace{2.5cm}}
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 The settings of TOC, LOF and LOT are controlled by 
 \family typewriter
 tocloft
 \family default
  package.
+\end_layout
+
+\begin_layout Section
+Appendices
+\end_layout
+
+\begin_layout Standard
+Appendices are attached in the end of thesis document after References.
+ All numbering in apendices printed in alphabetical character, starting
+ from A.
+\end_layout
+
+\begin_layout Standard
+The format style of appendix is a bit different with the chapter format.
+ To accommodate this the format is set differently and only applicable for
+ the appendices.
+\end_layout
+
+\begin_layout Standard
+After the References heading, TeX commands must be inserted to define the
+ vertical space, before and after the appendix heading:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadendvskip}{
+\backslash
+vspace{2cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadstartvskip}{
+\backslash
+vspace{1cm}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The definition of the appendix has been defined from the LyX menu Document\SpecialChar \menuseparator
+Start
+ Appendix Here.
+ User can make a cross reference to the bibliography database and will be
+ listed in the References.
+ 
 \end_layout
 
 \begin_layout Section
@@ -1595,11 +1681,11 @@ name "sec:Modification-records"
 \end_layout
 
 \begin_layout Standard
-Version 0.1: (23-September-2010)
+Version 0.3: (release date here)
 \end_layout
 
 \begin_layout Itemize
-<was.uthm> The first version is released to public
+<was.uthm> updated manual, appendices included after References
 \end_layout
 
 \begin_layout Standard
@@ -1638,8 +1724,20 @@ tocloft
 )
 \end_layout
 
+\begin_layout Standard
+Version 0.1: (23-September-2010)
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> The first version is released to public
+\end_layout
+
 \begin_layout Section
 Guidelines to contributors
+\end_layout
+
+\begin_layout Subsection
+Modifying documents
 \end_layout
 
 \begin_layout Standard
@@ -1766,6 +1864,14 @@ reference "sec:Modification-records"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+Working with PySVN Workbench
+\end_layout
+
+\begin_layout Subsection
+LyX version control
 \end_layout
 
 \end_body
