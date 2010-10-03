@@ -43,6 +43,7 @@
 % The following commands set the TOC, LOT and LOF
 % this employs tocloft package
 \usepackage{tocloft}
+\cftpagenumbersoff{part}
 \renewcommand{\cftdot}{}
 \renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries\sffamily}
 \renewcommand{\cftaftertoctitle}{\hfill}
@@ -282,12 +283,23 @@ addcontentsline{toc}{chapter}{Declaration}
 
 \begin_layout Standard
 \align center
-I hereby declare that the work in this thesis is my own except for quotations
- and summaries which have been duly acknowledged
+I hereby declare that this project report entitled “Write The Thesis Title
+ Here” is the result of my own research except as cited in the references.
+ This thesis has not been accepted for any degree and is not concurrently
+ submitted in candidature of any other degree.
+ 
 \begin_inset VSpace 2cm
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Signature
+\begin_inset Formula $\hphantom{xte1}$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -470,6 +482,19 @@ LatexCommand tableofcontents
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{List of Figures}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -478,6 +503,19 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset FloatList table
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{List of Tables}
+\end_layout
 
 \end_inset
 
@@ -900,6 +938,26 @@ dsds
 \end_layout
 
 \begin_layout Standard
+bla bla bla
+\end_layout
+
+\begin_layout Section
+Title
+\end_layout
+
+\begin_layout Standard
+bla bla bla
+\end_layout
+
+\begin_layout Section
+Another Title
+\end_layout
+
+\begin_layout Standard
+bla bla bla
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula \begin{equation}
 ff\end{equation}
 
@@ -916,8 +974,44 @@ Title of Chapter 4
 bla bla bla
 \end_layout
 
+\begin_layout Section
+Title
+\end_layout
+
+\begin_layout Standard
+bla bla bla
+\end_layout
+
+\begin_layout Section
+Another Title
+\end_layout
+
+\begin_layout Standard
+bla bla bla
+\end_layout
+
 \begin_layout Chapter
 Title of Chapter 5
+\end_layout
+
+\begin_layout Standard
+bla bla bla
+\end_layout
+
+\begin_layout Section
+Title
+\end_layout
+
+\begin_layout Standard
+bla bla bla
+\end_layout
+
+\begin_layout Section
+Another Title
+\end_layout
+
+\begin_layout Standard
+bla bla bla
 \end_layout
 
 \begin_layout Standard
@@ -943,6 +1037,30 @@ parskip}{0.3cm}
 LatexCommand bibtex
 bibfiles "thesis"
 options "klunum"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+APPENDICES
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{part}{Apendices}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
 
 \end_inset
 
