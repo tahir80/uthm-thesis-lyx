@@ -65,7 +65,7 @@ Manual - UTHM thesis template Version 0.3
 \begin_inset Newline newline
 \end_inset
 
-Using LyX (front-end LaTeX)
+Using LyX (front-end of LaTeX)
 \end_layout
 
 \begin_layout Author
@@ -74,7 +74,7 @@ Waluyo Adi Siswanto
 status open
 
 \begin_layout Plain Layout
-Other contributors: If you modify it, your name will be listed here!
+Other contributors: Richard Heck
 \end_layout
 
 \end_inset
@@ -135,7 +135,7 @@ fancy
 \family default
 hdr, 
 \family typewriter
-caption, kluwer, tocloft.
+caption, kluwer, tocloft, minitoc.
 
 \family default
  The installation of any LaTeX package should be done from the LaTeX distributio
@@ -736,38 +736,9 @@ The complete commands written in LaTeX preamble are as follows:
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "basicstyle={\small},breaklines=true,tabsize=1"
+lstparams "basicstyle={\small\ttfamily},breaklines=true,tabsize=1"
 inline false
 status open
-
-\begin_layout Plain Layout
-
-% ==================================
-\end_layout
-
-\begin_layout Plain Layout
-
-% Written by Waluyo Adi Siswanto 
-\end_layout
-
-\begin_layout Plain Layout
-
-% You are allowed to modify this 
-\end_layout
-
-\begin_layout Plain Layout
-
-% in order to meet your requirements 
-\end_layout
-
-\begin_layout Plain Layout
-
-% ==================================
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 
@@ -1142,6 +1113,74 @@ cftafterlottitleskip}{2.5cm}
 renewcommand{
 \backslash
 cftbeforelottitleskip}{2.5cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlistof{appendices}{loa}{List of Appendices}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftloatitlefont}{
+\backslash
+hfill
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterloatitle}{
+\backslash
+hfill}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterloatitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftbeforeloatitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{minitoc}
 \end_layout
 
 \end_inset
@@ -1523,12 +1562,359 @@ vspace{1cm}}
 \end_layout
 
 \begin_layout Standard
-The definition of the appendix has been defined from the LyX menu Document\SpecialChar \menuseparator
-Start
- Appendix Here.
+The definition of the appendix has been defined from the LyX menu 
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Start Appendix Here
+\family default
+.
  User can make a cross reference to the bibliography database and will be
  listed in the References.
  
+\end_layout
+
+\begin_layout Standard
+The contents of Appendices are listed in a separate List of Appendices.
+ The List of Appendices page is defined by 
+\family typewriter
+tocloft
+\family default
+ command:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlistof{appendices}{loa}{List of Appendices}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The format setting of the heading is consistent with LOF and LOT:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftloatitlefont}{
+\backslash
+hfill
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily} 
+\backslash
+renewcommand{
+\backslash
+cftafterloatitle}{
+\backslash
+hfill} 
+\backslash
+renewcommand{
+\backslash
+cftafterloatitleskip}{2.5cm} 
+\backslash
+renewcommand{
+\backslash
+cftbeforeloatitleskip}{2.5cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to print the chapter headings in List of Appendices, right after
+ the appendix definition (from the menu 
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Start Appendix Here
+\family default
+), LaTeX commands are inserted.
+ This simply copied from book.cls then changed 
+\family typewriter
+toc
+\family default
+ to 
+\family typewriter
+loa
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatletter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+@chapter[#1]#2{
+\backslash
+ifnum 
+\backslash
+c@secnumdepth >
+\backslash
+m@ne
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+if@mainmatter
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+refstepcounter{chapter}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+typeout{
+\backslash
+@chapapp
+\backslash
+space
+\backslash
+thechapter.}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+addcontentsline{loa}{chapter}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                                  {
+\backslash
+protect
+\backslash
+numberline{
+\backslash
+thechapter}#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+addcontentsline{loa}{chapter}{#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+                     
+\backslash
+addcontentsline{loa}{chapter}{#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+chaptermark{#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+addtocontents{lof}{
+\backslash
+protect
+\backslash
+addvspace{10
+\backslash
+p@}}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+addtocontents{lot}{
+\backslash
+protect
+\backslash
+addvspace{10
+\backslash
+p@}}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+if@twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+                     
+\backslash
+@topnewpage[
+\backslash
+@makechapterhead{#2}]%
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+                     
+\backslash
+@makechapterhead{#2}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                     
+\backslash
+@afterheading
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+fi}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatother
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To prevent section headings of the appendices printed in TOC, 
+\family typewriter
+minitoc
+\family default
+ command is used.
+ The package minitoc must be called in the preamble 
+\family typewriter
+\size small
+
+\backslash
+usepackage{minitoc}
+\family default
+\size default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{toc}{
+\backslash
+protect
+\backslash
+setcounter{tocdepth}{0}}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1686,6 +2072,11 @@ Version 0.3: (release date here)
 
 \begin_layout Itemize
 <was.uthm> updated manual, appendices included after References
+\end_layout
+
+\begin_layout Itemize
+<was.uthm, Richard Heck> include appendices in the template, Separate List
+ of Appendices
 \end_layout
 
 \begin_layout Standard
