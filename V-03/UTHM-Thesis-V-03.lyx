@@ -40,7 +40,7 @@
 \renewcommand*{\chapterheadendvskip}{\vspace{2cm}}
 \renewcommand*{\chapterheadstartvskip}{\vspace{2.5cm}}
 
-% The following commands set the TOC, LOT and LOF
+% The following commands set the TOC, LOT, LOF and LOA
 % this employs tocloft package
 \usepackage{tocloft}
 \cftpagenumbersoff{part}
@@ -75,6 +75,14 @@
 \renewcommand{\cftafterlottitle}{\hfill}
 \renewcommand{\cftafterlottitleskip}{2.5cm}
 \renewcommand{\cftbeforelottitleskip}{2.5cm}
+
+\newlistof{appendices}{loa}{List of Appendices}
+\renewcommand{\cftloatitlefont}{\hfill\Large\bfseries\sffamily}
+\renewcommand{\cftafterloatitle}{\hfill}
+\renewcommand{\cftafterloatitleskip}{2.5cm}
+\renewcommand{\cftbeforeloatitleskip}{2.5cm}
+
+\usepackage{minitoc}
 \end_preamble
 \options liststotoc,chapterprefix,tablecaptionabove,bibtotoc,parskip=full,headings=small,numbers=noenddot
 \use_default_options true
@@ -222,7 +230,7 @@ Degree of Doctor of Philosophy / Bachelor of.../ Master of ...
 \begin_inset Newline newline
 \end_inset
 
-Faculty of Mechanical and Manufacturing Engineering
+FACULTY OF WHATEVER
 \size default
 
 \begin_inset Newline newline
@@ -230,7 +238,7 @@ Faculty of Mechanical and Manufacturing Engineering
 
 
 \size normal
-Universiti Tun Hussein Onn Malaysia
+UNIVERSITY WAHATEVER
 \begin_inset VSpace 3.1cm
 \end_inset
 
@@ -437,14 +445,7 @@ Abstract
 \begin_layout Standard
 The abstract should be brief, written in one paragraph and not exceed 300
  words.
- This only demonstrates the paragraph in the abstract: Numisheet 2011 Conference
- attracts international participation from the metal forming industry and
- university professors interested in sheet metal forming technology, with
- a strong emphasis on forming simulation.
- The Numisheet 2011 Conference include the latest developments in metal
- forming technology, which is a rapidly growing and challenging opportunity
- for application of science to industry.
- One of the hallmarks of the conference is the Numisheet Benchmark Study.
+ This only demonstrates the paragraph in the abstract.
 \end_layout
 
 \begin_layout Addchap
@@ -534,6 +535,29 @@ status open
 
 
 \backslash
+listofappendices
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{List of Appendices}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
 mainmatter
 \end_layout
 
@@ -558,8 +582,8 @@ The specific use of the word “thesis” in this guide refers to the academic
 \end_layout
 
 \begin_layout Standard
-The Numisheet Conferences occur once every three in location between North
- America, Europe and Asia.
+The Numisheet Conferences is conducted once every three years in location
+ between North America, Europe and Asia.
  The conference attracts international participation from the metal forming
  industry and university professors interested in sheet metal forming technology
 , with a strong emphasis on forming simulation.
@@ -1052,13 +1076,6 @@ status open
 
 
 \backslash
-addcontentsline{toc}{part}{Apendices}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
 thispagestyle{empty}
 \end_layout
 
@@ -1093,8 +1110,234 @@ vspace{1cm}}
 
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Standard
 \start_of_appendix
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatletter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+@chapter[#1]#2{
+\backslash
+ifnum 
+\backslash
+c@secnumdepth >
+\backslash
+m@ne
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+if@mainmatter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+refstepcounter{chapter}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+typeout{
+\backslash
+@chapapp
+\backslash
+space
+\backslash
+thechapter.}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{loa}{chapter}%
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+protect
+\backslash
+numberline{
+\backslash
+thechapter}#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{loa}{chapter}{#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{loa}{chapter}{#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptermark{#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{lot}{
+\backslash
+protect
+\backslash
+addvspace{10
+\backslash
+p@}}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{lof}{
+\backslash
+protect
+\backslash
+addvspace{10
+\backslash
+p@}}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+if@twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+@topnewpage[
+\backslash
+@makechapterhead{#2}]%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+@makechapterhead{#2}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+@afterheading
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatother
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{toc}{
+\backslash
+protect
+\backslash
+setcounter{tocdepth}{0}} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
 Write Title Here
 \end_layout
 
@@ -1112,6 +1355,10 @@ You can see here the equation number is consistent with Appendix numbering
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+ddd
 \end_layout
 
 \begin_layout Section
