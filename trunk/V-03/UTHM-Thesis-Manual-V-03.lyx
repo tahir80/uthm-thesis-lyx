@@ -4,7 +4,7 @@
 \begin_header
 \textclass article
 \begin_preamble
-\date{Released date here}
+\date{8 October 2010}
 \end_preamble
 \use_default_options true
 \language english
@@ -61,7 +61,7 @@
 \begin_body
 
 \begin_layout Title
-Manual - UTHM thesis template Version 0.3
+User's Manual - UTHM thesis template Version 0.3
 \begin_inset Newline newline
 \end_inset
 
@@ -74,7 +74,8 @@ Waluyo Adi Siswanto
 status open
 
 \begin_layout Plain Layout
-Other contributors: Richard Heck
+Other contributors: Richard Heck, Agus D.
+ Anggono
 \end_layout
 
 \end_inset
@@ -111,7 +112,7 @@ ors.
  You may copy, distribute to others as you wish.
  This is free, you can redistribute it and/or modify it under the terms
  of the GNU General Public License as published by the Free Software Foundation;
- either version 2 of the License, or (at your option) any later version.
+ either version 3 of the License, or (at your option) any later version.
 \end_layout
 
 \begin_layout Section
@@ -135,7 +136,7 @@ fancy
 \family default
 hdr, 
 \family typewriter
-caption, kluwer, tocloft, minitoc.
+caption, kluwer, tocloft, minitoc, prettyref.
 
 \family default
  The installation of any LaTeX package should be done from the LaTeX distributio
@@ -1183,6 +1184,57 @@ cftbeforeloatitleskip}{2.5cm}
 usepackage{minitoc}
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Redefining automatic label of Figure, Table and Eq.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{prettyref}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{tab}{Table
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{fig}{Figure
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{eq}{Eq.
+\backslash
+,
+\backslash
+textup{(
+\backslash
+ref{#1})}}
+\end_layout
+
 \end_inset
 
 
@@ -1918,6 +1970,113 @@ setcounter{tocdepth}{0}}
 \end_layout
 
 \begin_layout Section
+Cross References
+\end_layout
+
+\begin_layout Standard
+For automatic labeling with prefix Figure, Table and Eq.
+ in the text, the thesis template uses 
+\family typewriter
+prettyref
+\family default
+ package.
+ The default formats for figure, table and equation have been changed.
+ The new command written in latex preamble:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+% Redefining automatic label of Figure, Table and Eq.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{prettyref}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{tab}{Table
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{fig}{Figure
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{eq}{Eq.
+\backslash
+,
+\backslash
+textup{(
+\backslash
+ref{#1})}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To make a reference to a figure, table or equation Inserting (
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Insert
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Cross-reference
+\family default
+), the format must be set to 
+\family typewriter
+Formatted reference
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/Cross-reference.png
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Bibliography
 \end_layout
 
@@ -2067,16 +2226,21 @@ name "sec:Modification-records"
 \end_layout
 
 \begin_layout Standard
-Version 0.3: (release date here)
+Version 0.3: (8-October-2010)
 \end_layout
 
 \begin_layout Itemize
-<was.uthm> updated manual, appendices included after References
+<was.uthm> updated manual, new sections: appendices and cross reference
 \end_layout
 
 \begin_layout Itemize
 <was.uthm, Richard Heck> include appendices in the template, Separate List
  of Appendices
+\end_layout
+
+\begin_layout Itemize
+<was.uthm, Agus Anggono> automatic cross references with prefix Figure, Table
+ and Eq.
 \end_layout
 
 \begin_layout Standard

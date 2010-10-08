@@ -67,6 +67,12 @@
 \renewcommand{\cftbeforeloatitleskip}{2.5cm}
 
 \usepackage{minitoc}
+
+% Redefining automatic label of Figure, Table and Eq.
+\usepackage{prettyref}
+\newrefformat{tab}{Table\,\ref{#1}}
+\newrefformat{fig}{Figure\,\ref{#1}}
+\newrefformat{eq}{Eq.\,\textup{(\ref{#1})}}
 \end_preamble
 \options liststotoc,chapterprefix,tablecaptionabove,bibtotoc,parskip=full,headings=small,numbers=noenddot
 \use_default_options true
@@ -147,7 +153,7 @@ frontmatter
 status open
 
 \begin_layout Plain Layout
-This is UTHM thesis template version 0.3 (release date)
+This is UTHM thesis template version 0.3 (8-10-2010)
 \end_layout
 
 \end_inset
@@ -275,8 +281,8 @@ addcontentsline{toc}{chapter}{Declaration}
 
 \begin_layout Standard
 \align center
-I hereby declare that this project report entitled “Write The Thesis Title
- Here” is the result of my own research except as cited in the references.
+I hereby declare that this thesis entitled “Write The Thesis Title Here”
+ is the result of my own research except as cited in the references.
  This thesis has not been accepted for any degree and is not concurrently
  submitted in candidature of any other degree.
  
@@ -582,9 +588,9 @@ Background of Study
 One of the hallmarks of the conference is the Numisheet Benchmark Study,
  which is a set of three blind tests prepared one year prior to the conference.
  Numisheet 2008 Benchmark Problem II is provided by Daimler AG.
- For this benchmark, the well known S-Rail geometry as shown in Figure 
+ For this benchmark, the well known S-Rail geometry as shown in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand prettyref
 reference "fig:R-rail-geometry"
 
 \end_inset
@@ -633,7 +639,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-R-rail geometry
+S-rail geometry
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:R-rail-geometry"
@@ -700,9 +706,9 @@ key "Poirson2007"
 \end_inset
 
 .
- Figure 
+ 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand prettyref
 reference "tab:Data-structure"
 
 \end_inset
@@ -725,9 +731,8 @@ where
 \end_layout
 
 \begin_layout Standard
-In Eq.
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand prettyref
 reference "eq:hubolt"
 
 \end_inset
@@ -748,9 +753,9 @@ dsd\nabla f\label{eq:ddssdd}\end{equation}
 
 \end_inset
 
-as mention in Chapter 
+as mention in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand prettyref
 reference "cha:Literature-Review"
 
 \end_inset
