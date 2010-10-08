@@ -1,3 +1,2 @@
-= User's Manual =
-Please visit here to read the manual:
-[http://sites.google.com/site/lyxthesistemplate/home]
+Please visit here to read the User's Manual:
+[http://sites.google.com/site/lyxthesistemplate]
