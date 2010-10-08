@@ -1,0 +1,2433 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\date{8 October 2010}
+\end_preamble
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman lmodern
+\font_sans lmss
+\font_typewriter lmtt
+\font_default_family rmdefault
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "User Manual - UTHM thesis template"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue, citecolor=blue, urlcolor=blue,pdfstartview=XYZ,plainpages=false,pdfpagelabels"
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 2.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+User's Manual - UTHM thesis template Version 0.3
+\begin_inset Newline newline
+\end_inset
+
+Using LyX (front-end of LaTeX)
+\end_layout
+
+\begin_layout Author
+Waluyo Adi Siswanto
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Other contributors: Richard Heck, Agus D.
+ Anggono
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+was.uthm@gmail.com
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+This is an explanation of UTHM thesis template that I have prepared to suit
+ UTHM thesis format style.
+ However, the template is not fully completed but provides a general format
+ and style.
+ You can modify it to make it better from time to time and one day the template
+ will be mature and perfectly matched with all expected requirements.
+ If you modify the template and you think it is better than the this version,
+ don't forget to modify this document as well and put your name as the contribut
+ors.
+ Of course you can modify this abstract and other parts of this document.
+ You may copy, distribute to others as you wish.
+ This is free, you can redistribute it and/or modify it under the terms
+ of the GNU General Public License as published by the Free Software Foundation;
+ either version 3 of the License, or (at your option) any later version.
+\end_layout
+
+\begin_layout Section
+LaTeX package requirement
+\end_layout
+
+\begin_layout Standard
+To be able to write your thesis using LyX, you have to make sure your LaTeX
+ distribution already include several packages which are not the standard
+ LaTeX packages in LyX.
+\end_layout
+
+\begin_layout Standard
+The required packages: 
+\family typewriter
+koma-script
+\family default
+, 
+\family typewriter
+fancy
+\family default
+hdr, 
+\family typewriter
+caption, kluwer, tocloft, minitoc, prettyref.
+
+\family default
+ The installation of any LaTeX package should be done from the LaTeX distributio
+n.
+ If you are running Ubuntu, you can install from Synaptic package manager
+ where TexLive optional packages can be selected.
+ For Windows users, you should install from MikTek package manager.
+ 
+\end_layout
+
+\begin_layout Standard
+After installing new package, LyX must be reconfigured to use newly installed
+ packages.
+ Reconfiguring LyX from the menu 
+\family sans
+Tools
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Reconfigure
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Section
+Document preparation
+\end_layout
+
+\begin_layout Subsection
+Document class
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Document-class"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+UTHM thesis is written under LaTeX document class 
+\family sans
+book
+\begin_inset space \thinspace{}
+\end_inset
+
+(KOMA-Script)
+\family default
+.
+ In order to employ this document class, from the menu 
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Settings
+\family default
+ and from the option 
+\family sans
+Document Class
+\family default
+ find 
+\family sans
+book
+\begin_inset space \thinspace{}
+\end_inset
+
+(KOMA-Script)
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/pasted1.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the custom field, write the optional command: 
+\family typewriter
+listtotoc
+\family default
+, 
+\family typewriter
+chapterprefix
+\family default
+, 
+\family typewriter
+tablecaptionabove
+\family default
+, 
+\family typewriter
+bibtotoc
+\family default
+, 
+\family typewriter
+parskip=full
+\family default
+, 
+\family typewriter
+headings=small
+\family default
+, 
+\family typewriter
+numbers=noenddot
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Description
+
+\family typewriter
+listtotoc
+\family default
+ prints all lists including List of Figures and List of Tables in TOC (Table
+ of Contents).
+ The default in 
+\family sans
+book
+\begin_inset space ~
+\end_inset
+
+(KOMA-Script)
+\family default
+, all lists are not printed in TOC.
+\end_layout
+
+\begin_layout Description
+
+\family typewriter
+chapterprefix
+\family default
+ prints the 
+\begin_inset Quotes eld
+\end_inset
+
+Chapter
+\begin_inset Quotes erd
+\end_inset
+
+ prefix in front of chapter number in every chapter.
+\end_layout
+
+\begin_layout Description
+
+\family typewriter
+tablecaptionabove
+\family default
+ puts a correct space between table caption and the table.
+ This is required for placing table below the caption table.
+ 
+\end_layout
+
+\begin_layout Description
+
+\family typewriter
+bibtotoc
+\family default
+ includes references heading in Table of Contents
+\end_layout
+
+\begin_layout Description
+
+\family typewriter
+parskip=full
+\family default
+ provides a full space between paragraph, as defined by the book
+\begin_inset space \thinspace{}
+\end_inset
+
+(KOMA-Script) document class.
+ This is important since in the thesis every paragraph must be visible and
+ separated by a vertical space which is higher than the line space.
+ In case an exact space between paragraphs is required, then you have to
+ write a command 
+\family typewriter
+
+\backslash
+setlength{
+\backslash
+parskip}{1cm}
+\family default
+ in LaTeX preamble as explained in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:LaTeX-Preamble"
+
+\end_inset
+
+, instead of 
+\family typewriter
+parskip=full
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Description
+headings=small defines as 
+\family typewriter
+small
+\family default
+ headings style.
+ In book
+\begin_inset space \thinspace{}
+\end_inset
+
+(KOMA-Script), other available styles are 
+\family typewriter
+normal
+\family default
+ and 
+\family typewriter
+big
+\family default
+.
+\end_layout
+
+\begin_layout Description
+numbers=noenddot the numbering of sectional units should have no dot at
+ the end if only arabic numbers are used.
+ On the other hand, if roman numerals or letters are appear in the numbering,
+ then a dot should appear at the end of the numbering.
+ If this optional command is not included, when appendix is inserted, then
+ unnecessary dot appears after the chapter number.
+\end_layout
+
+\begin_layout Subsection
+Fonts
+\end_layout
+
+\begin_layout Standard
+The standard UTHM thesis is written in standard Roman font with base size
+ of 12.
+ The font setting should be adjusted.
+ Go to 
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Settings
+\family default
+ and from the option
+\family sans
+ Font
+\family default
+ then change to the following entries:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/pasted2.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Text layout
+\end_layout
+
+\begin_layout Standard
+The line spacing of the text should be set here: from the menu 
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Settings
+\family default
+ then set the line spacing to OneHalf.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/pasted3.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Page layout
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Page-layout"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The thesis should be printed in A4 size paper.
+ This should be declare from the menu 
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Settings
+\family default
+ then set the paper format to 
+\family typewriter
+A4
+\family default
+.
+ The heading style to be used is 
+\family typewriter
+fancy
+\family default
+.
+ This fancy style requires 
+\family typewriter
+fancyhdr
+\family default
+ package, so make sure you have installed this from your LaTeX package manager.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/pasted4.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Page margins
+\end_layout
+
+\begin_layout Standard
+The default page margin of book
+\begin_inset space \thinspace{}
+\end_inset
+
+(KOMA-Script) does not match with the margin requirement in UTHM Thesis,
+ you need to modify it.
+\end_layout
+
+\begin_layout Standard
+Go to menu 
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Settings
+\family default
+ then under the option Page Margins, set the margins as follows
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/pasted5a.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+PDF properties
+\end_layout
+
+\begin_layout Standard
+Your pdf output can be nice with all links active, which means the table
+ of contents links to the corresponding pages in the document.
+ Other links within the document also accurately point to the referred page.
+\end_layout
+
+\begin_layout Standard
+LyX has already included hyperref LaTeX package when you install LyX.
+ What you need to do is just activating this package.
+ Go to menu 
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Settings 
+\family default
+and from 
+\family sans
+PDF Properties
+\family default
+ option enable the 
+\family typewriter
+Use hyperref support
+\family default
+ by clicking the radio button.
+ Write the title of the thesis and your name as the ID of pdf document.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/pasted7.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You need to write optional commands in Additional options field: 
+\family typewriter
+linkcolor=blue
+\family default
+, 
+\family typewriter
+citecolor=blue
+\family default
+, 
+\family typewriter
+urlcolor=blue
+\family default
+,
+\family typewriter
+ pdfstartview=XYZ
+\family default
+,
+\family typewriter
+ plainpages=false
+\family default
+,
+\family typewriter
+ pdfpagelabels
+\family default
+.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+blue
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+ color is recommended during thesis writing process to see clearly all links.
+ You may change the color to any standard color according to your preference.
+ When your thesis is ready to print, the printed result will be better if
+ you switch the color to 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+black
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Once you have finished writing all optional commands in 
+\family sans
+General
+\family default
+ tab, then modify the 
+\family sans
+Hyperlinks
+\family default
+ and 
+\family sans
+Bookmark
+\family default
+ tabs as follows:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/pasted8.png
+	scale 80
+	BoundingBox 0bp 0bp 230bp 181bp
+	clip
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename manual-figures/pasted9.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you want to know what the effects of changing the options under Hyperlinks
+ and Bookmarks tabs, you can modify and view the pdf output.
+ Perhaps you can find the most preferable to you.
+\end_layout
+
+\begin_layout Subsection
+LaTeX Preamble
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:LaTeX-Preamble"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The next step to prepare the thesis template is writing some additional
+ command in LaTeX preamble, acessable from the menu 
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Settings, LaTeX preamble
+\family default
+.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The complete commands written in LaTeX preamble are as follows:
+\lyxline
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true,tabsize=1"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+% this command prints empty date in title page 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+date{}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% this command set the paragraph indentation
+\end_layout
+
+\begin_layout Plain Layout
+
+% if you want to modify change the value 1.5cm to your preference 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+parindent}{1.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% This command will change the default Bibliography to References
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginDocument{
+\backslash
+renewcommand{
+\backslash
+bibname}{References}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% The following comands center the heading of chapters and 
+\end_layout
+
+\begin_layout Plain Layout
+
+% chapter entries, the default is on the left
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtokomafont{chapterentry}{
+\backslash
+centering} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtokomafont{chapter}{
+\backslash
+centering}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% The following commands set the page numbers on the top right 
+\end_layout
+
+\begin_layout Plain Layout
+
+% except in the beginning of chapters 
+\end_layout
+
+\begin_layout Plain Layout
+
+% using fancyhdr package (page layout>heading style->fancy) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chead{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cfoot{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rfoot{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+headrulewidth}{0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% The following commands set the vertical space before and after 
+\end_layout
+
+\begin_layout Plain Layout
+
+% every chapter entry 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadendvskip}{
+\backslash
+vspace{2cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadstartvskip}{
+\backslash
+vspace{2.5cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% The following commands set the TOC, LOT and LOF 
+\end_layout
+
+\begin_layout Plain Layout
+
+% this employs tocloft package 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{tocloft}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftdot}{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cfttoctitlefont}{
+\backslash
+hfill
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftaftertoctitle}{
+\backslash
+hfill} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftaftertoctitleskip}{2.5cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftbeforetoctitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftloftitlefont}{
+\backslash
+hfill
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterloftitle}{
+\backslash
+hfill}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterloftitleskip}{2.5cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftbeforeloftitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftlottitlefont}{
+\backslash
+hfill
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterlottitle}{
+\backslash
+hfill} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterlottitleskip}{2.5cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftbeforelottitleskip}{2.5cm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlistof{appendices}{loa}{List of Appendices}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftloatitlefont}{
+\backslash
+hfill
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterloatitle}{
+\backslash
+hfill}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterloatitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftbeforeloatitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{minitoc}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Redefining automatic label of Figure, Table and Eq.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{prettyref}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{tab}{Table
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{fig}{Figure
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{eq}{Eq.
+\backslash
+,
+\backslash
+textup{(
+\backslash
+ref{#1})}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lyxline
+By default the document class book
+\begin_inset space \thinspace{}
+\end_inset
+
+(KOMA-Script) always prints the date of printing in the title page.
+ To disable this a command 
+\family typewriter
+
+\backslash
+date{}
+\family default
+ prints a blank date.
+ 
+\end_layout
+
+\begin_layout Standard
+The indentation of the paragraph is set 
+\begin_inset Formula $\unit[1.5]{cm}$
+\end_inset
+
+.
+ This definition should be controlled by the command
+\family typewriter
+
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+parindent}{1.5cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you want to set the vertical space in exact measurement (for example
+ 
+\begin_inset Formula $\unit[1]{cm}$
+\end_inset
+
+), then you need to insert an additional command 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+parskip}{1cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The default of Bibliography heading name in 
+\family sans
+book
+\begin_inset space \thinspace{}
+\end_inset
+
+(KOMA-Script)
+\family default
+ is 
+\family typewriter
+Bibliography
+\family default
+.
+ In UTHM thesis, the name is 
+\family typewriter
+References
+\family default
+.
+ In this case you need to change the default name defined by 
+\backslash
+bibname, by using the following command
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginDocument{
+\backslash
+renewcommand{
+\backslash
+bibname}{References}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The command however works when you are using the default language which
+ is English.
+ In case you want to use another language rather then English.
+ You have to access in the 
+\family typewriter
+babel
+\family default
+ level.
+ For example you want to use English
+\begin_inset space \thinspace{}
+\end_inset
+
+(UK), then the command above should be modified to
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginDocument{
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+addto
+\backslash
+captionsbritish{
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+renewcommand{
+\backslash
+bibname}{References}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In UTHM thesis the page number should be located on the top-right except
+ in the beginning of every chapter and chapter like pages the page number
+ are located at the bottom of the page and centered.
+ To follow this requirement a 
+\family sans
+fancyhdr
+\family default
+ package is needed (see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Page-layout"
+
+\end_inset
+
+).
+ Write the following commands:
+\family typewriter
+
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chead{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rhead{
+\backslash
+thepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cfoot{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rfoot{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+headrulewidth}{0pt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another style appeared in UTHM thesis is before and chapter entry, the vertical
+ space is wider then the space between paragraphs.
+ Assuming this vertical space before chapter heading is 
+\begin_inset Formula $\unit[2.5]{cm}$
+\end_inset
+
+ and after chapter heading is 
+\begin_inset Formula $\unit[2]{cm}$
+\end_inset
+
+ , the following commands will set it accurately.
+\family typewriter
+
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadendvskip}{
+\backslash
+vspace{2cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadstartvskip}{
+\backslash
+vspace{2.5cm}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The settings of TOC, LOF and LOT are controlled by 
+\family typewriter
+tocloft
+\family default
+ package.
+\end_layout
+
+\begin_layout Section
+Appendices
+\end_layout
+
+\begin_layout Standard
+Appendices are attached in the end of thesis document after References.
+ All numbering in apendices printed in alphabetical character, starting
+ from A.
+\end_layout
+
+\begin_layout Standard
+The format style of appendix is a bit different with the chapter format.
+ To accommodate this the format is set differently and only applicable for
+ the appendices.
+\end_layout
+
+\begin_layout Standard
+After the References heading, TeX commands must be inserted to define the
+ vertical space, before and after the appendix heading:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadendvskip}{
+\backslash
+vspace{2cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadstartvskip}{
+\backslash
+vspace{1cm}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The definition of the appendix has been defined from the LyX menu 
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Start Appendix Here
+\family default
+.
+ User can make a cross reference to the bibliography database and will be
+ listed in the References.
+ 
+\end_layout
+
+\begin_layout Standard
+The contents of Appendices are listed in a separate List of Appendices.
+ The List of Appendices page is defined by 
+\family typewriter
+tocloft
+\family default
+ command:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlistof{appendices}{loa}{List of Appendices}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The format setting of the heading is consistent with LOF and LOT:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftloatitlefont}{
+\backslash
+hfill
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily} 
+\backslash
+renewcommand{
+\backslash
+cftafterloatitle}{
+\backslash
+hfill} 
+\backslash
+renewcommand{
+\backslash
+cftafterloatitleskip}{2.5cm} 
+\backslash
+renewcommand{
+\backslash
+cftbeforeloatitleskip}{2.5cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to print the chapter headings in List of Appendices, right after
+ the appendix definition (from the menu 
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Start Appendix Here
+\family default
+), LaTeX commands are inserted.
+ This simply copied from book.cls then changed 
+\family typewriter
+toc
+\family default
+ to 
+\family typewriter
+loa
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatletter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+@chapter[#1]#2{
+\backslash
+ifnum 
+\backslash
+c@secnumdepth >
+\backslash
+m@ne
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+if@mainmatter
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+refstepcounter{chapter}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+typeout{
+\backslash
+@chapapp
+\backslash
+space
+\backslash
+thechapter.}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+addcontentsline{loa}{chapter}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                                  {
+\backslash
+protect
+\backslash
+numberline{
+\backslash
+thechapter}#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+                        
+\backslash
+addcontentsline{loa}{chapter}{#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+                     
+\backslash
+addcontentsline{loa}{chapter}{#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+chaptermark{#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+addtocontents{lof}{
+\backslash
+protect
+\backslash
+addvspace{10
+\backslash
+p@}}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+addtocontents{lot}{
+\backslash
+protect
+\backslash
+addvspace{10
+\backslash
+p@}}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+if@twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+                     
+\backslash
+@topnewpage[
+\backslash
+@makechapterhead{#2}]%
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+                     
+\backslash
+@makechapterhead{#2}%
+\end_layout
+
+\begin_layout Plain Layout
+
+                     
+\backslash
+@afterheading
+\end_layout
+
+\begin_layout Plain Layout
+
+                   
+\backslash
+fi}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatother
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To prevent section headings of the appendices printed in TOC, 
+\family typewriter
+minitoc
+\family default
+ command is used.
+ The package minitoc must be called in the preamble 
+\family typewriter
+\size small
+
+\backslash
+usepackage{minitoc}
+\family default
+\size default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{toc}{
+\backslash
+protect
+\backslash
+setcounter{tocdepth}{0}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cross References
+\end_layout
+
+\begin_layout Standard
+For automatic labeling with prefix Figure, Table and Eq.
+ in the text, the thesis template uses 
+\family typewriter
+prettyref
+\family default
+ package.
+ The default formats for figure, table and equation have been changed.
+ The new command written in latex preamble:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+% Redefining automatic label of Figure, Table and Eq.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{prettyref}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{tab}{Table
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{fig}{Figure
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{eq}{Eq.
+\backslash
+,
+\backslash
+textup{(
+\backslash
+ref{#1})}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To make a reference to a figure, table or equation Inserting (
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Insert
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Cross-reference
+\family default
+), the format must be set to 
+\family typewriter
+Formatted reference
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/Cross-reference.png
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bibliography
+\end_layout
+
+\begin_layout Standard
+There are two template versions available.
+ One has numeric bibliography style (
+\family typewriter
+UTHM-Thesis-V-xx.lyx
+\family default
+) and another one uses author-year style (
+\family typewriter
+UTHM-Thesis-authoryear-V-xx.lyx
+\family default
+)
+\end_layout
+
+\begin_layout Subsection
+Numerical bibliography style
+\end_layout
+
+\begin_layout Itemize
+When you insert the bibliography in the first time and attaching bibliography
+ database file (*.bib), from the menu 
+\family sans
+Insert
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+List/TOC\SpecialChar \menuseparator
+BibTe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+X Bibliography
+\family default
+, you have to select 
+\family typewriter
+klunum
+\family default
+ as the bibliography style.
+ The package 
+\family typewriter
+klunum
+\family default
+ is provided by Kluwer international publisher for numeric citation and
+ bibliography styles.
+\end_layout
+
+\begin_layout Itemize
+For Ubuntu users, 
+\family typewriter
+kluwer
+\family default
+ and other publishers styles can be made available if you are installing
+ 
+\family typewriter
+texlive-publishers
+\family default
+.
+ If you are using Windows, 
+\family typewriter
+kluwer
+\family default
+ package must be installed from MikTek package manager.
+\end_layout
+
+\begin_layout Subsection
+Author-year bibliography style
+\end_layout
+
+\begin_layout Itemize
+When you insert the bibliography in the first time and attaching bibliography
+ database file (*.bib), from the menu 
+\family sans
+Insert
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+List/TOC\SpecialChar \menuseparator
+BibTe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+X Bibliography
+\family default
+, you have to use klun
+\family typewriter
+amed
+\family default
+ as the bibliography style.
+ The package 
+\family typewriter
+klunamed
+\family default
+ is provided by Kluwer international publisher for author-year citation
+ and bibliography styles.
+\end_layout
+
+\begin_layout Itemize
+The citation style must be consistent with author-year style.
+ Go to menu 
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Settings
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Bibliography
+\family default
+, then change the 
+\family sans
+default (numerical)
+\family default
+ to 
+\family sans
+Natbib (author-year).
+\end_layout
+
+\begin_layout Section
+Modification records
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Modification-records"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Version 0.3: (8-October-2010)
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> updated manual, new sections: appendices and cross reference
+\end_layout
+
+\begin_layout Itemize
+<was.uthm, Richard Heck> include appendices in the template, Separate List
+ of Appendices
+\end_layout
+
+\begin_layout Itemize
+<was.uthm, Agus Anggono> automatic cross references with prefix Figure, Table
+ and Eq.
+\end_layout
+
+\begin_layout Standard
+Version 0.2: (29-September-2010)
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> updated manual
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> title page updated
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> page margin: change margins
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> add students declaration page, dedication page
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> create author-year version (
+\family typewriter
+UTHM-Thesis-authoryear-V-xx.lyx
+\family default
+)
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> modify TOC, LOF and LOT without leader dots (employing 
+\family typewriter
+tocloft
+\family default
+)
+\end_layout
+
+\begin_layout Standard
+Version 0.1: (23-September-2010)
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> The first version is released to public
+\end_layout
+
+\begin_layout Section
+Guidelines to contributors
+\end_layout
+
+\begin_layout Subsection
+Modifying documents
+\end_layout
+
+\begin_layout Standard
+Please free to modify and to contribute!
+\end_layout
+
+\begin_layout Standard
+Whenever you modify UTHM thesis template (filename: 
+\family typewriter
+UTHM-Thesis-V-01.lyx
+\family default
+) you are requested to save in the subsequent version 
+\family typewriter
+UTHM-Thesis-V-xx.lyx
+\family default
+, where 
+\family typewriter
+xx
+\family default
+ is the numbers.
+ If you have modified 
+\family typewriter
+V-01
+\family default
+, you have to save 
+\family typewriter
+V-02
+\family default
+.
+ Inside the document (the first page), there is a note indicating the version
+ number and the date of realease.
+ Please modify this consistently with the file version.
+\end_layout
+
+\begin_layout Standard
+You need to modify and to document the modifications that you have done
+ in the manual (this file): 
+\family typewriter
+uthm-thesis-manual-V-01.lyx
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Apart from the mannual contents that should be in good agreement with the
+ thesis template, there are several sections you need to modify.
+ This is very important so that other contributors want to make better have
+ sufficient information what have been done previously.
+\end_layout
+
+\begin_layout Subsubsection*
+Filename
+\end_layout
+
+\begin_layout Standard
+You are requested to save the new version following.
+ If the file is 
+\family typewriter
+UTHM-Thesis-V-01.lyx
+\family default
+, the released version to public must be 
+\family typewriter
+UTHM-Thesis-V-02.lyx
+\end_layout
+
+\begin_layout Subsubsection*
+Title
+\end_layout
+
+\begin_layout Standard
+The title must be adjusted according to the new release version
+\end_layout
+
+\begin_layout Subsubsection*
+PDF Properties
+\end_layout
+
+\begin_layout Standard
+The title of the pdf properties (
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Settings 
+\family default
+and from 
+\family sans
+PDF Properties
+\family default
+) should be adjusted to be consistent with the version number
+\end_layout
+
+\begin_layout Subsubsection*
+Release date
+\end_layout
+
+\begin_layout Standard
+The release date should modified before you release to public.
+ This information is written in LaTeX Preamble accessible from the menu
+ 
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Settings, LaTeX Preamble
+\end_layout
+
+\begin_layout Subsubsection*
+Modification records
+\end_layout
+
+\begin_layout Standard
+Write the summary of the modification in the new release.
+ This modification records are written in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Modification-records"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Working with PySVN Workbench
+\end_layout
+
+\begin_layout Subsection
+LyX version control
+\end_layout
+
+\end_body
+\end_document
