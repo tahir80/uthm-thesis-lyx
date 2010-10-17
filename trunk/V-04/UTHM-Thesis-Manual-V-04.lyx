@@ -1565,7 +1565,7 @@ Appendices
 
 \begin_layout Standard
 Appendices are attached in the end of thesis document after References.
- All numbering in apendices printed in alphabetical character, starting
+ All numberings in appendices are printed in alphabetical character, starting
  from A.
 \end_layout
 
@@ -1714,7 +1714,7 @@ Document
 Start Appendix Here
 \family default
 ), LaTeX commands are inserted.
- This simply copied from book.cls then changed 
+ This is simply copied from book.cls then changed 
 \family typewriter
 toc
 \family default
@@ -1945,6 +1945,17 @@ usepackage{minitoc}
 \family default
 \size default
 .
+ This command is not written in LaTe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+X preamble, but right after the appendix definition.
 \end_layout
 
 \begin_layout Standard
@@ -1981,7 +1992,17 @@ prettyref
 \family default
  package.
  The default formats for figure, table and equation have been changed.
- The new command written in latex preamble:
+ The new command written in LaTe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+X preamble:
 \end_layout
 
 \begin_layout Standard
@@ -1989,11 +2010,6 @@ prettyref
 lstparams "basicstyle={\small\ttfamily},breaklines=true"
 inline false
 status open
-
-\begin_layout Plain Layout
-
-% Redefining automatic label of Figure, Table and Eq.
-\end_layout
 
 \begin_layout Plain Layout
 
@@ -2214,6 +2230,25 @@ default (numerical)
 Natbib (author-year).
 \end_layout
 
+\begin_layout Subsection
+Citation
+\end_layout
+
+\begin_layout Standard
+After you have defined the bibliography, then the bibliography database
+ can cited anywhere in the document, from the menu 
+\family sans
+Insert
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Citation
+\family default
+.
+ The citation style will be always consistent with the bibliography style.
+\end_layout
+
 \begin_layout Section
 Modification records
 \begin_inset CommandInset label
@@ -2230,7 +2265,7 @@ Version 0.4: (release date here)
 \end_layout
 
 \begin_layout Itemize
-.....
+<was.uthm> updated manual
 \end_layout
 
 \begin_layout Standard
@@ -2300,137 +2335,225 @@ Guidelines to contributors
 \end_layout
 
 \begin_layout Subsection
+Template sources
+\end_layout
+
+\begin_layout Standard
+All LyX template sources are saved in google code.
+ You can always get the latest version from the svn repository.
+ 
+\end_layout
+
+\begin_layout Standard
+To obtain the copy from the source you need to install subversion
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The information of Subversion(SVN) can be obtained from the project homepage
+ 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://subversion.tigris.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ (SVN) in your local computer.
+ From within the directory where you want to place your local copy of the
+ sources, do:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+svn checkout http://uthm-thesis-lyx.googlecode.com/svn/ thesis-template
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This will make a directory 
+\family typewriter
+thesis-template
+\family default
+ and download all files into that directory including those in 
+\family typewriter
+branch
+\family default
+ folder.
+\end_layout
+
+\begin_layout Standard
+If you are only interested in development files that will be included in
+ the next version, then do:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+svn checkout http://uthm-thesis-lyx.googlecode.com/svn/trunk/ thesis-template
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are various of opensource GUI subversions available.
+ In this manual only two of them are discussed, i.e.
+ 
+\family sans
+PySVN Workbench 
+\family default
+(see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Working-with-PySVN"
+
+\end_inset
+
+) for Ubuntu and 
+\family sans
+TortoiseSVN
+\family default
+ for Windows (see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Working-with-TortoiseSVN"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Subsection
 Modifying documents
 \end_layout
 
 \begin_layout Standard
-Please free to modify and to contribute!
-\end_layout
-
-\begin_layout Standard
-Whenever you modify UTHM thesis template (filename: 
+Please free to modify and to contribute! There are several files in your
+ 
 \family typewriter
-UTHM-Thesis-V-01.lyx
+trunk
 \family default
-) you are requested to save in the subsequent version 
+ development folder 
 \family typewriter
-UTHM-Thesis-V-xx.lyx
+V-xx
 \family default
-, where 
+.
+ Please use the latest version, indicated by the version 
 \family typewriter
 xx
 \family default
- is the numbers.
- If you have modified 
-\family typewriter
-V-01
-\family default
-, you have to save 
-\family typewriter
-V-02
-\family default
 .
- Inside the document (the first page), there is a note indicating the version
- number and the date of realease.
- Please modify this consistently with the file version.
 \end_layout
 
 \begin_layout Standard
-You need to modify and to document the modifications that you have done
- in the manual (this file): 
+
 \family typewriter
-uthm-thesis-manual-V-01.lyx
-\family default
-.
- 
+
+\backslash
+manual-figures
 \end_layout
 
 \begin_layout Standard
-Apart from the mannual contents that should be in good agreement with the
- thesis template, there are several sections you need to modify.
- This is very important so that other contributors want to make better have
- sufficient information what have been done previously.
-\end_layout
 
-\begin_layout Subsubsection*
-Filename
-\end_layout
-
-\begin_layout Standard
-You are requested to save the new version following.
- If the file is 
 \family typewriter
-UTHM-Thesis-V-01.lyx
-\family default
-, the released version to public must be 
+CHANGELOG
+\end_layout
+
+\begin_layout Standard
+
 \family typewriter
-UTHM-Thesis-V-02.lyx
-\end_layout
-
-\begin_layout Subsubsection*
-Title
+CREDITS
 \end_layout
 
 \begin_layout Standard
-The title must be adjusted according to the new release version
-\end_layout
 
-\begin_layout Subsubsection*
-PDF Properties
-\end_layout
-
-\begin_layout Standard
-The title of the pdf properties (
-\family sans
-Document
-\family default
-\SpecialChar \menuseparator
-
-\family sans
-Settings 
-\family default
-and from 
-\family sans
-PDF Properties
-\family default
-) should be adjusted to be consistent with the version number
-\end_layout
-
-\begin_layout Subsubsection*
-Release date
+\family typewriter
+LICENSE
 \end_layout
 
 \begin_layout Standard
-The release date should modified before you release to public.
- This information is written in LaTeX Preamble accessible from the menu
- 
-\family sans
-Document
-\family default
-\SpecialChar \menuseparator
 
-\family sans
-Settings, LaTeX Preamble
-\end_layout
-
-\begin_layout Subsubsection*
-Modification records
+\family typewriter
+README
 \end_layout
 
 \begin_layout Standard
-Write the summary of the modification in the new release.
- This modification records are written in section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Modification-records"
 
-\end_inset
+\family typewriter
+sample.png
+\end_layout
 
-.
+\begin_layout Standard
+
+\family typewriter
+thesis.bib
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+UTHM-Thesis-authoryear-V-xx.lyx
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+UTHM-Thesis-Manual-V-xx.lyx
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+UTHM-Thesis-V-xx.lyx
 \end_layout
 
 \begin_layout Subsection
 Working with PySVN Workbench
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Working-with-PySVN"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Working with TortoiseSVN
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Working-with-TortoiseSVN"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
