@@ -96,6 +96,10 @@ LatexCommand tableofcontents
 \end_inset
 
 
+\begin_inset Newpage clearpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Abstract
@@ -113,6 +117,18 @@ ors.
  This is free, you can redistribute it and/or modify it under the terms
  of the GNU General Public License as published by the Free Software Foundation;
  either version 3 of the License, or (at your option) any later version.
+ Online version the lyx-thesis-template can be found here 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://sites.google.com/site/lyxthesistemplate
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -129,21 +145,184 @@ To be able to write your thesis using LyX, you have to make sure your LaTeX
 The required packages: 
 \family typewriter
 koma-script
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+LaTeX package !
+\family typewriter
+koma-script
+\end_layout
+
+\end_inset
+
+
 \family default
 , 
 \family typewriter
 fancy
 \family default
-hdr, 
+hdr
 \family typewriter
-caption, kluwer, tocloft, minitoc, prettyref.
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+LaTeX package !
+\family typewriter
+fancyhdr
+\end_layout
+
+\end_inset
+
+
+\family default
+, 
+\family typewriter
+caption
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+LaTeX package !
+\family typewriter
+caption
+\end_layout
+
+\end_inset
+
+, kluwer
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+LaTeX package !
+\family typewriter
+kluwer
+\end_layout
+
+\end_inset
+
+ 
+\family default
+(
+\family typewriter
+klunamed
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+LaTeX package !
+\family typewriter
+klunamed
+\end_layout
+
+\end_inset
+
+.bst 
+\family default
+and
+\family typewriter
+ klunum
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+LaTeX package !
+\family typewriter
+klunum
+\end_layout
+
+\end_inset
+
+.bst
+\family default
+)
+\family typewriter
+, tocloft
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+LaTeX package !
+\family typewriter
+tocloft
+\end_layout
+
+\end_inset
+
+, minitoc
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+LaTeX package !
+\family typewriter
+minitoc
+\end_layout
+
+\end_inset
+
+, prettyref
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+LaTeX package !
+\family typewriter
+prettyref
+\end_layout
+
+\end_inset
+
+.
 
 \family default
  The installation of any LaTeX package should be done from the LaTeX distributio
 n.
- If you are running Ubuntu, you can install from Synaptic package manager
- where TexLive optional packages can be selected.
- For Windows users, you should install from MikTek package manager.
+ If you are running Ubuntu
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+Operating system!Ubuntu
+\end_layout
+
+\end_inset
+
+, you can install from Synaptic package manager where TexLive
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+LaTeX distribution!TexLive
+\end_layout
+
+\end_inset
+
+ optional packages can be selected.
+ For Windows
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+Operating system!Windows
+\end_layout
+
+\end_inset
+
+ users, you should install from MikTeX
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+LaTeX distribution!MikTeX
+\end_layout
+
+\end_inset
+
+ package manager.
  
 \end_layout
 
@@ -188,7 +367,17 @@ book
 (KOMA-Script)
 \family default
 .
- In order to employ this document class, from the menu 
+ In order to employ this document class
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+document class
+\end_layout
+
+\end_inset
+
+, from the menu 
 \family sans
 Document
 \family default
@@ -229,30 +418,100 @@ In the custom field, write the optional command:
 \family typewriter
 listtotoc
 \family default
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+koma-script option!listtotoc
+\end_layout
+
+\end_inset
+
 , 
 \family typewriter
 chapterprefix
 \family default
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+koma-script option!chapterprefix
+\end_layout
+
+\end_inset
+
 , 
 \family typewriter
 tablecaptionabove
 \family default
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+koma-script option!tablecaptionabove
+\end_layout
+
+\end_inset
+
 , 
 \family typewriter
 bibtotoc
 \family default
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+koma-script option!bibtotoc
+\end_layout
+
+\end_inset
+
 , 
 \family typewriter
 parskip=full
 \family default
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+koma-script option!parskip=full
+\end_layout
+
+\end_inset
+
 , 
 \family typewriter
 headings=small
 \family default
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+koma-script option!headings=small
+\end_layout
+
+\end_inset
+
 , 
 \family typewriter
 numbers=noenddot
 \family default
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+koma-script option!numbers=noenddot
+\end_layout
+
+\end_inset
+
 .
  
 \end_layout
@@ -403,7 +662,7 @@ Settings
 \align center
 \begin_inset Graphics
 	filename manual-figures/pasted2.png
-	scale 80
+	scale 70
 
 \end_inset
 
@@ -431,7 +690,7 @@ Settings
 \align center
 \begin_inset Graphics
 	filename manual-figures/pasted3.png
-	scale 80
+	scale 70
 
 \end_inset
 
@@ -473,6 +732,18 @@ fancy
  This fancy style requires 
 \family typewriter
 fancyhdr
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+LaTeX package !
+\family typewriter
+fancyhdr
+\end_layout
+
+\end_inset
+
+
 \family default
  package, so make sure you have installed this from your LaTeX package manager.
 \end_layout
@@ -481,7 +752,7 @@ fancyhdr
 \align center
 \begin_inset Graphics
 	filename manual-figures/pasted4.png
-	scale 80
+	scale 70
 
 \end_inset
 
@@ -536,7 +807,23 @@ Your pdf output can be nice with all links active, which means the table
 \end_layout
 
 \begin_layout Standard
-LyX has already included hyperref LaTeX package when you install LyX.
+LyX has already included 
+\family typewriter
+hyperref
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+LaTeX package ! hyperref
+\end_layout
+
+\end_inset
+
+
+\family default
+ LaTeX package when you install LyX.
  What you need to do is just activating this package.
  Go to menu 
 \family sans
@@ -731,6 +1018,234 @@ Settings, LaTeX preamble
 \end_inset
 
 The complete commands written in LaTeX preamble are as follows:
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+date
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+setlength
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+parindent
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+AtBeginDocument
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+renewcommand
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+bibname
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+addtokomafont
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+lhead
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+chead
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+lfoot
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+cfoot
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+rfoot
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+headrulewidth
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+chapterheadendvskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+chapterheadstartvskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+vspace
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+renewcommand*
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+usepackage{tocloft}
+\end_layout
+
+\end_inset
+
+
 \lyxline
 
 \end_layout
@@ -1990,7 +2505,23 @@ For automatic labeling with prefix Figure, Table and Eq.
 \family typewriter
 prettyref
 \family default
- package.
+ 
+\family typewriter
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+LaTeX package !
+\family typewriter
+prettyref
+\end_layout
+
+\end_inset
+
+
+\family default
+package.
  The default formats for figure, table and equation have been changed.
  The new command written in LaTe
 \begin_inset ERT
@@ -2059,6 +2590,33 @@ ref{#1})}}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+usepackage{prettyref}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+newrefformat{tab}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 To make a reference to a figure, table or equation Inserting (
 \family sans
 Document
@@ -2077,6 +2635,16 @@ Cross-reference
 \family typewriter
 Formatted reference
 \family default
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+Formatted reference
+\end_layout
+
+\end_inset
+
 .
  
 \end_layout
@@ -2110,7 +2678,27 @@ UTHM-Thesis-authoryear-V-xx.lyx
 \end_layout
 
 \begin_layout Subsection
-Numerical bibliography style
+Numerical
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+Numerical
+\end_layout
+
+\end_inset
+
+ bibliography style
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+bibliography style
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2143,6 +2731,18 @@ klunum
  The package 
 \family typewriter
 klunum
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+klunum
+\end_layout
+
+\end_inset
+
+
 \family default
  is provided by Kluwer international publisher for numeric citation and
  bibliography styles.
@@ -2152,22 +2752,64 @@ klunum
 For Ubuntu users, 
 \family typewriter
 kluwer
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+kluwer
+\end_layout
+
+\end_inset
+
+
 \family default
  and other publishers styles can be made available if you are installing
  
 \family typewriter
 texlive-publishers
 \family default
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+texlive-publishers
+\end_layout
+
+\end_inset
+
 .
  If you are using Windows, 
 \family typewriter
 kluwer
 \family default
- package must be installed from MikTek package manager.
+ package must be installed from MikTeX
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+MikTeX
+\end_layout
+
+\end_inset
+
+ package manager.
 \end_layout
 
 \begin_layout Subsection
-Author-year bibliography style
+Author-year
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+Author-year
+\end_layout
+
+\end_inset
+
+ bibliography style
 \end_layout
 
 \begin_layout Itemize
@@ -2200,6 +2842,18 @@ amed
  The package 
 \family typewriter
 klunamed
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+klunamed
+\end_layout
+
+\end_inset
+
+
 \family default
  is provided by Kluwer international publisher for author-year citation
  and bibliography styles.
@@ -2247,87 +2901,6 @@ Citation
 \family default
 .
  The citation style will be always consistent with the bibliography style.
-\end_layout
-
-\begin_layout Section
-Modification records
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Modification-records"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Version 0.4: (release date here)
-\end_layout
-
-\begin_layout Itemize
-<was.uthm> updated manual
-\end_layout
-
-\begin_layout Standard
-Version 0.3: (8-October-2010)
-\end_layout
-
-\begin_layout Itemize
-<was.uthm> updated manual, new sections: appendices and cross reference
-\end_layout
-
-\begin_layout Itemize
-<was.uthm, Richard Heck> include appendices in the template, Separate List
- of Appendices
-\end_layout
-
-\begin_layout Itemize
-<was.uthm, Agus Anggono> automatic cross references with prefix Figure, Table
- and Eq.
-\end_layout
-
-\begin_layout Standard
-Version 0.2: (29-September-2010)
-\end_layout
-
-\begin_layout Itemize
-<was.uthm> updated manual
-\end_layout
-
-\begin_layout Itemize
-<was.uthm> title page updated
-\end_layout
-
-\begin_layout Itemize
-<was.uthm> page margin: change margins
-\end_layout
-
-\begin_layout Itemize
-<was.uthm> add students declaration page, dedication page
-\end_layout
-
-\begin_layout Itemize
-<was.uthm> create author-year version (
-\family typewriter
-UTHM-Thesis-authoryear-V-xx.lyx
-\family default
-)
-\end_layout
-
-\begin_layout Itemize
-<was.uthm> modify TOC, LOF and LOT without leader dots (employing 
-\family typewriter
-tocloft
-\family default
-)
-\end_layout
-
-\begin_layout Standard
-Version 0.1: (23-September-2010)
-\end_layout
-
-\begin_layout Itemize
-<was.uthm> The first version is released to public
 \end_layout
 
 \begin_layout Section
@@ -2455,21 +3028,22 @@ Modifying documents
 \end_layout
 
 \begin_layout Standard
-Please free to modify and to contribute! There are several files in your
+Please free to modify and to contribute! There are several folders in your
  
 \family typewriter
 trunk
 \family default
- development folder 
-\family typewriter
-V-xx
-\family default
-.
- Please use the latest version, indicated by the version 
+ development folder.
+ 
+\end_layout
+
+\begin_layout Standard
+If you want to modify, please use the latest version, indicated by the version
+ 
 \family typewriter
 xx
 \family default
-.
+, containing one folder and files:
 \end_layout
 
 \begin_layout Standard
@@ -2525,6 +3099,12 @@ UTHM-Thesis-authoryear-V-xx.lyx
 \begin_layout Standard
 
 \family typewriter
+UTHM-Thesis-authoryear-BM-V-xx.lyx
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
 UTHM-Thesis-Manual-V-xx.lyx
 \end_layout
 
@@ -2534,8 +3114,184 @@ UTHM-Thesis-Manual-V-xx.lyx
 UTHM-Thesis-V-xx.lyx
 \end_layout
 
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\family typewriter
+UTHM-Thesis-authoryear-V-xx.lyx 
+\family default
+is the thesis template that uses author-year bybliography/citation system
+ from a BibTeX database file 
+\family typewriter
+thesis.bib
+\family default
+.
+ This template requires an image 
+\family typewriter
+sample.png
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\family typewriter
+UTHM-Thesis-authoryear-BM-V-xx.lyx 
+\family default
+is the author-year thesis template in Bahasa Melayu
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\family typewriter
+UTHM-Thesis-V-xx.lyx
+\family default
+ is another version of the thesis template but using numerical bybliography/cita
+tion.
+ The dependend files used by this template is also 
+\family typewriter
+thesis.bib
+\family default
+ and 
+\family typewriter
+sample.png
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\family typewriter
+UTHM-Thesis-Manual-V-xx.lyx 
+\family default
+is this document.
+ It explains all settings used in the templates and other relevant information.
+ This document uses figures from folder 
+\family typewriter
+manual-figures
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\family typewriter
+CHANGELOG
+\family default
+ is where modifications of 
+\family typewriter
+UTHM-Thesis-authoryear-V-xx.lyx
+\family default
+ and 
+\family typewriter
+UTHM-Thesis-V-xx.lyx
+\family default
+ are recorded
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\family typewriter
+README
+\family default
+ is a general information of the thesis template
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\family typewriter
+CREDITS
+\family default
+ is a document where all contributors are listed
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\family typewriter
+LICENSE
+\family default
+ provides the license information used for this lyx thesis template
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\family typewriter
+manual-figures
+\family default
+ is a folder containing all figures used by the manual (this document)
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\family typewriter
+thesis.bib
+\family default
+ is a bibliography database file where all bibliography data are documented.
+ The format follows the standard BibTeX
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+BibTeX
+\end_layout
+
+\end_inset
+
+ format.
+ A reference manager
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+reference manager
+\end_layout
+
+\end_inset
+
+ 
+\family sans
+JabRef
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\family sans
+JabRef
+\end_layout
+
+\end_inset
+
+
+\family default
+ is a useful tool to prepare BibTeX database
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+BibTeX database
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
-Working with PySVN Workbench
+Working with SVN Workbench (Ubuntu)
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+SVN Workbench
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Working-with-PySVN"
@@ -2545,8 +3301,328 @@ name "sub:Working-with-PySVN"
 
 \end_layout
 
+\begin_layout Subsubsection*
+SVN Workbench Intallation
+\end_layout
+
+\begin_layout Standard
+Installation wizard can be found from 
+\family sans
+Ubuntu Software Center
+\family default
+, from the menu 
+\family sans
+Applications
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Ubuntu Software Center
+\family default
+.
+ In the dialog, just type svn workbench in the searching field.
+ You will find 
+\family sans
+SVN Workbench
+\family default
+ in the list that you can select and install.
+ You need to have Internet connection to access Ubuntu repository.
+ After a successful installation, SVN Workbench can be found under 
+\family sans
+Programming
+\family default
+ menu (
+\family sans
+Applications
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Programming
+\family default
+).
+\end_layout
+
+\begin_layout Subsubsection*
+Creating Local SVN Working Copy
+\end_layout
+
+\begin_layout Standard
+Open your SVN Workbench (
+\family sans
+Applications
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Programming
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+SVN Workbench
+\family default
+).
+ From the 
+\family sans
+Project
+\family default
+ menu select 
+\family sans
+Add...
+
+\family default
+ to start the Add Project Wizard.
+ 
+\end_layout
+
+\begin_layout Standard
+Select the subversion URL 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://uthm-thesis-lyx.googlecode.com/svn/trunk
+\end_layout
+
+\end_inset
+
+.
+ This will select only trunk folder.
+ If you want to select all folders in SVN repository, use 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://uthm-thesis-lyx.googlecode.com/svn
+\end_layout
+
+\end_inset
+
+.
+ If you want have a check-in access (required password), you need to use
+ 
+\family typewriter
+https
+\family default
+ instead of 
+\family typewriter
+http
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/PySVN-Workbench-4.png
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After clicking 
+\family sans
+Next
+\family default
+ button, you are requested to enter an empty folder as your local working
+ directory (for example 
+\family typewriter
+$HOME/Documents/try
+\family default
+).
+ Use Browse button if you want to search a folder.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/PySVN-Workbench-5.png
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The last stage in defining your SVN working copy is by naming the project
+ (for example 
+\family typewriter
+uthm-thesis-local
+\family default
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/PySVN-Workbench-6.png
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On confirming 
+\family sans
+Finish
+\family default
+ button, you will see a project uthm-thesis-local with red comment 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+Use the checkout to fetch
+\family default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Now, go to the menu 
+\family sans
+Actions
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Checkout
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+You should see all folders copied in your local trunk.
+ It is recommended to update regularly your local project (
+\family sans
+Actions
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Update
+\family default
+) to make sure you have the most up-to-date files.
+\end_layout
+
+\begin_layout Subsubsection*
+Modifying lyx File in SVN Workbench
+\end_layout
+
+\begin_layout Standard
+Please modify files only from the last version in trunk folder that will
+ be released in the next version.
+ 
+\end_layout
+
+\begin_layout Standard
+If you want to modify one of sources (for example 
+\family typewriter
+UTHM-Thesis-authoryear-BM-V-xx.lyx
+\family default
+), select the file and from menu 
+\family typewriter
+Actions
+\family default
+, select 
+\family sans
+Open
+\family default
+ or by clicking the 
+\begin_inset Graphics
+	filename manual-figures/gear.png
+	scale 35
+
+\end_inset
+
+ icon.
+ On the top of your LyX window, it will be indicated as 
+\family typewriter
+version control
+\family default
+.
+ When you save your modification, this modified file will be tagged as 
+\family typewriter
+M
+\family default
+ and the color changed to blue.
+ Any modified file in your local folder which is different with the SVN
+ repository will be shown in blue color.
+ The modification will only be saved in your local directory.
+ The modified file will be saved in SVN repository (in googlecode) after
+ you check it in.
+\end_layout
+
+\begin_layout Subsubsection*
+Saving modified files to SVN repository
+\end_layout
+
+\begin_layout Standard
+There are three methods: 
+\end_layout
+
+\begin_layout Enumerate
+Send your modified files to the project administrator or other contributors
+ who have checkin password
+\end_layout
+
+\begin_layout Enumerate
+If you have checkin password, you can commit it directly to SVN repository
+ in googlecode from your local SVN Workbench.
+ Select the modified file that you want to commit, then checkin (Actions\SpecialChar \menuseparator
+Checkin,
+ or by clicking 
+\begin_inset Graphics
+	filename manual-figures/checkin.png
+	scale 30
+
+\end_inset
+
+ button).
+ For multiple files, use 
+\family typewriter
+Ctrl
+\family default
+ when selecting modified files
+\end_layout
+
+\begin_layout Enumerate
+If you are working with LyX, committing to SVN repository can be done from
+ within LyX, using LyX version control feature (see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:LyX-version-control"
+
+\end_inset
+
+).
+ This requires checkin password.
+\end_layout
+
 \begin_layout Subsection
-Working with TortoiseSVN
+Working with TortoiseSVN (Windows)
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+TortoiseSVN
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Working-with-TortoiseSVN"
@@ -2556,8 +3632,118 @@ name "sub:Working-with-TortoiseSVN"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 LyX version control
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:LyX-version-control"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Modification records
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Modification-records"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Version 0.4: (release date here)
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> updated manual
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> Bahasa Melayu version is included (UTHM-Thesis-authoryear-BM-V-04.lyx)
+\end_layout
+
+\begin_layout Standard
+Version 0.3: (8-October-2010)
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> updated manual, new sections: appendices and cross reference
+\end_layout
+
+\begin_layout Itemize
+<was.uthm, Richard Heck> include appendices in the template, Separate List
+ of Appendices
+\end_layout
+
+\begin_layout Itemize
+<was.uthm, Agus Anggono> automatic cross references
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+references
+\end_layout
+
+\end_inset
+
+ with prefix Figure, Table and Eq.
+\end_layout
+
+\begin_layout Standard
+Version 0.2: (29-September-2010)
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> updated manual
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> title page updated
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> page margin: change margins
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> add students declaration page, dedication page
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> create author-year version (
+\family typewriter
+UTHM-Thesis-authoryear-V-xx.lyx
+\family default
+)
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> modify TOC, LOF and LOT without leader dots (employing 
+\family typewriter
+tocloft
+\family default
+)
+\end_layout
+
+\begin_layout Standard
+Version 0.1: (23-September-2010)
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> The first version is released to public
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset index_print
+LatexCommand printindex
+
+\end_inset
+
+
 \end_layout
 
 \end_body
