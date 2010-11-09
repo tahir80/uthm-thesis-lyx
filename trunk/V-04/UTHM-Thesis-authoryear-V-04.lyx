@@ -17,7 +17,10 @@
 \setlength{\parindent}{1.5cm}
 
 %This command will change the default Bibliography to References
-\AtBeginDocument{\renewcommand{\bibname}{References}}
+\AtBeginDocument{
+        \renewcommand{\bibname}{References}
+        \renewcommand{\nomname}{List of Symbols}
+}
 
 %The following comands center the heading of chapters and
 % chapter entries, the default is on the left
@@ -536,6 +539,35 @@ addcontentsline{toc}{chapter}{List of Appendices}
 \end_inset
 
 
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{List of Symbols}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -934,6 +966,30 @@ z
 \begin_layout Plain Layout
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+DVI
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DVI"
+description "Device Independent"
+
+\end_inset
+
+, 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\sigma$"
+description "Nominal Stress"
 
 \end_inset
 
