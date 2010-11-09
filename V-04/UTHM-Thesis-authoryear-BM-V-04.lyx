@@ -26,6 +26,7 @@
           \renewcommand{\listfigurename}{Senarai Rajah}
           \renewcommand{\listtablename}{Senarai Jadual}          
           \renewcommand{\contentsname}{Isi Kandungan}
+          \renewcommand{\nomname}{Senarai Simbol}
 }
 
 %The following comands center the heading of chapters and
@@ -546,6 +547,32 @@ addcontentsline{toc}{chapter}{Senarai Appendiks}
 \end_inset
 
 
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Senarai Simbol}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -944,6 +971,30 @@ z
 \begin_layout Plain Layout
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+DVI
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DVI"
+description "Device Independent"
+
+\end_inset
+
+, 
+\begin_inset Formula $\sigma$
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\sigma$"
+description "Nominal Stress"
 
 \end_inset
 
