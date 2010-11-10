@@ -5,6 +5,11 @@
 \textclass article
 \begin_preamble
 \date{release date here}
+
+% redefine the \LyX macro for PDF bookmarks
+\def\LyX{\texorpdfstring{%
+  L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+  {LyX}}
 \end_preamble
 \use_default_options true
 \language english
@@ -74,7 +79,7 @@ Waluyo Adi Siswanto
 status open
 
 \begin_layout Plain Layout
-Other contributors: Richard Heck, Agus D.
+Other contributors: Richard Heck, Hanani bte Abd Wahab, Agus D.
  Anggono
 \end_layout
 
@@ -1305,10 +1310,29 @@ parindent}{1.5cm}
 
 \backslash
 AtBeginDocument{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
 \backslash
 renewcommand{
 \backslash
-bibname}{References}}
+bibname}{References}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+renewcommand{
+\backslash
+nomname}{List of Symbols}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \begin_layout Plain Layout
@@ -3632,7 +3656,167 @@ name "sub:Working-with-TortoiseSVN"
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
+TortoiseSVN Installation
+\end_layout
+
+\begin_layout Standard
+You need to download the installer from 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://tortoisesvn.net/downloads
+\end_layout
+
+\end_inset
+
+.
+ After a successfull installation, it integrates in the file explorer which
+ means you can use it with the tool you are most familiar with.
+ All commands are available directly from the windows explorer.
+ You can choose which entries TortoiseSVN should show in the top context
+ menu and which it should put in the submenu.
+ 
+\end_layout
+
+\begin_layout Standard
+To make sure your TortoiseSVN is ready, just right click in any folder in
+ your windows file explorer, you should see TortoiseSVN submenus.
+\end_layout
+
+\begin_layout Subsubsection*
+Creating Local SVN Working Copy
+\end_layout
+
+\begin_layout Standard
+You need to create an empty folder for your working directory.
+ By rightcliking the empty folder, select SVN checkout, then enter the 
+\family typewriter
+URL
+\family default
+ address where the lyx-thesis-template is saved in googlecode.
+ If you are have checkin password, use 
+\family typewriter
+https
+\family default
+ instead of 
+\family typewriter
+http
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/tortoise-1.png
+	width 45text%
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename manual-figures/tortoise-4.png
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On clicking 
+\family sans
+OK
+\family default
+ button, all files under 
+\family typewriter
+/svn
+\family default
+ folder in the repository will be copied to your local checkout local folder.
+ It is suggested you update your local directory regularly, especially if
+ you want to make any modification to make sure you are using the latest
+ version.
+\end_layout
+
+\begin_layout Standard
+If you want to modify a file, you can just double click on the file or open
+ with an application software that you want.
+\end_layout
+
+\begin_layout Subsubsection*
+Committing update
+\end_layout
+
+\begin_layout Standard
+If you want to commit the changes to the SVN repository, right click on
+ the modified file (indicated by red puctuation mark) then click SVN Commit.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/tortoise-5.png
+	width 65text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you use https checkout, a dialog requestiong your username and password
+ will appear.
+ Your password can be found in the 
+\family sans
+Source
+\family default
+ tab in lyx-thesis-template in googlecode (you need to sign in).
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/tortoise-2.png
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 LyX version control
 \begin_inset CommandInset label
 LatexCommand label
@@ -3640,6 +3824,43 @@ name "sub:LyX-version-control"
 
 \end_inset
 
+ 
+\end_layout
+
+\begin_layout Standard
+If you modify LyX file, you can checkin to SVN repository directly from
+ within LyX.
+ It will be very simple.
+ Go to menu 
+\family sans
+File
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Version Control
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Checkin Changes
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/lyx-checkin.png
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
@@ -3664,6 +3885,10 @@ Version 0.4: (release date here)
 
 \begin_layout Itemize
 <was.uthm> Bahasa Melayu version is included (UTHM-Thesis-authoryear-BM-V-04.lyx)
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> Added List of Symbols
 \end_layout
 
 \begin_layout Standard
