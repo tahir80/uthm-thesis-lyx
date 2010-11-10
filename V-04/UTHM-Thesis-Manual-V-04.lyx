@@ -377,7 +377,7 @@ book
 status open
 
 \begin_layout Plain Layout
-document class
+Document Settings!document class
 \end_layout
 
 \end_inset
@@ -646,7 +646,17 @@ Fonts
 \begin_layout Standard
 The standard UTHM thesis is written in standard Roman font with base size
  of 12.
- The font setting should be adjusted.
+ The font setting
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+Document Settings!font
+\end_layout
+
+\end_inset
+
+ should be adjusted.
  Go to 
 \family sans
 Document
@@ -679,7 +689,17 @@ Text layout
 \end_layout
 
 \begin_layout Standard
-The line spacing of the text should be set here: from the menu 
+The line spacing of the text
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+Document Settings!text layout
+\end_layout
+
+\end_inset
+
+ should be set here: from the menu 
 \family sans
 Document
 \family default
@@ -714,7 +734,17 @@ name "sub:Page-layout"
 \end_layout
 
 \begin_layout Standard
-The thesis should be printed in A4 size paper.
+The thesis should be printed in A4 size paper
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+Document Settings!page layout
+\end_layout
+
+\end_inset
+
+.
  This should be declare from the menu 
 \family sans
 Document
@@ -769,7 +799,17 @@ Page margins
 \end_layout
 
 \begin_layout Standard
-The default page margin of book
+The default page margin
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+Document Settings!page margin
+\end_layout
+
+\end_inset
+
+ of book
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -808,7 +848,17 @@ PDF properties
 \begin_layout Standard
 Your pdf output can be nice with all links active, which means the table
  of contents links to the corresponding pages in the document.
- Other links within the document also accurately point to the referred page.
+ Other links within the document
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+Document Settings!PDF properties
+\end_layout
+
+\end_inset
+
+ also accurately point to the referred page.
 \end_layout
 
 \begin_layout Standard
@@ -1005,14 +1055,44 @@ name "sec:LaTeX-Preamble"
 
 \begin_layout Standard
 The next step to prepare the thesis template is writing some additional
- command in LaTeX preamble, acessable from the menu 
+ command in LaTeX preamble
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+Document Settings!LaTe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+X preamble
+\end_layout
+
+\end_inset
+
+, acessable from the menu 
 \family sans
 Document
 \family default
 \SpecialChar \menuseparator
 
 \family sans
-Settings, LaTeX preamble
+Settings, LaTe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+X preamble
 \family default
 .
 \begin_inset VSpace medskip
@@ -3697,7 +3777,7 @@ You need to create an empty folder for your working directory.
 URL
 \family default
  address where the lyx-thesis-template is saved in googlecode.
- If you are have checkin password, use 
+ If you have checkin password, use 
 \family typewriter
 https
 \family default
