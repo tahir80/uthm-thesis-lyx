@@ -12,6 +12,10 @@
 % this command prints empty date in title page
 \date{}
 
+% If you want your text paragraph is left justfied
+% you need to uncomment (delete %) the following command
+%\raggedright
+
 % this command set the paragraph indentation
 % if you want to modify change the value 1.5cm to your preference
 \setlength{\parindent}{1.5cm}
@@ -127,7 +131,7 @@
 \use_geometry true
 \use_amsmath 1
 \use_esint 1
-\cite_engine basic
+\cite_engine natbib_numerical
 \use_bibtopic false
 \paperorientation portrait
 \leftmargin 4cm
@@ -607,6 +611,13 @@ mainmatter
 
 \begin_layout Chapter
 Introduction
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introduction"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -650,6 +661,7 @@ reference "fig:R-rail-geometry"
  In this benchmark, study the influence of different drawbeads geometries;
  smooth bead and locking bead on the springback behavior for steel is to
  be examined using numerical simulation.
+ Here is the example of citation.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -731,12 +743,12 @@ The sheet metal forming process, in theory, can be viewed as relatively
  into desired shape.
  
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citet
 key "Schell2002"
 
 \end_inset
 
-
+ has investigated musical melodies.
 \end_layout
 
 \begin_layout Section
@@ -751,20 +763,19 @@ In practice, however, variations in blank dimensions, material properties
  tedious to design appropriate tooling for a given process.
  
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citet
 key "Poirson2007"
 
 \end_inset
 
-.
- 
+ concluded the analysis as shown in 
 \begin_inset CommandInset ref
 LatexCommand prettyref
 reference "tab:Data-structure"
 
 \end_inset
 
- shows.....
+.
 \end_layout
 
 \begin_layout Standard
@@ -790,7 +801,7 @@ reference "eq:hubolt"
 
  can be derived from another equation as written by
 \begin_inset Formula \begin{equation}
-ffdfd\label{eq:fdfdfd}\end{equation}
+\varepsilon_{x}=\dfrac{\partial u}{\partial x}\label{eq:fdfdfd}\end{equation}
 
 \end_inset
 
@@ -800,14 +811,15 @@ ffdfd\label{eq:fdfdfd}\end{equation}
 \begin_layout Standard
 This is another example 
 \begin_inset Formula \begin{equation}
-dsd\nabla f\label{eq:ddssdd}\end{equation}
+\left[N\right]=\left[\begin{array}{ccc}
+N_{1} & N_{2} & N_{3}\end{array}\right]^{T}\label{eq:ddssdd}\end{equation}
 
 \end_inset
 
 as mention in Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cha:Literature-Review"
+reference "cha:Introduction"
 
 \end_inset
 
@@ -1089,7 +1101,21 @@ Title
 \end_layout
 
 \begin_layout Standard
-bla bla bla
+According to 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Abdullah1989"
+
+\end_inset
+
+ also 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Creme2003"
+
+\end_inset
+
+, bla bla bla.
 \end_layout
 
 \begin_layout Section
@@ -1122,7 +1148,7 @@ parskip}{0.3cm}
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "thesis"
-options "klunum"
+options "kluwer"
 
 \end_inset
 
