@@ -4,7 +4,7 @@
 \begin_header
 \textclass article
 \begin_preamble
-\date{release date here}
+\date{29-January-2011}
 
 % redefine the \LyX macro for PDF bookmarks
 \def\LyX{\texorpdfstring{%
@@ -112,17 +112,14 @@ This is an explanation of UTHM thesis template that I have prepared to suit
  UTHM thesis format style.
  However, the template is not fully completed but provides a general format
  and style.
- You can modify it to make it better from time to time and one day the template
- will be mature and perfectly matched with all expected requirements.
- If you modify the template and you think it is better than the this version,
- don't forget to modify this document as well and put your name as the contribut
-ors.
- Of course you can modify this abstract and other parts of this document.
- You may copy, distribute to others as you wish.
+ You can modify it to make it better to satisfy your own preference.
+ If you modify this template and you think it is better, please send your
+ modifications to me so I can put them in the next release.
+  You may copy, distribute to others as you wish.
  This is free, you can redistribute it and/or modify it under the terms
  of the GNU General Public License as published by the Free Software Foundation;
  either version 3 of the License, or (at your option) any later version.
- Online version the lyx-thesis-template can be found here 
+ Online version this explanation can be found here 
 \begin_inset Flex URL
 status open
 
@@ -133,7 +130,19 @@ http://sites.google.com/site/lyxthesistemplate
 
 \end_inset
 
+.
+ All template sources are saved here: 
+\begin_inset Flex URL
+status open
 
+\begin_layout Plain Layout
+
+http://code.google.com/p/uthm-thesis-lyx/
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -809,12 +818,20 @@ Document Settings!page margin
 
 \end_inset
 
- of book
+ of 
+\family sans
+book
+\family default
+
 \begin_inset space \thinspace{}
 \end_inset
 
-(KOMA-Script) does not match with the margin requirement in UTHM Thesis,
- you need to modify it.
+
+\family sans
+(KOMA-Script)
+\family default
+ does not match with the margin requirement in UTHM Thesis, you need to
+ modify it.
 \end_layout
 
 \begin_layout Standard
@@ -966,6 +983,46 @@ black
 \end_inset
 
 .
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+citecolor
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+urlcolor
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+pdfstartview
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+plainpages
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2059,6 +2116,78 @@ reference "sub:Page-layout"
 
 ).
  Write the following commands:
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+lhead
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+chead
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+rhead
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+lfoot
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+cfoot
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+rfoot
+\end_layout
+
+\end_inset
+
+
 \family typewriter
 
 \begin_inset listings
@@ -2176,6 +2305,30 @@ The settings of TOC, LOF and LOT are controlled by
 tocloft
 \family default
  package.
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+chapterheadendvskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+chapterheadstartvskip
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2197,6 +2350,30 @@ The format style of appendix is a bit different with the chapter format.
 \begin_layout Standard
 After the References heading, TeX commands must be inserted to define the
  vertical space, before and after the appendix heading:
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+chapterheadendvskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+chapterheadstartvskip
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2255,6 +2432,18 @@ The contents of Appendices are listed in a separate List of Appendices.
 tocloft
 \family default
  command:
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+newlistof
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2277,6 +2466,54 @@ newlistof{appendices}{loa}{List of Appendices}
 
 \begin_layout Standard
 The format setting of the heading is consistent with LOF and LOT:
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+cftloatitlefont
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+cftafterloatitle
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+cftafterloatitleskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+cftbeforeloatitleskip
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2343,6 +2580,18 @@ loa
 \family default
 .
  
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+makeatletter
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2575,6 +2824,18 @@ status open
 \end_inset
 
 X preamble, but right after the appendix definition.
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+addtocontents
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2770,7 +3031,27 @@ Bibliography
 
 \begin_layout Standard
 There are two template versions available.
- One has numeric bibliography style (
+ One has numeric bibliography
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+bibliography
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+bibliography style
+\end_layout
+
+\end_inset
+
+style (
 \family typewriter
 UTHM-Thesis-V-xx.lyx
 \family default
@@ -2988,6 +3269,40 @@ default (numerical)
 Natbib (author-year).
 \end_layout
 
+\begin_layout Standard
+Please note in V-04, the style has been changed and used a 
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+customized style
+\end_layout
+
+\end_inset
+
+customized style.
+ The file of this bibliography style
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+bibliography style
+\end_layout
+
+\end_inset
+
+ is 
+\family typewriter
+UTHM-ref-style-V-04.bst
+\family default
+.
+ This file replaces 
+\family typewriter
+klunamed
+\family default
+.
+\end_layout
+
 \begin_layout Subsection
 Citation
 \end_layout
@@ -3004,7 +3319,17 @@ Insert
 Citation
 \family default
 .
- The citation style will be always consistent with the bibliography style.
+ The citation
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+citation
+\end_layout
+
+\end_inset
+
+ style will be always consistent with the bibliography style.
 \end_layout
 
 \begin_layout Section
@@ -3103,6 +3428,18 @@ There are various of opensource GUI subversions available.
  In this manual only two of them are discussed, i.e.
  
 \family sans
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\family sans
+PySVN Workbench
+\end_layout
+
+\end_inset
+
 PySVN Workbench 
 \family default
 (see section 
@@ -3114,6 +3451,18 @@ reference "sub:Working-with-PySVN"
 
 ) for Ubuntu and 
 \family sans
+
+\begin_inset Index
+status open
+
+\begin_layout Plain Layout
+
+\family sans
+TortoiseSVN
+\end_layout
+
+\end_inset
+
 TortoiseSVN
 \family default
  for Windows (see section 
@@ -3197,6 +3546,12 @@ thesis.bib
 \begin_layout Standard
 
 \family typewriter
+UTHM-ref-style-V-04.bst
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
 UTHM-Thesis-authoryear-V-xx.lyx
 \end_layout
 
@@ -3272,6 +3627,15 @@ is this document.
  This document uses figures from folder 
 \family typewriter
 manual-figures
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\family typewriter
+UTHM-ref-style-V-xx.bst 
+\family default
+is the biblography style used in author-year version
 \end_layout
 
 \begin_layout List
@@ -3956,7 +4320,7 @@ name "sec:Modification-records"
 \end_layout
 
 \begin_layout Standard
-Version 0.4: (release date here)
+Version 0.4: (29-January-2011)
 \end_layout
 
 \begin_layout Itemize
@@ -3964,11 +4328,19 @@ Version 0.4: (release date here)
 \end_layout
 
 \begin_layout Itemize
-<was.uthm> Bahasa Melayu version is included (UTHM-Thesis-authoryear-BM-V-04.lyx)
+<was.uthm, Hanani> Bahasa Melayu version is included (UTHM-Thesis-authoryear-BM-V
+-04.lyx)
 \end_layout
 
 \begin_layout Itemize
 <was.uthm> Added List of Symbols
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> for author-year version, the bibliography style uses a custumized
+ style 
+\family typewriter
+UTHM-ref-style-V-04.bst
 \end_layout
 
 \begin_layout Standard
