@@ -22,7 +22,7 @@
           \renewcommand{\figurename}{Rajah}
           \renewcommand{\tablename}{Jadual}
           \renewcommand{\chaptername}{Bab}
-          \renewcommand{\appendixname}{Appendiks}
+          \renewcommand{\appendixname}{Lampiran}
           \renewcommand{\listfigurename}{Senarai Rajah}
           \renewcommand{\listtablename}{Senarai Jadual}          
           \renewcommand{\contentsname}{Isi Kandungan}
@@ -70,7 +70,7 @@
 \renewcommand{\cftafterlottitleskip}{2.5cm}
 \renewcommand{\cftbeforelottitleskip}{2.5cm}
 
-\newlistof{appendices}{loa}{Senarai Appendiks}
+\newlistof{appendices}{loa}{Senarai Lampiran}
 \renewcommand{\cftloatitlefont}{\hfill\Large\bfseries\sffamily}
 \renewcommand{\cftafterloatitle}{\hfill}
 \renewcommand{\cftafterloatitleskip}{2.5cm}
@@ -164,7 +164,7 @@ frontmatter
 status open
 
 \begin_layout Plain Layout
-This is UTHM thesis template version 0.4 (release date here)
+This is UTHM thesis template version 0.4 (29-January-2011)
 \end_layout
 
 \end_inset
@@ -181,7 +181,7 @@ This is UTHM thesis template version 0.4 (release date here)
 \family roman
 \series medium
 \size larger
-The Thesis Title Line 1
+Tajuk Tesis Baris 1
 \family default
 \series default
 \size default
@@ -193,7 +193,7 @@ The Thesis Title Line 1
 \family roman
 \series medium
 \size larger
-Thesis Title Line 2
+Tajuk Tesis Baris 2
 \family default
 \series default
 \size default
@@ -205,7 +205,7 @@ Thesis Title Line 2
 \end_layout
 
 \begin_layout Author
-The Author
+Nama Penulis
 \begin_inset VSpace 2.5cm
 \end_inset
 
@@ -215,15 +215,15 @@ The Author
 
 
 \size normal
-A thesis submitted in
+Tesis yang dikemukakan
 \begin_inset Newline newline
 \end_inset
 
-fulfillment of the requirement for the award of the 
+untuk memenuhi syarat memperolehi ijazah 
 \begin_inset Newline newline
 \end_inset
 
-Degree of Doctor of Philosophy / Bachelor of.../ Master of ...
+Doktor Falsafah / Ijazah Sarjana .../ Ijazah ...
 \begin_inset VSpace 3.1cm
 \end_inset
 
@@ -231,7 +231,7 @@ Degree of Doctor of Philosophy / Bachelor of.../ Master of ...
 \begin_inset Newline newline
 \end_inset
 
-FACULTY OF WHATEVER
+FAKULTI ...
 \size default
 
 \begin_inset Newline newline
@@ -239,7 +239,7 @@ FACULTY OF WHATEVER
 
 
 \size normal
-UNIVERSITY WAHATEVER
+UNIVERSITI ...
 \begin_inset VSpace 3.1cm
 \end_inset
 
@@ -249,7 +249,7 @@ UNIVERSITY WAHATEVER
 \begin_layout Publishers
 
 \size normal
-SEPTEMBER 2010
+BULAN TAHUN
 \end_layout
 
 \begin_layout Standard
@@ -291,11 +291,12 @@ addcontentsline{toc}{chapter}{Deklarasi}
 \end_layout
 
 \begin_layout Standard
-\align center
-I hereby declare that this thesis entitled “Write The Thesis Title Here”
- is the result of my own research except as cited in the references.
- This thesis has not been accepted for any degree and is not concurrently
- submitted in candidature of any other degree.
+\noindent
+Saya akui tesis bertajuk “Tajuk Tesis” ini adalah hasil penyelidikan saya
+ sendiri kecuali nukilan dan ringkasan yang setiap satunya telah saya jelaskan
+ sumbernya.
+ Tesis ini tidak pernah diterima bagi mana mana ijazah atau dihantar untuk
+ pencalonan mana mana ijazah.
  
 \begin_inset VSpace 2cm
 \end_inset
@@ -304,27 +305,27 @@ I hereby declare that this thesis entitled “Write The Thesis Title Here”
 \end_layout
 
 \begin_layout Standard
-Signature
-\begin_inset Formula $\hphantom{xte1}$
+Tandatangan
+\begin_inset Formula $\hphantom{a}$
 \end_inset
 
-:
+ :
 \end_layout
 
 \begin_layout Standard
-Student
-\begin_inset Formula $\hphantom{Date1}$
+Nama
+\begin_inset Formula $\hphantom{Tarikha}$
 \end_inset
 
-: Write the name of the student here
+ : Tulis nama pelajar di sini
 \end_layout
 
 \begin_layout Standard
-Date
-\begin_inset Formula $\hphantom{Student1}$
+Tarikh
+\begin_inset Formula $\hphantom{Namaa}$
 \end_inset
 
-: Write the date here
+ : Tulis tarikh di sini
 \begin_inset VSpace 4cm
 \end_inset
 
@@ -332,11 +333,11 @@ Date
 \end_layout
 
 \begin_layout Standard
-Supervisor
-\begin_inset Formula $\hphantom{Co}\,$
+Penyelia 
+\begin_inset Formula $\hphantom{kedua}$
 \end_inset
 
-: Write supervisor's name here
+ : Tulis nama penyelia di sini
 \begin_inset VSpace 2cm
 \end_inset
 
@@ -344,7 +345,7 @@ Supervisor
 \end_layout
 
 \begin_layout Standard
-Co-Supervisor: Write co-supervisor's name here
+Penyelia kedua : Tulis nama penyelia kedua di sini
 \end_layout
 
 \begin_layout Standard
@@ -394,7 +395,8 @@ addcontentsline{toc}{chapter}{Dedikasi}
 
 \begin_layout Standard
 \align center
-For my beloved mother and father 
+Untuk ...
+ 
 \end_layout
 
 \begin_layout Addchap
@@ -402,32 +404,30 @@ Penghargaan
 \end_layout
 
 \begin_layout Standard
-Here is the acknowledgment must be written.
+Tulis kata penghargaan di sini...
 \end_layout
 
 \begin_layout Standard
-Praise to the Almighty...
+Syukur dan pujian ...
  
 \end_layout
 
 \begin_layout Standard
-Thanks to supervisor(s)...
+Terima kasih untuk penyelia-penyelia ...
  
 \end_layout
 
 \begin_layout Standard
-Thanks to sponsor...
+Terima kasih untuk penaja ...
  
 \end_layout
 
 \begin_layout Standard
-Appreciate family...
+Rasa penghargaan keluarga dan rakan ...
  
 \end_layout
 
 \begin_layout Standard
-Thanks to friends...
- 
 \begin_inset VSpace medskip
 \end_inset
 
@@ -436,18 +436,7 @@ Thanks to friends...
 
 \begin_layout Standard
 \align right
-Author, Place 
-\end_layout
-
-\begin_layout Addchap
-Abstract
-\end_layout
-
-\begin_layout Standard
-The abstract should be brief, written in one paragraph and not exceed 300
- words.
- This only demonstrates the paragraph in the abstract.
- 
+Nama penulis, Lokasi 
 \end_layout
 
 \begin_layout Addchap
@@ -455,10 +444,17 @@ Abstrak
 \end_layout
 
 \begin_layout Standard
-Here is the abstract in Malay.
- Please write the abstract in Malay.
- Please write the abstract in Malay.
- Please write the abstract in Malay.
+Abstrak dalam bahasa Melayu.
+ Dalam satu perenggan tidak melebihi 300 patah perkataan.
+ 
+\end_layout
+
+\begin_layout Addchap
+Abstract
+\end_layout
+
+\begin_layout Standard
+Abstrak dalam bahasa Inggeris.
 \end_layout
 
 \begin_layout Standard
@@ -541,7 +537,7 @@ status open
 \backslash
 listofappendices 
 \backslash
-addcontentsline{toc}{chapter}{Senarai Appendiks}
+addcontentsline{toc}{chapter}{Senarai Lampiran}
 \end_layout
 
 \end_inset
@@ -592,37 +588,39 @@ mainmatter
 \end_layout
 
 \begin_layout Chapter
-Introduction
+Pengenalan
 \end_layout
 
 \begin_layout Standard
-The specific use of the word “thesis” in this guide refers to the academic
- writings submitted in fulfillment for the award of the doctoral degree
- or the masters by research degree.
- The word “thesis” is also used in general to refer to the master’s project
- report and research dissertation, which are the documents submitted in
- partial fulfillment for the award of the degree of master by coursework
- or by coursework and research as well as the undergraduate project reports.
+Perenggan pertama di tulis di sini.
+ Perenggan pertama di tulis di sini.
+ Perenggan pertama di tulis di sini.
+ Perenggan pertama di tulis di sini.
+ Perenggan pertama di tulis di sini.
+ Perenggan pertama di tulis di sini.Perenggan pertama di tulis di sini.
+\end_layout
+
+\begin_layout Standard
+Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
  
 \end_layout
 
-\begin_layout Standard
-The Numisheet Conferences is conducted once every three years in location
- between North America, Europe and Asia.
- The conference attracts international participation from the metal forming
- industry and university professors interested in sheet metal forming technology
-, with a strong emphasis on forming simulation.
- The Numisheet Conference Proceedings include the latest developments in
- metal forming technology, which is a rapidly growing and challenging opportunit
-y for application of science to industry
-\end_layout
-
 \begin_layout Section
-Background of Study
+Latar Belakang Masalah
 \end_layout
 
 \begin_layout Standard
-One of the hallmarks of the conference is the Numisheet Benchmark Study,
+Semua ditulis dalam Bahasa Melayu.
+ One of the hallmarks of the conference is the Numisheet Benchmark Study,
  which is a set of three blind tests prepared one year prior to the conference.
  Numisheet 2008 Benchmark Problem II is provided by Daimler AG.
  For this benchmark, the well known S-Rail geometry as shown in 
@@ -701,7 +699,7 @@ name "fig:R-rail-geometry"
 \end_layout
 
 \begin_layout Chapter
-Literature Review
+Tajuk Bab 2
 \begin_inset CommandInset label
 LatexCommand label
 name "cha:Literature-Review"
@@ -712,29 +710,37 @@ name "cha:Literature-Review"
 \end_layout
 
 \begin_layout Standard
-The sheet metal forming process, in theory, can be viewed as relatively
+Semua ditulis dalam Bahasa Melayu.
+ The sheet metal forming process, in theory, can be viewed as relatively
  straight forward operation where a sheet of material is plastically deformed
  into desired shape.
- 
+ According to 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Schell2002"
 
 \end_inset
 
-
+ ...
 \end_layout
 
 \begin_layout Section
-Practical Usage
+Tajuk ...
 \end_layout
 
 \begin_layout Standard
-In practice, however, variations in blank dimensions, material properties
+Semua ditulis dalam Bahasa Melayu.
+ In practice, however, variations in blank dimensions, material properties
  and environmental conditions make the predictability and reproducibility
  of a sheet metal forming process difficult.
  Apart from this, springback properties of sheet metal make it extremely
  tedious to design appropriate tooling for a given process.
+ 
+\end_layout
+
+\begin_layout Standard
+An application of genetic algorithm has been implemented to optimize brass
+ musical instrument and shows a prospective tool.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -742,8 +748,7 @@ key "Poirson2007"
 
 \end_inset
 
-.
- 
+  
 \begin_inset CommandInset ref
 LatexCommand prettyref
 reference "tab:Data-structure"
@@ -801,11 +806,22 @@ reference "cha:Literature-Review"
 \end_layout
 
 \begin_layout Section
-dded
+Tajuk ...
+\end_layout
+
+\begin_layout Standard
+Hasil kajian 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Abdullah1989"
+
+\end_inset
+
+ memberikan jalan ..
 \end_layout
 
 \begin_layout Subsection
-dddd
+Tajuk ...
 \end_layout
 
 \begin_layout Standard
@@ -1002,19 +1018,12 @@ description "Nominal Stress"
 \end_layout
 
 \begin_layout Chapter
-Methodology
+Metodologi Kajian
 \end_layout
 
 \begin_layout Standard
-dsds
-\end_layout
-
-\begin_layout Standard
-bla bla bla
-\end_layout
-
-\begin_layout Section
-Title
+Semua ditulis dalam Bahasa Melayu.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1022,11 +1031,19 @@ bla bla bla
 \end_layout
 
 \begin_layout Section
-Another Title
+Tajuk ...
 \end_layout
 
 \begin_layout Standard
-bla bla bla
+Semua ditulis dalam Bahasa Melayu.
+\end_layout
+
+\begin_layout Section
+Tajuk ...
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
 \begin_layout Standard
@@ -1039,51 +1056,51 @@ ff\end{equation}
 \end_layout
 
 \begin_layout Chapter
-Title of Chapter 4
+Tajuk Bab 4
 \end_layout
 
 \begin_layout Standard
-bla bla bla
+Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
 \begin_layout Section
-Title
+Tajuk Kecil
 \end_layout
 
 \begin_layout Standard
-bla bla bla
+Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
 \begin_layout Section
-Another Title
+Tajuk Kecil 
 \end_layout
 
 \begin_layout Standard
-bla bla bla
+Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
 \begin_layout Chapter
-Title of Chapter 5
+Tajuk Bab 5
 \end_layout
 
 \begin_layout Standard
-bla bla bla
+Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
 \begin_layout Section
-Title
+Tajuk Kecil
 \end_layout
 
 \begin_layout Standard
-bla bla bla
+Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
 \begin_layout Section
-Another Title
+Tajuk Kecil
 \end_layout
 
 \begin_layout Standard
-bla bla bla
+Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
 \begin_layout Standard
@@ -1108,7 +1125,7 @@ parskip}{0.3cm}
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "thesis"
-options "klunamed"
+options "UTHM-ref-style-V-04"
 
 \end_inset
 
@@ -1116,7 +1133,7 @@ options "klunamed"
 \end_layout
 
 \begin_layout Part*
-APPENDICES
+LAMPIRAN
 \begin_inset ERT
 status open
 
@@ -1382,11 +1399,12 @@ setcounter{tocdepth}{0}}
 \end_layout
 
 \begin_layout Chapter
-Write Title Here
+Tajuk Lampiran A
 \end_layout
 
 \begin_layout Standard
-You can see here the equation number is consistent with Appendix numbering
+Semua ditulis dalam Bahasa Melayu.
+ You can see here the equation number is consistent with Appendix numbering
  system
 \end_layout
 
@@ -1402,11 +1420,12 @@ You can see here the equation number is consistent with Appendix numbering
 \end_layout
 
 \begin_layout Section
-Section title 1 here
+Tajuk ...
 \end_layout
 
 \begin_layout Standard
-Text text text of first paragraph
+Semua ditulis dalam Bahasa Melayu.
+ Text text text of first paragraph
 \end_layout
 
 \begin_layout Standard
@@ -1431,11 +1450,12 @@ f\left(x\right)=3x^{2}+\intop_{0}^{20}45x^{2}\textrm{d}x\end{equation}
 \end_layout
 
 \begin_layout Section
-Section title 2 here
+Tajuk ...
 \end_layout
 
 \begin_layout Standard
-Text text text of first paragraph
+Semua ditulis dalam Bahasa Melayu.
+ Text text text of first paragraph
 \end_layout
 
 \begin_layout Standard
@@ -1443,11 +1463,22 @@ Now second paragraph
 \end_layout
 
 \begin_layout Chapter
-Source Code for Initial Model
+Tajuk Lampiran B
 \end_layout
 
 \begin_layout Standard
-The following the example of computer codes attached in the appendix
+Semua ditulis dalam Bahasa Melayu.
+ The following codes written in LaT
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+eX preamble.
 \end_layout
 
 \begin_layout Standard

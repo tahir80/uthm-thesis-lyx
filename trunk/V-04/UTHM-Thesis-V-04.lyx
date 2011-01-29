@@ -177,7 +177,7 @@ frontmatter
 status open
 
 \begin_layout Plain Layout
-This is UTHM thesis template version 0.4 (release date here)
+This is UTHM thesis template version 0.4 (29-January-2011)
 \end_layout
 
 \end_inset
@@ -748,7 +748,7 @@ key "Schell2002"
 
 \end_inset
 
- has investigated musical melodies.
+ has investigated musical melodies ...
 \end_layout
 
 \begin_layout Section
@@ -1495,7 +1495,17 @@ Source Code for Initial Model
 \end_layout
 
 \begin_layout Standard
-The following the example of computer codes attached in the appendix
+The following codes are written in LaTe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+X preamble
 \end_layout
 
 \begin_layout Standard
@@ -2060,6 +2070,68 @@ cftafterlottitleskip}{2.5cm}
 renewcommand{
 \backslash
 cftbeforelottitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{minitoc}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Redefining automatic label of Figure, Table and Eq.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{prettyref}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{tab}{Table
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{fig}{Figure
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{eq}{Eq.
+\backslash
+,
+\backslash
+textup{(
+\backslash
+ref{#1})}}
 \end_layout
 
 \end_inset
