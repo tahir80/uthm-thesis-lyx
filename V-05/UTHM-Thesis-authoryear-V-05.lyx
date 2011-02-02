@@ -80,6 +80,10 @@
 \newrefformat{tab}{Table\,\ref{#1}}
 \newrefformat{fig}{Figure\,\ref{#1}}
 \newrefformat{eq}{Eq.\,\textup{(\ref{#1})}}
+
+%added in V-05
+\setlength{\nomitemsep}{-\parsep}
+%\setlength{\nomitemsep}{-2\parsep}   % another alternative 
 \end_preamble
 \options liststotoc,chapterprefix,tablecaptionabove,bibtotoc,parskip=full,headings=small,numbers=noenddot
 \use_default_options true
