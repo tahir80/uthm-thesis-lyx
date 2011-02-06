@@ -59,18 +59,20 @@
 
 \renewcommand{\cftloftitlefont}{\hfill\Large\bfseries\sffamily}
 \renewcommand{\cftafterloftitle}{\hfill \hfill
-\\[3\baselineskip]{Figure No \hfill Title \hfill Page} \vskip-30pt}
+\\[3\baselineskip]{Figure No \hfill Title \hfill Page \linebreak} \vskip-50pt}
 \renewcommand{\cftbeforeloftitleskip}{2.5cm}
 
 \renewcommand{\cftlottitlefont}{\hfill\Large\bfseries\sffamily}
 \renewcommand{\cftafterlottitle}{\hfill \hfill
-\\[3\baselineskip]{Table No \hfill Title \hfill Page} \vskip-30pt}
+\\[3\baselineskip]{Table No \hfill Title \hfill Page \linebreak }
+\vskip-50pt}
 \renewcommand{\cftbeforelottitleskip}{2.5cm}
 
 \newlistof{appendices}{loa}{List of Appendices}
 \renewcommand{\cftloatitlefont}{\hfill\Large\bfseries\sffamily}
 \renewcommand{\cftafterloatitle}{\hfill \hfill
-\\[3\baselineskip]{Appendix \hfill Title \hfill Page} \vskip-30pt}
+\\[3\baselineskip]{Appendix \hfill Title \hfill Page  \linebreak} 
+\vskip-60pt}
 \renewcommand{\cftbeforeloatitleskip}{2.5cm}
 
 
