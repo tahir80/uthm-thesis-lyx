@@ -99,6 +99,7 @@
 \newrefformat{tab}{Jadual\,\ref{#1}}
 \newrefformat{fig}{Rajah\,\ref{#1}}
 \newrefformat{eq}{Pers.\,\textup{(\ref{#1})}}
+\newrefformat{cha}{Bab\,\ref{#1}}
 
 %To remove extra vertical space in List of Symbols [added in V-05]
 %\setlength{\nomitemsep}{-2\parsep}   % another alternative 
@@ -1655,7 +1656,7 @@ Semua ditulis dalam Bahasa Melayu.
  Perenggan kedua.
  
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "Bongers1998"
 
 \end_inset
