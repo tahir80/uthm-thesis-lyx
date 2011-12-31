@@ -1,10 +1,10 @@
-#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.10 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
 \textclass article
 \begin_preamble
-\date{release date}
+\date{1 January 2012}
 
 % redefine the \LyX macro for PDF bookmarks
 \def\LyX{\texorpdfstring{%
@@ -113,8 +113,6 @@ This is an explanation of UTHM thesis template that I have prepared to suit
  However, the template is not fully completed but provides a general format
  and style.
  You can modify it to make it better to satisfy your own preference.
- If you modify this template and you think it is better, please send your
- modifications to me so I can put them in the next release.
   You may copy, distribute to others as you wish.
  This is free, you can redistribute it and/or modify it under the terms
  of the GNU General Public License as published by the Free Software Foundation;
@@ -615,6 +613,12 @@ reference "sec:LaTeX-Preamble"
 parskip=full
 \family default
 .
+ In the 
+\family sans
+Classic style
+\family default
+ template this option is removed.
+ It means the space between paragraph is in normal space.
  
 \end_layout
 
@@ -2331,6 +2335,375 @@ chapterheadstartvskip
 
 \end_layout
 
+\begin_layout Standard
+In version V-05, new a new template is added.
+ This is a 
+\family sans
+Classic style
+\family default
+ using a fancy TOC.
+ To accommodate this UTHM fancy 
+\begin_inset Quotes eld
+\end_inset
+
+classic
+\begin_inset Quotes erd
+\end_inset
+
+ style, the preamble has been added.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+% from koma-script scrbook.cls, then modified [added in V-05]
+\end_layout
+
+\begin_layout Plain Layout
+
+% to shift addchap in TOC ro the right: 
+\backslash
+qquad
+\backslash
+qquad
+\backslash
+,
+\backslash
+,
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+addchap{
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+if@openright
+\backslash
+cleardoublepage
+\backslash
+else
+\backslash
+clearpage
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+thispagestyle{plain}
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+global
+\backslash
+@topnum
+\backslash
+z@
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+@afterindentfalse
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+secdef
+\backslash
+@addchap
+\backslash
+@saddchap}
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+def
+\backslash
+@addchap[#1]#2{
+\end_layout
+
+\begin_layout Plain Layout
+
+           
+\backslash
+typeout{#2}
+\end_layout
+
+\begin_layout Plain Layout
+
+           
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+qquad
+\backslash
+qquad
+\backslash
+,
+\backslash
+, #1}
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+if@twoside
+\backslash
+@mkboth{#1}{}
+\backslash
+else
+\backslash
+@mkboth{}{#1}
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+addtocontents{lof}{
+\backslash
+protect
+\backslash
+addvspace{10
+\backslash
+p@}}
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+addtocontents{lot}{
+\backslash
+protect
+\backslash
+addvspace{10
+\backslash
+p@}}
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+if@twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+                         
+\backslash
+@topnewpage[
+\backslash
+@makeschapterhead{#2}]
+\end_layout
+
+\begin_layout Plain Layout
+
+                         
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+                         
+\backslash
+@makeschapterhead{#2}
+\end_layout
+
+\begin_layout Plain Layout
+
+                         
+\backslash
+@afterheading
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+                    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+def
+\backslash
+@saddchap#1{
+\backslash
+@mkboth{}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+if@twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+@topnewpage[
+\backslash
+@makeschapterhead{#1}]
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+@makeschapterhead{#1}
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+@afterheading
+\end_layout
+
+\begin_layout Plain Layout
+
+             
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatletter
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+renewcommand*
+\backslash
+l@figure{
+\backslash
+@dottedtocline{0}{1.5em}{4.3em}}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+renewcommand*
+\backslash
+l@table{
+\backslash
+@dottedtocline{0}{1.5em}{4.3em}}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+renewcommand{
+\backslash
+@dotsep}{10000}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatother
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For more accurate information of the LaTe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+X preamble, you can see from one of the template, e.g.
+ 
+\family typewriter
+UTHM-Thesis-Classic-authoryear-V-05.lyx
+\family default
+.
+ 
+\end_layout
+
 \begin_layout Section
 Appendices
 \end_layout
@@ -3564,6 +3937,18 @@ UTHM-Thesis-authoryear-BM-V-xx.lyx
 \begin_layout Standard
 
 \family typewriter
+UTHM-Thesis-Classic-authoryear-V-xx.lyx
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+UTHM-Thesis-Classic-authoryear-BM-V-xx.lyx
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
 UTHM-Thesis-Manual-V-xx.lyx
 \end_layout
 
@@ -3594,9 +3979,39 @@ sample.png
 \labelwidthstring 00.00.0000
 
 \family typewriter
+UTHM-Thesis-Classic-authoryear-V-xx.lyx 
+\family default
+is the thesis template that uses author-year bybliography/citation system
+ from a BibTeX database file 
+\family typewriter
+thesis.bib
+\family default
+.
+ This template requires an image 
+\family typewriter
+sample.png.
+ 
+\family default
+In this template, TOC is written in a fancy style
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\family typewriter
 UTHM-Thesis-authoryear-BM-V-xx.lyx 
 \family default
 is the author-year thesis template in Bahasa Melayu
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\family typewriter
+UTHM-Thesis-Classic-authoryear-BM-V-xx.lyx 
+\family default
+is the author-year thesis template in Bahasa Melayu.
+ In this template, TOC is written in a fancy style
 \end_layout
 
 \begin_layout List
@@ -3644,15 +4059,7 @@ is the biblography style used in author-year version
 \family typewriter
 CHANGELOG
 \family default
- is where modifications of 
-\family typewriter
-UTHM-Thesis-authoryear-V-xx.lyx
-\family default
- and 
-\family typewriter
-UTHM-Thesis-V-xx.lyx
-\family default
- are recorded
+ is where modifications are recorded
 \end_layout
 
 \begin_layout List
@@ -4320,6 +4727,64 @@ name "sec:Modification-records"
 \end_layout
 
 \begin_layout Standard
+Version 0.5: (1-Januari-2012) 
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> Use smaller vertical space between items in List of Symbols
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> Support fancy TOC style, in different file:
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+UTHM-Thesis-Classic-authoryear-V-05.lyx
+\family default
+ 
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> Remove parskip=full (
+\family sans
+Document
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Settings
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Document
+\family default
+ 
+\family sans
+Classs
+\family default
+\SpecialChar \menuseparator
+
+\family sans
+Customs
+\family default
+) 
+\end_layout
+
+\begin_layout Itemize
+<was.uthm, Hanani> Add Bahasa Melayu Version
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+UTHM-Thesis-Classic-authoryear-BM-V-05.lyx
+\end_layout
+
+\begin_layout Standard
+\noindent
 Version 0.4: (29-January-2011)
 \end_layout
 
@@ -4338,7 +4803,11 @@ Version 0.4: (29-January-2011)
 
 \begin_layout Itemize
 <was.uthm> for author-year version, the bibliography style uses a custumized
- style 
+ style
+\begin_inset Newline newline
+\end_inset
+
+
 \family typewriter
 UTHM-ref-style-V-04.bst
 \end_layout
