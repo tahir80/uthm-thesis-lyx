@@ -1,0 +1,2853 @@
+#LyX 1.6.10 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass scrbook
+\begin_preamble
+%======================
+% Written by Waluyo Adi Siswanto
+% You are allowed to modify this
+% in order to meet your requirements
+%======================
+% this command prints empty date in title page
+\date{}
+
+% If you want your text paragraph is left justfied
+% you need to uncomment (delete %) the following command
+%\raggedright
+
+% this command set the paragraph indentation
+% if you want to modify change the value 1.5cm to your preference
+\setlength{\parindent}{1.5cm}
+
+%This command will change the default Bibliography to References
+\AtBeginDocument{
+          \renewcommand{\bibname}{Rujukan}
+          \renewcommand{\figurename}{Rajah}
+          \renewcommand{\tablename}{Jadual}
+          \renewcommand{\chaptername}{Bab}
+          \renewcommand{\appendixname}{Lampiran}
+          \renewcommand{\listfigurename}{Senarai Rajah}
+          \renewcommand{\listtablename}{Senarai Jadual}          
+          \renewcommand{\contentsname}{Isi Kandungan}
+          \renewcommand{\nomname}{Senarai Simbol}
+}
+
+%The following comands center the heading of chapters and
+% chapter entries, the default is on the left
+\addtokomafont{chapterentry}{\centering}
+\addtokomafont{chapter}{\centering}
+
+% The following commands set the page numbers on the top right
+% except in the beginning of chapters
+% using fancyhdr package (page layout>heading style->fancy)
+\lhead{}
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+
+% The following commands set the vertical space before and after 
+% every chapter entry
+\renewcommand*{\chapterheadendvskip}{\vspace{2cm}}
+\renewcommand*{\chapterheadstartvskip}{\vspace{2.5cm}}
+
+% The following commands set the TOC, LOT, LOF and LOA
+% this employs tocloft package
+\usepackage{tocloft}
+\cftpagenumbersoff{part}
+\renewcommand{\cftdot}{}
+\renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries\sffamily}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftaftertoctitleskip}{2.5cm}
+\renewcommand{\cftbeforetoctitleskip}{2.5cm}
+
+\renewcommand{\cftloftitlefont}{\hfill\Large\bfseries\sffamily}
+\renewcommand{\cftafterloftitle}{\hfill \hfill
+%\renewcommand{\cftafterloftitle}{\hfill \hfill\hfill
+\\[3\baselineskip]{No Rajah \hfill Tajuk \hfill Laman \linebreak} \vskip-50pt}
+\renewcommand{\cftbeforeloftitleskip}{2.5cm}
+
+\renewcommand{\cftlottitlefont}{\hfill\Large\bfseries\sffamily}
+\renewcommand{\cftafterlottitle}{\hfill \hfill
+%\renewcommand{\cftafterlottitle}{\hfill \hfill\hfill
+\\[3\baselineskip]{No Jadual\hfill Tajuk \hfill Laman \linebreak }
+\vskip-50pt}
+\renewcommand{\cftbeforelottitleskip}{2.5cm}
+
+\newlistof{appendices}{loa}{Senarai Lampiran}
+\renewcommand{\cftloatitlefont}{\hfill\Large\bfseries\sffamily}
+\renewcommand{\cftafterloatitle}{\hfill \hfill
+%\renewcommand{\cftafterloatitle}{\hfill \hfill\hfill
+\\[3\baselineskip]{Lampiran \hfill Tajuk \hfill Laman  \linebreak} 
+\vskip-60pt}
+\renewcommand{\cftbeforeloatitleskip}{2.5cm}
+
+
+\renewcommand{\cftchappresnum}{Bab }
+\renewcommand{\cftchapaftersnum}{}
+\renewcommand{\cftchapaftersnumb}{\qquad\quad\,\,}
+\renewcommand{\cftsecpresnum}{\qquad\quad\,\,\,\, }
+\renewcommand{\cftsubsecpresnum}{\quad\,\, }
+\renewcommand{\cftsecaftersnum}{}
+\renewcommand{\cftsecaftersnumb}{\qquad\qquad\,}
+\renewcommand{\cftsubsecaftersnumb}{\quad}
+
+\usepackage{minitoc}
+
+% Redefining automatic label of Figure, Table and Eq.
+\usepackage{prettyref}
+\newrefformat{tab}{Jadual\,\ref{#1}}
+\newrefformat{fig}{Rajah\,\ref{#1}}
+\newrefformat{eq}{Pers.\,\textup{(\ref{#1})}}
+\newrefformat{cha}{Bab\,\ref{#1}}
+
+%To remove extra vertical space in List of Symbols [added in V-05]
+%\setlength{\nomitemsep}{-2\parsep}   % another alternative 
+\setlength{\nomitemsep}{-\parsep}
+
+% from koma-script scrbook.cls, then modified [added in V-05]
+% to shift addchap in TOC ro the right: \qquad\qquad\,\,
+\renewcommand\addchap{
+   \if@openright\cleardoublepage\else\clearpage
+   \fi
+   \thispagestyle{plain}
+   \global\@topnum\z@
+   \@afterindentfalse
+   \secdef\@addchap\@saddchap}
+   \def\@addchap[#1]#2{
+           \typeout{#2}
+           \addcontentsline{toc}{chapter}{\qquad\qquad\,\, #1}
+                    \if@twoside\@mkboth{#1}{}\else\@mkboth{}{#1}
+                    \fi
+                    \addtocontents{lof}{\protect\addvspace{10\p@}}
+                    \addtocontents{lot}{\protect\addvspace{10\p@}}
+                    \if@twocolumn
+                         \@topnewpage[\@makeschapterhead{#2}]
+                         \else
+                         \@makeschapterhead{#2}
+                         \@afterheading
+                    \fi
+                    }
+    \def\@saddchap#1{\@mkboth{}{}
+            \if@twocolumn
+                      \@topnewpage[\@makeschapterhead{#1}]
+                      \else
+                      \@makeschapterhead{#1}
+                      \@afterheading
+             \fi
+}
+
+\makeatletter
+    \renewcommand*\l@figure{\@dottedtocline{0}{1.5em}{4.3em}}
+    \renewcommand*\l@table{\@dottedtocline{0}{1.5em}{4.3em}}
+    \renewcommand{\@dotsep}{10000}
+\makeatother
+\end_preamble
+\options liststotoc,chapterprefix,tablecaptionabove,bibtotoc,headings=small,numbers=noenddot
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman lmodern
+\font_sans lmss
+\font_typewriter lmtt
+\font_default_family rmdefault
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Judul Thesis"
+\pdf_author "Nama Pelajar"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue, citecolor=blue, urlcolor=blue, pdfstartview=XYZ, plainpages=false, pdfpagelabels "
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 4cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\headsep 0.5cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+frontmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ini templet Tesis UTHM (Klasik) Bahasa Melayu versi 0.6 (release date)
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 2.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+
+\family roman
+\series medium
+\size larger
+Tajuk Tesis Baris 1
+\family default
+\series default
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\size larger
+Tajuk Tesis Baris 2
+\family default
+\series default
+\size default
+
+\begin_inset VSpace 1.8cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Nama Penulis
+\begin_inset VSpace 2.5cm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size normal
+Tesis yang dikemukakan
+\begin_inset Newline newline
+\end_inset
+
+untuk memenuhi syarat memperoleh ijazah 
+\begin_inset Newline newline
+\end_inset
+
+Doktor Falsafah / Ijazah Sarjana.../ Ijazah ...
+\begin_inset VSpace 3.1cm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+FAKULTI ...
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size normal
+UNIVERSITI ...
+\begin_inset VSpace 3.1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Publishers
+
+\size normal
+BULAN 2012
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{plain}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+qquad
+\backslash
+qquad
+\backslash
+,
+\backslash
+, Pernyataan}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Saya akui tesis bertajuk “Tajuk Tesis” ini adalah hasil penyelidikan saya
+ sendiri kecuali nukilan dan ringkasan yang setiap satunya telah saya jelaskan
+ sumbernya.
+ Tesis ini tidak pernah diterima bagi mana mana ijazah atau dihantar untuk
+ pencalonan mana mana ijazah.
+ 
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tandatangan
+\begin_inset space \thinspace{}
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+Nama
+\begin_inset Formula $\hphantom{tangan..}$
+\end_inset
+
+: Tulis nama pelajar di sini
+\end_layout
+
+\begin_layout Standard
+Tarikh
+\begin_inset Formula $\hphantom{.angan.}$
+\end_inset
+
+: Tulis tarikh di sini
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Penyelia
+\begin_inset Formula $\hphantom{tang.....}$
+\end_inset
+
+: Tulis nama penyelia di sini
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Penyelia kedua : Tulis nama penyelia kedua di sini
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{plain}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+qquad
+\backslash
+qquad
+\backslash
+,
+\backslash
+, Persembahan}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Untuk ayah dan ibu 
+\end_layout
+
+\begin_layout Addchap
+Penghargaan
+\end_layout
+
+\begin_layout Standard
+Tulis kata penghargaan di sini...
+\end_layout
+
+\begin_layout Standard
+Syukur dan pujian ...
+ 
+\end_layout
+
+\begin_layout Standard
+Terima kasih untuk penyelia-penyelia ...
+ 
+\end_layout
+
+\begin_layout Standard
+Terima kasih untuk penaja ...
+ 
+\end_layout
+
+\begin_layout Standard
+Rasa penghargaan keluarga dan rakan ...
+ 
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+Nama Penulis, Lokasi 
+\end_layout
+
+\begin_layout Addchap
+Abstrak
+\end_layout
+
+\begin_layout Standard
+Abstrak dalam bahasa Melayu.
+ Dalam satu perenggan tidak melebihi 300 patah perkataan.
+ 
+\end_layout
+
+\begin_layout Addchap
+Abstract
+\end_layout
+
+\begin_layout Standard
+Abstrak dalam bahasa Inggeris.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+qquad
+\backslash
+qquad
+\backslash
+,
+\backslash
+, Senarai Rajah}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+qquad
+\backslash
+qquad
+\backslash
+,
+\backslash
+, Senarai Jadual}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftchappresnum}{
+\backslash
+quad
+\backslash
+,
+\backslash
+,
+\backslash
+,}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftchapaftersnum}{} 
+\backslash
+renewcommand{
+\backslash
+cftchapaftersnumb}{
+\backslash
+qquad
+\backslash
+qquad}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+listofappendices 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+qquad
+\backslash
+qquad
+\backslash
+,
+\backslash
+, Senarai Lampiran}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+qquad
+\backslash
+qquad
+\backslash
+,
+\backslash
+, Senarai Simbol}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mainmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Pengenalan
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introduction"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Perenggan pertama di tulis di sini.
+ Perenggan pertama di tulis di sini.
+ Perenggan pertama di tulis di sini.
+ Perenggan pertama di tulis di sini.
+ Perenggan pertama di tulis di sini.
+ Perenggan pertama di tulis di sini.Perenggan pertama di tulis di sini.
+\end_layout
+
+\begin_layout Standard
+Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ Perenggan kedua di sini.
+ 
+\end_layout
+
+\begin_layout Section
+Latar Belakang Masalah
+\end_layout
+
+\begin_layout Standard
+Masalah utama yang dihadapi oleh pelajar dalam proses pengajaran dan pembelajara
+n subjek kejuruteraan kawalan adalah kesukaran untuk mengaplikasikan teori
+ yang dipelajari di kelas kepada kerja amali di makmal.
+ Subjek kejuruteraan kawalan merupakan subjek yang penting yang diajar kepada
+ hampir kesemua program kejuruteraan.
+ Kekurangan atau ketiadaan bahan ujikaji yang sesuai menimbulkan ketidakfahaman
+ dalam subjek tersebut.
+\end_layout
+
+\begin_layout Standard
+Tidak dapat dinafikan bahawa makmal memainkan peranan yang sangat penting
+ dalam subjek kejuruteraan kawalan.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Ner1989"
+
+\end_inset
+
+ mengatakan bahawa pengalaman pelajar sendiri di makmal adalah asas dalam
+ pembelajaran sains.
+ 
+\begin_inset CommandInset ref
+LatexCommand prettyref
+reference "fig:Sistem-Kawalan-Berasaskan"
+
+\end_inset
+
+ menunjukkan senarai kompenen yang penting dalam sistem kawalan yang berasaskan
+ komputer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename sample.png
+	width 30col%
+	BoundingBox 0bp 0bp 150bp 160bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Sistem Kawalan Berasaskan Komputer
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistem-Kawalan-Berasaskan"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat
+ lain ayat lain ayat lain ayat lain ayat lain.
+ Ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat
+ lain ayat lain ayat lain ayat lain ayat lain.
+ 
+\end_layout
+
+\begin_layout Standard
+Ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat
+ lain ayat lain ayat lain ayat lain ayat lain.
+ Ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat
+ lain ayat lain ayat lain ayat lain ayat lain.
+ 
+\end_layout
+
+\begin_layout Standard
+Ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat
+ lain ayat lain ayat lain ayat lain ayat lain.
+ Ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat
+ lain ayat lain ayat lain ayat lain ayat lain.
+\end_layout
+
+\begin_layout Chapter
+Tajuk Bab 2
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Literature-Review"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ada perbezaan antara 'Virtual Lab' (VL) dan “Remote Lab' (RL).
+ Perbezaan utama adalah VL membenarkan teori yang sudah diguna pakai.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Allen19981717"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tajuk ...
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ Semua ditulis dalam Bahasa Melayu.
+ Semua ditulis dalam Bahasa Melayu.
+ Semua ditulis dalam Bahasa Melayu.
+ Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Poirson2007"
+
+\end_inset
+
+ mendapat keputusan seperti ditulis dalam 
+\begin_inset CommandInset ref
+LatexCommand prettyref
+reference "tab:Data-structure"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Persamaan Hubolt dibawah
+\begin_inset Formula \begin{equation}
+f(t)=\intop_{s0}^{s1}d\left(x\right)\label{eq:hubolt}\end{equation}
+
+\end_inset
+
+dimana 
+\begin_inset Formula $x$
+\end_inset
+
+ adalah garis tegasan.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand prettyref
+reference "eq:hubolt"
+
+\end_inset
+
+ dapat dihasilkan daripada persamaam berikut
+\begin_inset Formula \begin{equation}
+\varepsilon_{x}=\dfrac{\partial u}{\partial x}\label{eq:fdfdfd}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Contoh persamaan lain 
+\begin_inset Formula \begin{equation}
+\left[N\right]=\left[\begin{array}{ccc}
+N_{1} & N_{2} & N_{3}\end{array}\right]^{T}\label{eq:ddssdd}\end{equation}
+
+\end_inset
+
+seperti yang telah diterangkan dalam 
+\begin_inset CommandInset ref
+LatexCommand prettyref
+reference "cha:Introduction"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Tajuk ...
+\end_layout
+
+\begin_layout Subsection
+Tajuk ...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Struktur data
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Data-structure"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features booktabs="true">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No Garis Tegasan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+z
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Contoh lain adalah DVI
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DVI"
+description "Device Independent"
+
+\end_inset
+
+, juga 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "$\\sigma$"
+description "Nominal Stress"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Metodologi Kajian
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Section
+Tajuk
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Section
+Tajuk 
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+G=3x^{2}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Tajuk Bab 4
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Section
+Tajuk Kecil
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Section
+Tajuk Kecil
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Chapter
+Tajuk Bab 5
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Section
+Tajuk Kecil
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ Menurut 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Abdullah1989"
+
+\end_inset
+
+ juga 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Creme2003"
+
+\end_inset
+
+, kaidah yang dipakai ....
+\end_layout
+
+\begin_layout Section
+Tajuk Kecil Lain
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+setlength{
+\backslash
+parskip}{0.3cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "thesis"
+options "UTHM-ref-style-V-04"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+LAMPIRAN
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadendvskip}{
+\backslash
+vspace{2cm}} 
+\backslash
+renewcommand*{
+\backslash
+chapterheadstartvskip}{
+\backslash
+vspace{1cm}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatletter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+@chapter[#1]#2{
+\backslash
+ifnum 
+\backslash
+c@secnumdepth >
+\backslash
+m@ne
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+if@mainmatter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+refstepcounter{chapter}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+typeout{
+\backslash
+@chapapp
+\backslash
+space
+\backslash
+thechapter.}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{loa}{chapter}%
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+protect
+\backslash
+numberline{
+\backslash
+thechapter}#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{loa}{chapter}{#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{loa}{chapter}{#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptermark{#1}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{lot}{
+\backslash
+protect
+\backslash
+addvspace{10
+\backslash
+p@}}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{lof}{
+\backslash
+protect
+\backslash
+addvspace{10
+\backslash
+p@}}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+if@twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+@topnewpage[
+\backslash
+@makechapterhead{#2}]%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+@makechapterhead{#2}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+@afterheading
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fi}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatother
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{toc}{
+\backslash
+protect
+\backslash
+setcounter{tocdepth}{0}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Tajuk Lampiran A
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ Persamaan di bawah,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\left[k^{e}\right]=\dfrac{AE}{L}\left[\begin{array}{cc}
+1 & -1\\
+-1 & 1\end{array}\right]\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tajuk
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ Perenggan kedua.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bongers1998"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+f\left(x\right)=3x^{2}+\intop_{0}^{20}45x^{2}\textrm{d}x\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tajuk Kecil
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+\end_layout
+
+\begin_layout Chapter
+Tajuk Lampiran B
+\end_layout
+
+\begin_layout Standard
+Dibawah adalah program yang ditulis
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true,numbers=left"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+%======================
+\end_layout
+
+\begin_layout Plain Layout
+
+% Written by Waluyo Adi Siswanto
+\end_layout
+
+\begin_layout Plain Layout
+
+% You are allowed to modify this
+\end_layout
+
+\begin_layout Plain Layout
+
+% in order to meet your requirements
+\end_layout
+
+\begin_layout Plain Layout
+
+%======================
+\end_layout
+
+\begin_layout Plain Layout
+
+% this command prints empty date in title page
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+date{}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% If you want your text paragraph is left justfied
+\end_layout
+
+\begin_layout Plain Layout
+
+% you need to uncomment (delete %) the following command
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+raggedright
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% this command set the paragraph indentation
+\end_layout
+
+\begin_layout Plain Layout
+
+% if you want to modify change the value 1.5cm to your preference
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+parindent}{1.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%This command will change the default Bibliography to References
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginDocument{
+\end_layout
+
+\begin_layout Plain Layout
+
+          
+\backslash
+renewcommand{
+\backslash
+bibname}{Rujukan}
+\end_layout
+
+\begin_layout Plain Layout
+
+          
+\backslash
+renewcommand{
+\backslash
+figurename}{Rajah}
+\end_layout
+
+\begin_layout Plain Layout
+
+          
+\backslash
+renewcommand{
+\backslash
+tablename}{Jadual}
+\end_layout
+
+\begin_layout Plain Layout
+
+          
+\backslash
+renewcommand{
+\backslash
+chaptername}{Bab}
+\end_layout
+
+\begin_layout Plain Layout
+
+          
+\backslash
+renewcommand{
+\backslash
+appendixname}{Lampiran}
+\end_layout
+
+\begin_layout Plain Layout
+
+          
+\backslash
+renewcommand{
+\backslash
+listfigurename}{Senarai Rajah}
+\end_layout
+
+\begin_layout Plain Layout
+
+          
+\backslash
+renewcommand{
+\backslash
+listtablename}{Senarai Jadual}          
+\end_layout
+
+\begin_layout Plain Layout
+
+          
+\backslash
+renewcommand{
+\backslash
+contentsname}{Isi Kandungan}
+\end_layout
+
+\begin_layout Plain Layout
+
+          
+\backslash
+renewcommand{
+\backslash
+nomname}{Senarai Simbol}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%The following comands center the heading of chapters and
+\end_layout
+
+\begin_layout Plain Layout
+
+% chapter entries, the default is on the left
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtokomafont{chapterentry}{
+\backslash
+centering}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtokomafont{chapter}{
+\backslash
+centering}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% The following commands set the page numbers on the top right
+\end_layout
+
+\begin_layout Plain Layout
+
+% except in the beginning of chapters
+\end_layout
+
+\begin_layout Plain Layout
+
+% using fancyhdr package (page layout>heading style->fancy)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chead{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rhead{
+\backslash
+thepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cfoot{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rfoot{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+headrulewidth}{0pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% The following commands set the vertical space before and after 
+\end_layout
+
+\begin_layout Plain Layout
+
+% every chapter entry
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadendvskip}{
+\backslash
+vspace{2cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadstartvskip}{
+\backslash
+vspace{2.5cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% The following commands set the TOC, LOT, LOF and LOA
+\end_layout
+
+\begin_layout Plain Layout
+
+% this employs tocloft package
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{tocloft}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cftpagenumbersoff{part}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftdot}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cfttoctitlefont}{
+\backslash
+hfill
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftaftertoctitle}{
+\backslash
+hfill}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftaftertoctitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftbeforetoctitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftloftitlefont}{
+\backslash
+hfill
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterloftitle}{
+\backslash
+hfill 
+\backslash
+hfill
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[3
+\backslash
+baselineskip]{No Rajah 
+\backslash
+hfill Tajuk 
+\backslash
+hfill Laman 
+\backslash
+linebreak} 
+\backslash
+vskip-50pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftbeforeloftitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftlottitlefont}{
+\backslash
+hfill
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterlottitle}{
+\backslash
+hfill 
+\backslash
+hfill
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[3
+\backslash
+baselineskip]{No Jadual
+\backslash
+hfill Tajuk 
+\backslash
+hfill Laman 
+\backslash
+linebreak }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip-50pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftbeforelottitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlistof{appendices}{loa}{Senarai Lampiran}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftloatitlefont}{
+\backslash
+hfill
+\backslash
+Large
+\backslash
+bfseries
+\backslash
+sffamily}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftafterloatitle}{
+\backslash
+hfill 
+\backslash
+hfill
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[3
+\backslash
+baselineskip]{Lampiran 
+\backslash
+hfill Tajuk 
+\backslash
+hfill Laman  
+\backslash
+linebreak} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip-60pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftbeforeloatitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftchappresnum}{Bab }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftchapaftersnum}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftchapaftersnumb}{
+\backslash
+qquad
+\backslash
+quad
+\backslash
+,
+\backslash
+,}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftsecpresnum}{
+\backslash
+qquad
+\backslash
+quad
+\backslash
+,
+\backslash
+,
+\backslash
+,
+\backslash
+, }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftsubsecpresnum}{
+\backslash
+quad
+\backslash
+,
+\backslash
+, }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftsecaftersnum}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftsecaftersnumb}{
+\backslash
+qquad
+\backslash
+qquad
+\backslash
+,}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftsubsecaftersnumb}{
+\backslash
+quad}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{minitoc}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Redefining automatic label of Figure, Table and Eq.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{prettyref}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{tab}{Jadual
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{fig}{Rajah
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{eq}{Pers.
+\backslash
+,
+\backslash
+textup{(
+\backslash
+ref{#1})}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%To remove extra vertical space in List of Symbols [added in V-05]
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setlength{
+\backslash
+nomitemsep}{-2
+\backslash
+parsep}   % another alternative 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+nomitemsep}{-
+\backslash
+parsep}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% from koma-script scrbook.cls, then modified [added in V-05]
+\end_layout
+
+\begin_layout Plain Layout
+
+% to shift addchap in TOC ro the right: 
+\backslash
+qquad
+\backslash
+qquad
+\backslash
+,
+\backslash
+,
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+addchap{
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+if@openright
+\backslash
+cleardoublepage
+\backslash
+else
+\backslash
+clearpage
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+thispagestyle{plain}
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+global
+\backslash
+@topnum
+\backslash
+z@
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+@afterindentfalse
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+secdef
+\backslash
+@addchap
+\backslash
+@saddchap}
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+def
+\backslash
+@addchap[#1]#2{
+\end_layout
+
+\begin_layout Plain Layout
+
+           
+\backslash
+typeout{#2}
+\end_layout
+
+\begin_layout Plain Layout
+
+           
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+qquad
+\backslash
+qquad
+\backslash
+,
+\backslash
+, #1}
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+if@twoside
+\backslash
+@mkboth{#1}{}
+\backslash
+else
+\backslash
+@mkboth{}{#1}
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+addtocontents{lof}{
+\backslash
+protect
+\backslash
+addvspace{10
+\backslash
+p@}}
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+addtocontents{lot}{
+\backslash
+protect
+\backslash
+addvspace{10
+\backslash
+p@}}
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+if@twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+                         
+\backslash
+@topnewpage[
+\backslash
+@makeschapterhead{#2}]
+\end_layout
+
+\begin_layout Plain Layout
+
+                         
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+                         
+\backslash
+@makeschapterhead{#2}
+\end_layout
+
+\begin_layout Plain Layout
+
+                         
+\backslash
+@afterheading
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+                    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+def
+\backslash
+@saddchap#1{
+\backslash
+@mkboth{}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+if@twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+@topnewpage[
+\backslash
+@makeschapterhead{#1}]
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+@makeschapterhead{#1}
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+@afterheading
+\end_layout
+
+\begin_layout Plain Layout
+
+             
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatletter
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+renewcommand*
+\backslash
+l@figure{
+\backslash
+@dottedtocline{0}{1.5em}{4.3em}}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+renewcommand*
+\backslash
+l@table{
+\backslash
+@dottedtocline{0}{1.5em}{4.3em}}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+renewcommand{
+\backslash
+@dotsep}{10000}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+makeatother
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
