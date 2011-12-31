@@ -1,4 +1,4 @@
-#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.10 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -164,7 +164,7 @@ frontmatter
 status open
 
 \begin_layout Plain Layout
-This is UTHM thesis template version 0.5 (release date)
+This is UTHM thesis template version 0.5 (1-January-2012)
 \end_layout
 
 \end_inset
@@ -1438,7 +1438,7 @@ Text text text of first paragraph
 Now second paragraph.
  
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "Bongers1998"
 
 \end_inset

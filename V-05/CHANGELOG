@@ -1,9 +1,9 @@
-Version 0.5: (release date)
+Version 0.5: (1-Januari-2012)
 <was.uthm> Use smaller vertical space between items in List of Symbols
 <was.uthm> Support fancy TOC style, in different file:
            UTHM-Thesis-Classic-authoryear-V-05.lyx
 <was.uthm> Remove parskip=full (Document>Settings>Document Classs>Customs)
-<was.uthm> Add Bahasa Melayu Version
+<was.uthm, Hanani> Add Bahasa Melayu Version
            UTHM-Thesis-Classic-authoryear-BM-V-05.lyx
 
 Version 0.4: (29-January-2011)

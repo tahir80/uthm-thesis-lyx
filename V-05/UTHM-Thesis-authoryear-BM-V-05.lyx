@@ -1,4 +1,4 @@
-#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.10 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -168,7 +168,7 @@ frontmatter
 status open
 
 \begin_layout Plain Layout
-This is UTHM thesis template version 0.5 (release date)
+This is UTHM thesis template version 0.5 (1-Januari-2012)
 \end_layout
 
 \end_inset
@@ -623,37 +623,29 @@ Latar Belakang Masalah
 \end_layout
 
 \begin_layout Standard
-Semua ditulis dalam Bahasa Melayu.
- One of the hallmarks of the conference is the Numisheet Benchmark Study,
- which is a set of three blind tests prepared one year prior to the conference.
- Numisheet 2008 Benchmark Problem II is provided by Daimler AG.
- For this benchmark, the well known S-Rail geometry as shown in 
-\begin_inset CommandInset ref
-LatexCommand prettyref
-reference "fig:R-rail-geometry"
-
-\end_inset
-
- was chosen.
- In this benchmark, study the influence of different drawbeads geometries;
- smooth bead and locking bead on the springback behavior for steel is to
- be examined using numerical simulation.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Rodriguez2009,Poirson2007"
-
-\end_inset
-
-
+Masalah utama yang dihadapi oleh pelajar dalam proses pengajaran dan pembelajara
+n subjek kejuruteraan kawalan adalah kesukaran untuk mengaplikasikan teori
+ yang dipelajari di kelas kepada kerja amali di makmal.
+ Subjek kejuruteraan kawalan merupakan subjek yang penting yang diajar kepada
+ hampir kesemua program kejuruteraan.
+ Kekurangan atau ketiadaan bahan ujikaji yang sesuai menimbulkan ketidakfahaman
+ dalam subjek tersebut.
 \end_layout
 
 \begin_layout Standard
-Sheet metal forming is one of the most widely used manufacturing processes
- for the fabrication of a wide range of products in many industries.
- The reason behind sheet metal forming gaining a lot attention in modern
- technology is due to the ease with which metal may be formed into useful
- shapes by plastic deformation processes in which the volume and etc.
+Tidak dapat dinafikan bahawa makmal memainkan peranan yang sangat penting
+ dalam subjek kejuruteraan kawalan.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Ner1989"
+
+\end_inset
+
+ mengatakan bahawa pengalaman pelajar sendiri di makmal adalah asas dalam
+ pembelajaran sains.
+ menunjukkan senarai kompenen yang penting dalam sistem kawalan yang berasaskan
+ komputer.
 \end_layout
 
 \begin_layout Standard
@@ -667,7 +659,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename sample.png
-	width 80col%
+	width 30col%
+	BoundingBox 0bp 0bp 150bp 160bp
+	clip
 
 \end_inset
 
@@ -678,10 +672,10 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-S-rail geometry
+Sistem Kawalan Berasaskan Komputer
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:R-rail-geometry"
+name "fig:Sistem-Kawalan-Berasaskan"
 
 \end_inset
 
@@ -700,6 +694,29 @@ name "fig:R-rail-geometry"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat
+ lain ayat lain ayat lain ayat lain ayat lain.
+ Ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat
+ lain ayat lain ayat lain ayat lain ayat lain.
+ 
+\end_layout
+
+\begin_layout Standard
+Ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat
+ lain ayat lain ayat lain ayat lain ayat lain.
+ Ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat
+ lain ayat lain ayat lain ayat lain ayat lain.
+ 
+\end_layout
+
+\begin_layout Standard
+Ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat
+ lain ayat lain ayat lain ayat lain ayat lain.
+ Ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat lain ayat
+ lain ayat lain ayat lain ayat lain ayat lain.
 \end_layout
 
 \begin_layout Chapter
@@ -714,18 +731,16 @@ name "cha:Literature-Review"
 \end_layout
 
 \begin_layout Standard
-Semua ditulis dalam Bahasa Melayu.
- The sheet metal forming process, in theory, can be viewed as relatively
- straight forward operation where a sheet of material is plastically deformed
- into desired shape.
- According to 
+Ada perbezaan antara 'Virtual Lab' (VL) dan “Remote Lab' (RL).
+ Perbezaan utama adalah VL membenarkan teori yang sudah diguna pakai.
+ 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Schell2002"
+LatexCommand citep
+key "Allen19981717"
 
 \end_inset
 
- ...
+
 \end_layout
 
 \begin_layout Section
@@ -734,46 +749,45 @@ Tajuk ...
 
 \begin_layout Standard
 Semua ditulis dalam Bahasa Melayu.
- In practice, however, variations in blank dimensions, material properties
- and environmental conditions make the predictability and reproducibility
- of a sheet metal forming process difficult.
- Apart from this, springback properties of sheet metal make it extremely
- tedious to design appropriate tooling for a given process.
+ Semua ditulis dalam Bahasa Melayu.
+ Semua ditulis dalam Bahasa Melayu.
+ Semua ditulis dalam Bahasa Melayu.
+ Semua ditulis dalam Bahasa Melayu.
  
 \end_layout
 
 \begin_layout Standard
-An application of genetic algorithm has been implemented to optimize brass
- musical instrument and shows a prospective tool.
- 
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citet
 key "Poirson2007"
 
 \end_inset
 
-  
+ mendapat keputusan seperti ditulis dalam 
 \begin_inset CommandInset ref
-LatexCommand prettyref
+LatexCommand ref
 reference "tab:Data-structure"
 
 \end_inset
 
- shows.....
+.
 \end_layout
 
 \begin_layout Standard
-The explanation of the Hubolt formula
+Persamaan Hubolt dibawah
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula \begin{equation}
 f(t)=\intop_{s0}^{s1}d\left(x\right)\label{eq:hubolt}\end{equation}
 
 \end_inset
 
-where 
+dimana 
 \begin_inset Formula $x$
 \end_inset
 
- is the displacement.
+ adalah garis tegasan.
 \end_layout
 
 \begin_layout Standard
@@ -783,7 +797,7 @@ reference "eq:hubolt"
 
 \end_inset
 
- can be derived from another equation as written by
+ dapat dihasilkan daripada persamaam berikut
 \begin_inset Formula \begin{equation}
 ffdfd\label{eq:fdfdfd}\end{equation}
 
@@ -793,13 +807,13 @@ ffdfd\label{eq:fdfdfd}\end{equation}
 \end_layout
 
 \begin_layout Standard
-This is another example 
+Contoh persamaan lain 
 \begin_inset Formula \begin{equation}
 dsd\nabla f\label{eq:ddssdd}\end{equation}
 
 \end_inset
 
-as mention in 
+seperti yang telah diterangkan dalam 
 \begin_inset CommandInset ref
 LatexCommand prettyref
 reference "cha:Literature-Review"
@@ -843,7 +857,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Data structure
+Struktur data
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Data-structure"
@@ -872,7 +886,7 @@ name "tab:Data-structure"
 \begin_inset Text
 
 \begin_layout Plain Layout
-node
+No Garis Tegasan
 \end_layout
 
 \end_inset
@@ -998,7 +1012,7 @@ z
 \end_layout
 
 \begin_layout Standard
-DVI
+Contoh lain adalah DVI
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DVI"
@@ -1006,11 +1020,11 @@ description "Device Independent"
 
 \end_inset
 
-, 
+, juga 
 \begin_inset Formula $\sigma$
 \end_inset
 
-
+.
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "$\\sigma$"
@@ -1031,7 +1045,7 @@ Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
 \begin_layout Standard
-bla bla bla
+Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
 \begin_layout Section
@@ -1040,6 +1054,11 @@ Tajuk ...
 
 \begin_layout Standard
 Semua ditulis dalam Bahasa Melayu.
+ 
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu
 \end_layout
 
 \begin_layout Section
@@ -1052,7 +1071,7 @@ Semua ditulis dalam Bahasa Melayu.
 
 \begin_layout Standard
 \begin_inset Formula \begin{equation}
-ff\end{equation}
+G=3x^{2}\end{equation}
 
 \end_inset
 
@@ -1061,6 +1080,10 @@ ff\end{equation}
 
 \begin_layout Chapter
 Tajuk Bab 4
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
 \begin_layout Standard
@@ -1083,8 +1106,16 @@ Tajuk Kecil
 Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+\end_layout
+
 \begin_layout Chapter
 Tajuk Bab 5
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
 \begin_layout Standard
@@ -1097,6 +1128,25 @@ Tajuk Kecil
 
 \begin_layout Standard
 Semua ditulis dalam Bahasa Melayu.
+\end_layout
+
+\begin_layout Standard
+Semua ditulis dalam Bahasa Melayu.
+ Menurut 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Abdullah1989"
+
+\end_inset
+
+ juga 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Creme2003"
+
+\end_inset
+
+, kaidah yang dipakai ....
 \end_layout
 
 \begin_layout Section
@@ -1408,8 +1458,7 @@ Tajuk Lampiran A
 
 \begin_layout Standard
 Semua ditulis dalam Bahasa Melayu.
- You can see here the equation number is consistent with Appendix numbering
- system
+ Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
 \begin_layout Standard
@@ -1429,14 +1478,11 @@ Tajuk ...
 
 \begin_layout Standard
 Semua ditulis dalam Bahasa Melayu.
- Text text text of first paragraph
-\end_layout
-
-\begin_layout Standard
-Now second paragraph.
+ Semua ditulis dalam Bahasa Melayu.
+ Semua ditulis dalam Bahasa Melayu.
  
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "Bongers1998"
 
 \end_inset
@@ -1459,11 +1505,11 @@ Tajuk ...
 
 \begin_layout Standard
 Semua ditulis dalam Bahasa Melayu.
- Text text text of first paragraph
+ 
 \end_layout
 
 \begin_layout Standard
-Now second paragraph
+Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
 \begin_layout Chapter
@@ -1472,17 +1518,7 @@ Tajuk Lampiran B
 
 \begin_layout Standard
 Semua ditulis dalam Bahasa Melayu.
- The following codes written in LaT
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-eX preamble.
+ Dibawah ini adalah program yang ditulis
 \end_layout
 
 \begin_layout Standard
@@ -1534,519 +1570,7 @@ date{}
 
 \begin_layout Plain Layout
 
-% this command set the paragraph indentation
-\end_layout
-
-\begin_layout Plain Layout
-
-% if you want to modify change the value 1.5cm to your preference
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-setlength{
-\backslash
-parindent}{1.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-%This command will change the default Bibliography to References
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-AtBeginDocument{
-\backslash
-renewcommand{
-\backslash
-bibname}{References}}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-%The following comands center the heading of chapters and
-\end_layout
-
-\begin_layout Plain Layout
-
-% chapter entries, the default is on the left
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-addtokomafont{chapterentry}{
-\backslash
-centering}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-addtokomafont{chapter}{
-\backslash
-centering}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-% The following commands set the page numbers on the top right
-\end_layout
-
-\begin_layout Plain Layout
-
-% except in the beginning of chapters
-\end_layout
-
-\begin_layout Plain Layout
-
-% using fancyhdr package (page layout>heading style->fancy)
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lhead{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-chead{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-rhead{
-\backslash
-thepage}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lfoot{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-cfoot{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-rfoot{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-headrulewidth}{0pt}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-% The following commands set the vertical space before and after 
-\end_layout
-
-\begin_layout Plain Layout
-
-% every chapter entry
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand*{
-\backslash
-chapterheadendvskip}{
-\backslash
-vspace{2cm}}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand*{
-\backslash
-chapterheadstartvskip}{
-\backslash
-vspace{2.5cm}}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-% The following commands set the TOC, LOT and LOF
-\end_layout
-
-\begin_layout Plain Layout
-
-% this employs tocloft package
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-usepackage{tocloft}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftdot}{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cfttoctitlefont}{
-\backslash
-hfill
-\backslash
-Large
-\backslash
-bfseries
-\backslash
-sffamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftaftertoctitle}{
-\backslash
-hfill}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftaftertoctitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftbeforetoctitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftloftitlefont}{
-\backslash
-hfill
-\backslash
-Large
-\backslash
-bfseries
-\backslash
-sffamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterloftitle}{
-\backslash
-hfill}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterloftitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftbeforeloftitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftlottitlefont}{
-\backslash
-hfill
-\backslash
-Large
-\backslash
-bfseries
-\backslash
-sffamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterlottitle}{
-\backslash
-hfill}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterlottitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftbeforelottitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-usepackage{tocloft}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftdot}{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cfttoctitlefont}{
-\backslash
-hfill
-\backslash
-Large
-\backslash
-bfseries
-\backslash
-sffamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftaftertoctitle}{
-\backslash
-hfill}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftaftertoctitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftbeforetoctitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftloftitlefont}{
-\backslash
-hfill
-\backslash
-Large
-\backslash
-bfseries
-\backslash
-sffamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterloftitle}{
-\backslash
-hfill}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterloftitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftbeforeloftitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftlottitlefont}{
-\backslash
-hfill
-\backslash
-Large
-\backslash
-bfseries
-\backslash
-sffamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterlottitle}{
-\backslash
-hfill}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterlottitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftbeforelottitleskip}{2.5cm}
+etc
 \end_layout
 
 \end_inset

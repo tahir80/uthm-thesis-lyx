@@ -58,12 +58,14 @@
 \renewcommand{\cftbeforetoctitleskip}{2.5cm}
 
 \renewcommand{\cftloftitlefont}{\hfill\Large\bfseries\sffamily}
-\renewcommand{\cftafterloftitle}{\hfill \hfill
+\renewcommand{\cftafterloftitle}{\hfill \hfill 
+%\renewcommand{\cftafterloftitle}{\hfill \hfill \hfill
 \\[3\baselineskip]{Figure No \hfill Title \hfill Page \linebreak} \vskip-50pt}
 \renewcommand{\cftbeforeloftitleskip}{2.5cm}
 
 \renewcommand{\cftlottitlefont}{\hfill\Large\bfseries\sffamily}
 \renewcommand{\cftafterlottitle}{\hfill \hfill
+%\renewcommand{\cftafterlottitle}{\hfill \hfill\hfill
 \\[3\baselineskip]{Table No \hfill Title \hfill Page \linebreak }
 \vskip-50pt}
 \renewcommand{\cftbeforelottitleskip}{2.5cm}
@@ -71,6 +73,7 @@
 \newlistof{appendices}{loa}{List of Appendices}
 \renewcommand{\cftloatitlefont}{\hfill\Large\bfseries\sffamily}
 \renewcommand{\cftafterloatitle}{\hfill \hfill
+%\renewcommand{\cftafterloatitle}{\hfill \hfill\hfill 
 \\[3\baselineskip]{Appendix \hfill Title \hfill Page  \linebreak} 
 \vskip-60pt}
 \renewcommand{\cftbeforeloatitleskip}{2.5cm}
@@ -152,8 +155,8 @@
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref true
-\pdf_title "Write the title of the thesis here"
-\pdf_author "Write the student's name here"
+\pdf_title "Thesis Title"
+\pdf_author "Name of Students"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
 \pdf_bookmarksopen false
@@ -214,7 +217,7 @@ frontmatter
 status open
 
 \begin_layout Plain Layout
-This is UTHM thesis (Classic) template version 0.5 (release date)
+This is UTHM thesis (Classic) template version 0.5 (1-January-2012)
 \end_layout
 
 \end_inset
@@ -1578,7 +1581,7 @@ Text text text of first paragraph
 Now second paragraph.
  
 \begin_inset CommandInset citation
-LatexCommand cite
+LatexCommand citep
 key "Bongers1998"
 
 \end_inset

@@ -66,11 +66,13 @@
 
 \renewcommand{\cftloftitlefont}{\hfill\Large\bfseries\sffamily}
 \renewcommand{\cftafterloftitle}{\hfill \hfill
+%\renewcommand{\cftafterloftitle}{\hfill \hfill\hfill
 \\[3\baselineskip]{No Rajah \hfill Tajuk \hfill Laman \linebreak} \vskip-50pt}
 \renewcommand{\cftbeforeloftitleskip}{2.5cm}
 
 \renewcommand{\cftlottitlefont}{\hfill\Large\bfseries\sffamily}
 \renewcommand{\cftafterlottitle}{\hfill \hfill
+%\renewcommand{\cftafterlottitle}{\hfill \hfill\hfill
 \\[3\baselineskip]{No Jadual\hfill Tajuk \hfill Laman \linebreak }
 \vskip-50pt}
 \renewcommand{\cftbeforelottitleskip}{2.5cm}
@@ -78,6 +80,7 @@
 \newlistof{appendices}{loa}{Senarai Lampiran}
 \renewcommand{\cftloatitlefont}{\hfill\Large\bfseries\sffamily}
 \renewcommand{\cftafterloatitle}{\hfill \hfill
+%\renewcommand{\cftafterloatitle}{\hfill \hfill\hfill
 \\[3\baselineskip]{Lampiran \hfill Tajuk \hfill Laman  \linebreak} 
 \vskip-60pt}
 \renewcommand{\cftbeforeloatitleskip}{2.5cm}
@@ -222,7 +225,7 @@ frontmatter
 status open
 
 \begin_layout Plain Layout
-Ini templet Tesis UTHM (Klasik) Bahasa Melayu versi 0.5 (tarikh rilis)
+Ini templet Tesis UTHM (Klasik) Bahasa Melayu versi 0.5 (1-Januari-2012)
 \end_layout
 
 \end_inset
