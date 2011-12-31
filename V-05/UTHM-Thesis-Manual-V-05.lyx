@@ -108,11 +108,12 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Abstract
-This is an explanation of UTHM thesis template that I have prepared to suit
- UTHM thesis format style.
- However, the template is not fully completed but provides a general format
- and style.
- You can modify it to make it better to satisfy your own preference.
+This is an explanation of UTHM thesis template in 
+\family sans
+book(KOMA-Script)
+\family default
+ document class.
+ You can modify it to satisfy your own preference.
   You may copy, distribute to others as you wish.
  This is free, you can redistribute it and/or modify it under the terms
  of the GNU General Public License as published by the Free Software Foundation;
