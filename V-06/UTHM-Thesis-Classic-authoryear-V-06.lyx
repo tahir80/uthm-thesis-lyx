@@ -198,7 +198,7 @@
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -220,9 +220,159 @@ status open
 This is UTHM thesis (Classic) template version 0.6 (release date)
 \end_layout
 
+\begin_layout Plain Layout
+The information below will be automatically written in your thesis
+\end_layout
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+studentname}  {Fulan bin Fulan}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+supervisor}   {Prof.
+ Dr.
+ Supervisor} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+cosupervisor} {A/Prof.
+ Dr.
+ Cosupervisor}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+faculty}      {Faculty of Engineering Science}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+university}   {Universiti Tun Hussein Onn Malaysia}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+loccity}      {Parit Raja}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+loccountry}   {Malaysia}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+degree}       {Doctor of Philosophy}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+submitdate}   {1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+submitmonth}  {January}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+submityear}   {2012}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+titlelineone} {The Thesis Title Line One}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+titlelinetwo} {Thesis Title Line Two}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+End of basic information
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset VSpace 2.5cm
 \end_inset
 
@@ -234,7 +384,19 @@ This is UTHM thesis (Classic) template version 0.6 (release date)
 \family roman
 \series medium
 \size larger
-The Thesis Title Line 1
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+titlelineone
+\end_layout
+
+\end_inset
+
+
 \family default
 \series default
 \size default
@@ -246,7 +408,20 @@ The Thesis Title Line 1
 \family roman
 \series medium
 \size larger
-Thesis Title Line 2
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+titlelinetwo
+\end_layout
+
+\end_inset
+
+
 \family default
 \series default
 \size default
@@ -258,7 +433,19 @@ Thesis Title Line 2
 \end_layout
 
 \begin_layout Author
-The Author
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+studentname
+\end_layout
+
+\end_inset
+
+
 \begin_inset VSpace 2.5cm
 \end_inset
 
@@ -276,15 +463,43 @@ fulfillment of the requirement for the award of the
 \begin_inset Newline newline
 \end_inset
 
-Degree of Doctor of Philosophy / Bachelor of.../ Master of ...
-\begin_inset VSpace 3.1cm
+Degree of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+degree
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace 3.6cm
 \end_inset
 
 
 \begin_inset Newline newline
 \end_inset
 
-FACULTY OF WHATEVER
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+MakeUppercase{
+\backslash
+faculty}
+\end_layout
+
+\end_inset
+
+
 \size default
 
 \begin_inset Newline newline
@@ -292,7 +507,22 @@ FACULTY OF WHATEVER
 
 
 \size normal
-UNIVERSITY WHATEVER
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+MakeUppercase{
+\backslash
+university}
+\end_layout
+
+\end_inset
+
+
 \begin_inset VSpace 3.1cm
 \end_inset
 
@@ -302,7 +532,27 @@ UNIVERSITY WHATEVER
 \begin_layout Publishers
 
 \size normal
-SEPTEMBER 2010
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+MakeUppercase{
+\backslash
+submitmonth}
+\backslash
+,
+\backslash
+,
+\backslash
+submityear
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -353,8 +603,28 @@ qquad
 
 \begin_layout Standard
 \align center
-I hereby declare that this thesis entitled “Write The Thesis Title Here”
- is the result of my own research except as cited in the references.
+I hereby declare that this thesis entitled “
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+titlelineone
+\backslash
+;
+\backslash
+titlelinetwo
+\end_layout
+
+\end_inset
+
+
+\series default
+” is the result of my own research except as cited in the references.
  This thesis has not been accepted for any degree and is not concurrently
  submitted in candidature of any other degree.
  
@@ -452,7 +722,19 @@ Name
 \begin_inset Text
 
 \begin_layout Plain Layout
-Write your name here
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+studentname
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -481,7 +763,31 @@ Date
 \begin_inset Text
 
 \begin_layout Plain Layout
-Write the date here
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+submitdate
+\backslash
+,
+\backslash
+,
+\backslash
+submitmonth
+\backslash
+,
+\backslash
+,
+\backslash
+submityear
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \end_inset
@@ -531,7 +837,19 @@ Supervisor
 \begin_inset Text
 
 \begin_layout Plain Layout
-Write supervisor's name here
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+supervisor
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -581,7 +899,19 @@ Co-Supervisor
 \begin_inset Text
 
 \begin_layout Plain Layout
-Write co-supervisor's name here
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cosupervisor
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -691,7 +1021,32 @@ Thanks to friends...
 
 \begin_layout Standard
 \align right
-Author, Place 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+studentname
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+loccity
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Addchap
