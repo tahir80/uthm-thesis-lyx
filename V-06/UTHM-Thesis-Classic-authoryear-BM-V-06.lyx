@@ -228,6 +228,153 @@ status open
 Ini templet Tesis UTHM (Klasik) Bahasa Melayu versi 0.6 (release date)
 \end_layout
 
+\begin_layout Plain Layout
+Sila lengkapkan informasi dibawah ini
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+namapelajar}    {Fulan bin Fulan}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+penyelia}       {Prof.
+ Dr.
+ Supervisor} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+penyeliadua}    {A/Prof.
+ Dr.
+ Cosupervisor}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+fakulti}        {Fakulti Kejuruteraan Mekanik}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+universiti}     {Universiti Tun Hussein Onn Malaysia}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+lokasi}         {Parit Raja}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+loknegara}      {Malaysia}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+ijazah}         {Doktor Falsafah}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+tarikhhantar}   {1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+bulanhantar}    {Januari}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+tahunhantar}    {2012}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+tajukbarissatu} {Tajuk Tesis Baris Satu}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+tajukbarisdua}  {Tajuk Tesis Baris Dua}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Akhir dari informasi tesis
+\end_layout
+
 \end_inset
 
 
@@ -242,7 +389,19 @@ Ini templet Tesis UTHM (Klasik) Bahasa Melayu versi 0.6 (release date)
 \family roman
 \series medium
 \size larger
-Tajuk Tesis Baris 1
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tajukbarissatu
+\end_layout
+
+\end_inset
+
+
 \family default
 \series default
 \size default
@@ -254,7 +413,20 @@ Tajuk Tesis Baris 1
 \family roman
 \series medium
 \size larger
-Tajuk Tesis Baris 2
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tajukbarisdua
+\end_layout
+
+\end_inset
+
+
 \family default
 \series default
 \size default
@@ -266,7 +438,19 @@ Tajuk Tesis Baris 2
 \end_layout
 
 \begin_layout Author
-Nama Penulis
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+namapelajar
+\end_layout
+
+\end_inset
+
+
 \begin_inset VSpace 2.5cm
 \end_inset
 
@@ -284,15 +468,43 @@ untuk memenuhi syarat memperoleh ijazah
 \begin_inset Newline newline
 \end_inset
 
-Doktor Falsafah / Ijazah Sarjana.../ Ijazah ...
-\begin_inset VSpace 3.1cm
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ijazah
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 3.6cm
 \end_inset
 
 
 \begin_inset Newline newline
 \end_inset
 
-FAKULTI ...
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+MakeUppercase{
+\backslash
+fakulti}
+\end_layout
+
+\end_inset
+
+
 \size default
 
 \begin_inset Newline newline
@@ -300,7 +512,22 @@ FAKULTI ...
 
 
 \size normal
-UNIVERSITI ...
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+MakeUppercase{
+\backslash
+universiti}
+\end_layout
+
+\end_inset
+
+
 \begin_inset VSpace 3.1cm
 \end_inset
 
@@ -310,7 +537,27 @@ UNIVERSITI ...
 \begin_layout Publishers
 
 \size normal
-BULAN 2012
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+MakeUppercase{
+\backslash
+bulanhantar}
+\backslash
+,
+\backslash
+,
+\backslash
+tahunhantar
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -361,9 +608,29 @@ qquad
 
 \begin_layout Standard
 \align center
-Saya akui tesis bertajuk “Tajuk Tesis” ini adalah hasil penyelidikan saya
- sendiri kecuali nukilan dan ringkasan yang setiap satunya telah saya jelaskan
- sumbernya.
+Saya akui tesis bertajuk “
+\series bold
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tajukbarissatu
+\backslash
+;
+\backslash
+tajukbarisdua
+\end_layout
+
+\end_inset
+
+
+\series default
+” ini adalah hasil penyelidikan saya sendiri kecuali nukilan dan ringkasan
+ yang setiap satunya telah saya jelaskan sumbernya.
  Tesis ini tidak pernah diterima bagi mana mana ijazah atau dihantar untuk
  pencalonan mana mana ijazah.
  
@@ -374,27 +641,172 @@ Saya akui tesis bertajuk “Tajuk Tesis” ini adalah hasil penyelidikan saya
 \end_layout
 
 \begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features>
+<column alignment="left" valignment="top" width="2.7cm">
+<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Tandatangan
-\begin_inset space \thinspace{}
-\end_inset
-
- :
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Nama
-\begin_inset Formula $\hphantom{tangan..}$
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+namapelajar
+\end_layout
+
 \end_inset
 
-: Tulis nama pelajar di sini
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tarikh
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tarikhhantar
+\backslash
+,
+\backslash
+,
+\backslash
+bulanhantar
+\backslash
+,
+\backslash
+,
+\backslash
+tahunhantar
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Tarikh
-\begin_inset Formula $\hphantom{.angan.}$
-\end_inset
-
-: Tulis tarikh di sini
 \begin_inset VSpace 4cm
 \end_inset
 
@@ -402,11 +814,58 @@ Tarikh
 \end_layout
 
 \begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features>
+<column alignment="left" valignment="top" width="2.7cm">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Penyelia
-\begin_inset Formula $\hphantom{tang.....}$
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+penyelia
+\end_layout
+
 \end_inset
 
-: Tulis nama penyelia di sini
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \begin_inset VSpace 2cm
 \end_inset
 
@@ -414,7 +873,58 @@ Penyelia
 \end_layout
 
 \begin_layout Standard
-Penyelia kedua : Tulis nama penyelia kedua di sini
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features>
+<column alignment="left" valignment="top" width="2.7cm">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Penyelia kedua
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+penyeliadua
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -509,7 +1019,32 @@ Rasa penghargaan keluarga dan rakan ...
 
 \begin_layout Standard
 \align right
-Nama Penulis, Lokasi 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+namapelajar
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lokasi
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Addchap
