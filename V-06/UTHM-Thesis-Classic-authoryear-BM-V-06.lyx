@@ -256,6 +256,15 @@ namapelajar}    {Fulan bin Fulan}
 \backslash
 newcommand{
 \backslash
+nopelajar}      {AD99999}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
 penyelia}       {Prof.
  Dr.
  Supervisor} 
@@ -396,6 +405,8 @@ status open
 
 
 \backslash
+MakeUppercase
+\backslash
 tajukbarissatu
 \end_layout
 
@@ -420,6 +431,8 @@ status open
 \begin_layout Plain Layout
 
 
+\backslash
+MakeUppercase
 \backslash
 tajukbarisdua
 \end_layout
@@ -642,7 +655,7 @@ tajukbarisdua
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
+<lyxtabular version="3" rows="5" columns="3">
 <features>
 <column alignment="left" valignment="top" width="2.7cm">
 <column alignment="center" valignment="top" width="0">
@@ -736,6 +749,48 @@ status open
 
 \backslash
 namapelajar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No.
+ Pelajar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nopelajar
 \end_layout
 
 \end_inset

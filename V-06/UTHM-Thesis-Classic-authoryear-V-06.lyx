@@ -248,6 +248,15 @@ studentname}  {Fulan bin Fulan}
 \backslash
 newcommand{
 \backslash
+studentno}    {AD99999}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
 supervisor}   {Prof.
  Dr.
  Supervisor} 
@@ -391,6 +400,8 @@ status open
 
 
 \backslash
+MakeUppercase
+\backslash
 titlelineone
 \end_layout
 
@@ -415,6 +426,8 @@ status open
 \begin_layout Plain Layout
 
 
+\backslash
+MakeUppercase
 \backslash
 titlelinetwo
 \end_layout
@@ -636,7 +649,7 @@ titlelinetwo
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
+<lyxtabular version="3" rows="5" columns="3">
 <features>
 <column alignment="left" valignment="top" width="2.6cm">
 <column alignment="center" valignment="top" width="0">
@@ -730,6 +743,47 @@ status open
 
 \backslash
 studentname
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Matrix No.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+studentno
 \end_layout
 
 \end_inset
