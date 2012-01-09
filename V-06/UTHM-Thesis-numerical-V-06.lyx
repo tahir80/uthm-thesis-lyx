@@ -17,8 +17,8 @@
 %\raggedright
 
 % this command set the paragraph indentation
-% if you want to modify change the value 1.5cm to your preference
-\setlength{\parindent}{1.5cm}
+% if you want to modify change the value 1.27cm to your preference
+\setlength{\parindent}{1.27cm}
 
 %This command will change the default Bibliography to References
 \AtBeginDocument{
@@ -181,7 +181,7 @@ frontmatter
 status open
 
 \begin_layout Plain Layout
-This is UTHM thesis template version 0.5 (1-January-2012)
+This is UTHM thesis template version 0.6 (release date)
 \end_layout
 
 \end_inset
