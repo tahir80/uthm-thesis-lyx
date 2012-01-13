@@ -17,8 +17,8 @@
 %\raggedright
 
 % this command set the paragraph indentation
-% if you want to modify change the value 1.5cm to your preference
-\setlength{\parindent}{1.5cm}
+% if you want to modify change the value 1.27cm to your preference
+\setlength{\parindent}{1.27cm}
 
 %This command will change the default Bibliography to References
 \AtBeginDocument{
@@ -90,10 +90,10 @@
 \renewcommand{\cftchapaftersnum}{}
 \renewcommand{\cftchapaftersnumb}{\qquad\quad\,\,}
 \renewcommand{\cftsecpresnum}{\qquad\quad\,\,\,\, }
-\renewcommand{\cftsubsecpresnum}{\quad\,\, }
+\renewcommand{\cftsubsecpresnum}{\qquad\quad\,\,\,\,\,\, } %v-06
 \renewcommand{\cftsecaftersnum}{}
 \renewcommand{\cftsecaftersnumb}{\qquad\qquad\,}
-\renewcommand{\cftsubsecaftersnumb}{\quad}
+\renewcommand{\cftsubsecaftersnumb}{\qquad\quad\,\,\,\,} %v-06
 
 \usepackage{minitoc}
 
@@ -247,6 +247,24 @@ status open
 \backslash
 newcommand{
 \backslash
+tajukbarissatu} {Tajuk Tesis Baris Satu}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+tajukbarisdua}  {Tajuk Tesis Baris Dua}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
 namapelajar}    {Fulan bin Fulan}
 \end_layout
 
@@ -267,7 +285,7 @@ newcommand{
 \backslash
 penyelia}       {Prof.
  Dr.
- Supervisor} 
+ Nama Penyelia} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -278,7 +296,7 @@ newcommand{
 \backslash
 penyeliadua}    {A/Prof.
  Dr.
- Cosupervisor}
+ Nama Penyelia Dua}
 \end_layout
 
 \begin_layout Plain Layout
@@ -287,7 +305,7 @@ penyeliadua}    {A/Prof.
 \backslash
 newcommand{
 \backslash
-fakulti}        {Fakulti Kejuruteraan Mekanik}
+fakulti}        {Fakulti Kejuruteraan Mekanikal}
 \end_layout
 
 \begin_layout Plain Layout
@@ -351,24 +369,6 @@ bulanhantar}    {Januari}
 newcommand{
 \backslash
 tahunhantar}    {2012}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-tajukbarissatu} {Tajuk Tesis Baris Satu}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-tajukbarisdua}  {Tajuk Tesis Baris Dua}
 \end_layout
 
 \end_inset
@@ -1772,6 +1772,10 @@ description "Nominal Stress"
 
 \end_layout
 
+\begin_layout Subsection
+Tajuk lain
+\end_layout
+
 \begin_layout Chapter
 Metodologi Kajian
 \end_layout
@@ -1798,6 +1802,14 @@ Semua ditulis dalam Bahasa Melayu.
 \begin_layout Standard
 Semua ditulis dalam Bahasa Melayu.
  
+\end_layout
+
+\begin_layout Subsection
+Tajuk Lain
+\end_layout
+
+\begin_layout Subsection
+Tajuk Lain Lagi
 \end_layout
 
 \begin_layout Section

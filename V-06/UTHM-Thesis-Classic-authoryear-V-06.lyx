@@ -17,8 +17,8 @@
 %\raggedright
 
 % this command set the paragraph indentation
-% if you want to modify change the value 1.5cm to your preference
-\setlength{\parindent}{1.5cm}
+% if you want to modify change the value 1.27cm to your preference
+\setlength{\parindent}{1.27cm}
 
 %This command will change the default Bibliography to References
 \AtBeginDocument{
@@ -83,10 +83,10 @@
 \renewcommand{\cftchapaftersnum}{}
 \renewcommand{\cftchapaftersnumb}{\qquad\quad\,\,}
 \renewcommand{\cftsecpresnum}{\qquad\quad\,\,\,\, }
-\renewcommand{\cftsubsecpresnum}{\quad\,\, }
+\renewcommand{\cftsubsecpresnum}{\qquad\quad\,\,\,\,\,\, } %v-06
 \renewcommand{\cftsecaftersnum}{}
 \renewcommand{\cftsecaftersnumb}{\qquad\qquad\,}
-\renewcommand{\cftsubsecaftersnumb}{\quad}
+\renewcommand{\cftsubsecaftersnumb}{\qquad\quad\,\,\,\,} %v-06
 
 \usepackage{minitoc}
 
@@ -239,6 +239,24 @@ status open
 \backslash
 newcommand{
 \backslash
+titlelineone} {The Thesis Title Line One}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+titlelinetwo} {Thesis Title Line Two}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
 studentname}  {Fulan bin Fulan}
 \end_layout
 
@@ -343,24 +361,6 @@ submitmonth}  {January}
 newcommand{
 \backslash
 submityear}   {2012}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-titlelineone} {The Thesis Title Line One}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-titlelinetwo} {Thesis Title Line Two}
 \end_layout
 
 \end_inset
@@ -1750,6 +1750,10 @@ description "Nominal Stress"
 
 \end_layout
 
+\begin_layout Subsection
+Try
+\end_layout
+
 \begin_layout Chapter
 Methodology
 \end_layout
@@ -1768,6 +1772,10 @@ Title
 
 \begin_layout Standard
 bla bla bla
+\end_layout
+
+\begin_layout Subsection
+Title
 \end_layout
 
 \begin_layout Section
