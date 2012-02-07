@@ -2,6 +2,7 @@ Version 0.6: (release date)
 <was.uthm> Add global information
 <was.uthm> Rename UTHM-Thesis-V-06 to UTHM-Thesis-numerical-V-06
 <was.uthm> Page numbers in front matter are set at centre bottom page
+<was.uthm> fix subfigure error in classic style
 
 Version 0.5: (1-Januari-2012)
 <was.uthm> Use smaller vertical space between items in List of Symbols
