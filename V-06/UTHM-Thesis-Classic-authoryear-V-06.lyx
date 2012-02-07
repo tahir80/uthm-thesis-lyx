@@ -132,11 +132,11 @@
              \fi
 }
 
-\makeatletter
+%\makeatletter  % removed V-06 (fix issue 16)
     \renewcommand*\l@figure{\@dottedtocline{0}{1.5em}{4.3em}}
     \renewcommand*\l@table{\@dottedtocline{0}{1.5em}{4.3em}}
     \renewcommand{\@dotsep}{10000}
-\makeatother
+%\makeatother % removed V-06 (fix issue 16)
 \end_preamble
 \options liststotoc,chapterprefix,tablecaptionabove,bibtotoc,headings=small,numbers=noenddot
 \use_default_options true
@@ -1427,11 +1427,128 @@ Sheet metal forming is one of the most widely used manufacturing processes
 \end_layout
 
 \begin_layout Standard
+Subfigures are shown in 
+\begin_inset CommandInset ref
+LatexCommand prettyref
+reference "fig:Example-1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand prettyref
+reference "fig:Example-2"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename sample.png
+	width 40col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example 1
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Example-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename sample.png
+	width 40col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example 2
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Example-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
