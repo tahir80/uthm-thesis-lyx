@@ -191,11 +191,7 @@ koma-script
 \family default
 , 
 \family typewriter
-fancy
-\family default
-hdr
-\family typewriter
-
+fancyhdr
 \begin_inset Index idx
 status open
 
@@ -303,6 +299,16 @@ status open
 LaTeX package !
 \family typewriter
 prettyref
+\end_layout
+
+\end_inset
+
+, nomencl
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+LaTeX package !nomencl
 \end_layout
 
 \end_inset
@@ -905,20 +911,24 @@ Document Settings!PDF properties
 LyX has already included 
 \family typewriter
 hyperref
+\family default
+ 
+\family typewriter
+
 \begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-
+LaTeX package !
 \family typewriter
-LaTeX package ! hyperref
+hyperref
 \end_layout
 
 \end_inset
 
 
 \family default
- LaTeX package when you install LyX.
+LaTeX package when you install LyX.
  What you need to do is just activating this package.
  Go to menu 
 \family sans
@@ -1155,7 +1165,7 @@ X preamble
 
 \end_inset
 
-, acessable from the menu 
+, accessible from the menu 
 \family sans
 Document
 \family default
@@ -1175,6 +1185,18 @@ status open
 X preamble
 \family default
 .
+ You can find the complete LaTe
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+X preamble in the template.
+ 
 \begin_inset VSpace medskip
 \end_inset
 
@@ -1960,6 +1982,11 @@ height "1pt"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\noindent
 By default the document class book
 \begin_inset space \thinspace{}
 \end_inset
@@ -4314,8 +4341,7 @@ http://uthm-thesis-lyx.googlecode.com/svn
 \end_inset
 
 .
- If you want have a check-in access (required password), you need to use
- 
+ If you want a check-in access (required password), you need to use 
 \family typewriter
 https
 \family default
@@ -4742,6 +4768,303 @@ Checkin Changes
 \begin_inset Graphics
 	filename manual-figures/lyx-checkin.png
 	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+User information
+\end_layout
+
+\begin_layout Standard
+Since version 0.6 user information is used and placed in the beginning of
+ the thesis template.
+ The thesis author is only required to complete the information in the beginning
+ of the thesis template.
+ 
+\end_layout
+
+\begin_layout Standard
+The information that should be written are: title of the thesis line one
+ (
+\family typewriter
+
+\backslash
+titlelineone
+\family default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+titlelineone
+\end_layout
+
+\end_inset
+
+), title of the thesis line two (
+\family typewriter
+
+\backslash
+titlelinetwo
+\family default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+titlelinetwo
+\end_layout
+
+\end_inset
+
+), author's name (
+\family typewriter
+
+\backslash
+studentname
+\family default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+studentname
+\end_layout
+
+\end_inset
+
+), student's number (
+\family typewriter
+
+\backslash
+studentno
+\family default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+studentno
+\end_layout
+
+\end_inset
+
+), supervisor's name (
+\family typewriter
+
+\backslash
+supervisor
+\family default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+supervisor
+\end_layout
+
+\end_inset
+
+), co-supervisor's name (
+\family typewriter
+
+\backslash
+cosupervisor
+\family default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+cosupervisor
+\end_layout
+
+\end_inset
+
+), name of faculty (
+\family typewriter
+
+\backslash
+faculty
+\family default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+faculty
+\end_layout
+
+\end_inset
+
+), name of university (
+\family typewriter
+
+\backslash
+university
+\family default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+university
+\end_layout
+
+\end_inset
+
+), name of city (
+\family typewriter
+
+\backslash
+loccity
+\family default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+loccity
+\end_layout
+
+\end_inset
+
+), name of country (
+\family typewriter
+
+\backslash
+loccountry
+\family default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+loccountry
+\end_layout
+
+\end_inset
+
+), degree (
+\family typewriter
+
+\backslash
+degree
+\family default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+degree
+\end_layout
+
+\end_inset
+
+), date of submission (
+\family typewriter
+
+\backslash
+submitdate
+\family default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+submitdate
+\end_layout
+
+\end_inset
+
+), month of submission (
+\family typewriter
+
+\backslash
+submitmonth
+\family default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+submitmonth
+\end_layout
+
+\end_inset
+
+) and year of submission (
+\family typewriter
+
+\backslash
+submityear
+\family default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+submityear
+\end_layout
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+If the information is not used don't delete the line, it can be a blank
+ value.
+ For example, there is no co-supervisor, just use an empty value.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+
+\backslash
+newcommand{
+\backslash
+cosupervisor}{}
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename manual-figures/user-information.png
+	width 60col%
 
 \end_inset
 
