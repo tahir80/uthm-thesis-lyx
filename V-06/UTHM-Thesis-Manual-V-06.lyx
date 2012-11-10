@@ -1,5 +1,5 @@
-#LyX 1.6.10 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass article
@@ -12,18 +12,26 @@
   {LyX}}
 \end_preamble
 \use_default_options true
+\maintain_unincluded_children false
 \language english
+\language_package default
 \inputencoding auto
+\fontencoding global
 \font_roman lmodern
 \font_sans lmss
 \font_typewriter lmtt
 \font_default_family rmdefault
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
 
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize default
 \spacing single
 \use_hyperref true
@@ -42,9 +50,18 @@
 \use_geometry true
 \use_amsmath 1
 \use_esint 1
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
 \leftmargin 3cm
 \topmargin 3cm
 \rightmargin 2.5cm
@@ -52,21 +69,22 @@
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\defskip medskip
+\paragraph_indentation default
 \quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
 
 \begin_layout Title
-User's Manual - UTHM thesis template Version 0.5
+User's Manual - UTHM thesis template Version 0.6
 \begin_inset Newline newline
 \end_inset
 
@@ -158,7 +176,7 @@ To be able to write your thesis using LyX, you have to make sure your LaTeX
 The required packages: 
 \family typewriter
 koma-script
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -178,7 +196,7 @@ fancy
 hdr
 \family typewriter
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -194,7 +212,7 @@ fancyhdr
 , 
 \family typewriter
 caption
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -206,7 +224,7 @@ caption
 \end_inset
 
 , kluwer
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -222,7 +240,7 @@ kluwer
 (
 \family typewriter
 klunamed
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -238,7 +256,7 @@ klunamed
 and
 \family typewriter
  klunum
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -254,7 +272,7 @@ klunum
 )
 \family typewriter
 , tocloft
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -266,7 +284,7 @@ tocloft
 \end_inset
 
 , minitoc
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -278,7 +296,7 @@ minitoc
 \end_inset
 
 , prettyref
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -295,7 +313,7 @@ prettyref
  The installation of any LaTeX package should be done from the LaTeX distributio
 n.
  If you are running Ubuntu
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -305,7 +323,7 @@ Operating system!Ubuntu
 \end_inset
 
 , you can install from Synaptic package manager where TexLive
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -316,7 +334,7 @@ LaTeX distribution!TexLive
 
  optional packages can be selected.
  For Windows
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -326,7 +344,7 @@ Operating system!Windows
 \end_inset
 
  users, you should install from MikTeX
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -381,7 +399,7 @@ book
 \family default
 .
  In order to employ this document class
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -432,7 +450,7 @@ In the custom field, write the optional command:
 listtotoc
 \family default
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -446,7 +464,7 @@ koma-script option!listtotoc
 chapterprefix
 \family default
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -460,7 +478,7 @@ koma-script option!chapterprefix
 tablecaptionabove
 \family default
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -474,7 +492,7 @@ koma-script option!tablecaptionabove
 bibtotoc
 \family default
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -488,7 +506,7 @@ koma-script option!bibtotoc
 parskip=full
 \family default
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -502,7 +520,7 @@ koma-script option!parskip=full
 headings=small
 \family default
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -516,7 +534,7 @@ koma-script option!headings=small
 numbers=noenddot
 \family default
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -661,7 +679,7 @@ Fonts
 The standard UTHM thesis is written in standard Roman font with base size
  of 12.
  The font setting
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -704,7 +722,7 @@ Text layout
 
 \begin_layout Standard
 The line spacing of the text
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -749,7 +767,7 @@ name "sub:Page-layout"
 
 \begin_layout Standard
 The thesis should be printed in A4 size paper
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -781,7 +799,7 @@ fancy
  This fancy style requires 
 \family typewriter
 fancyhdr
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -814,7 +832,7 @@ Page margins
 
 \begin_layout Standard
 The default page margin
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -871,7 +889,7 @@ PDF properties
 Your pdf output can be nice with all links active, which means the table
  of contents links to the corresponding pages in the document.
  Other links within the document
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -887,7 +905,7 @@ Document Settings!PDF properties
 LyX has already included 
 \family typewriter
 hyperref
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -988,7 +1006,7 @@ black
 \end_inset
 
 .
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -998,7 +1016,7 @@ citecolor
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1008,7 +1026,7 @@ urlcolor
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1018,7 +1036,7 @@ pdfstartview
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1118,7 +1136,7 @@ name "sec:LaTeX-Preamble"
 \begin_layout Standard
 The next step to prepare the thesis template is writing some additional
  command in LaTeX preamble
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1165,7 +1183,7 @@ X preamble
 \end_inset
 
 The complete commands written in LaTeX preamble are as follows:
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1177,7 +1195,7 @@ date
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1189,7 +1207,7 @@ setlength
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1201,7 +1219,7 @@ parindent
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1213,7 +1231,7 @@ AtBeginDocument
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1225,7 +1243,7 @@ renewcommand
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1237,7 +1255,7 @@ bibname
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1249,7 +1267,7 @@ addtokomafont
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1261,7 +1279,7 @@ centering
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1273,7 +1291,7 @@ lhead
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1285,7 +1303,7 @@ chead
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1297,7 +1315,7 @@ lfoot
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1309,7 +1327,7 @@ cfoot
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1321,7 +1339,7 @@ rfoot
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1333,7 +1351,7 @@ headrulewidth
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1345,7 +1363,7 @@ chapterheadendvskip
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1357,7 +1375,7 @@ chapterheadstartvskip
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1369,7 +1387,7 @@ vspace
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1381,7 +1399,7 @@ renewcommand*
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -1393,7 +1411,18 @@ usepackage{tocloft}
 \end_inset
 
 
-\lyxline
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100line%"
+height "1pt"
+
+\end_inset
+
 
 \end_layout
 
@@ -1922,8 +1951,15 @@ ref{#1})}}
 \end_layout
 
 \begin_layout Standard
+\noindent
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100line%"
+height "1pt"
 
-\lyxline
+\end_inset
+
 By default the document class book
 \begin_inset space \thinspace{}
 \end_inset
@@ -2121,7 +2157,7 @@ reference "sub:Page-layout"
 
 ).
  Write the following commands:
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2133,7 +2169,7 @@ lhead
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2145,7 +2181,7 @@ chead
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2157,7 +2193,7 @@ rhead
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2169,7 +2205,7 @@ lfoot
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2181,7 +2217,7 @@ cfoot
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2310,7 +2346,7 @@ The settings of TOC, LOF and LOT are controlled by
 tocloft
 \family default
  package.
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2322,7 +2358,7 @@ chapterheadendvskip
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2724,7 +2760,7 @@ The format style of appendix is a bit different with the chapter format.
 \begin_layout Standard
 After the References heading, TeX commands must be inserted to define the
  vertical space, before and after the appendix heading:
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2736,7 +2772,7 @@ chapterheadendvskip
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2806,7 +2842,7 @@ The contents of Appendices are listed in a separate List of Appendices.
 tocloft
 \family default
  command:
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2840,7 +2876,7 @@ newlistof{appendices}{loa}{List of Appendices}
 
 \begin_layout Standard
 The format setting of the heading is consistent with LOF and LOT:
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2852,7 +2888,7 @@ cftloatitlefont
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2864,7 +2900,7 @@ cftafterloatitle
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2876,7 +2912,7 @@ cftafterloatitleskip
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -2954,7 +2990,7 @@ loa
 \family default
 .
  
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3198,7 +3234,7 @@ status open
 \end_inset
 
 X preamble, but right after the appendix definition.
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3247,7 +3283,7 @@ prettyref
  
 \family typewriter
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3329,7 +3365,7 @@ ref{#1})}}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3341,7 +3377,7 @@ usepackage{prettyref}
 \end_inset
 
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3375,7 +3411,7 @@ Cross-reference
 Formatted reference
 \family default
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3406,7 +3442,7 @@ Bibliography
 \begin_layout Standard
 There are two template versions available.
  One has numeric bibliography
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3416,7 +3452,7 @@ bibliography
 \end_inset
 
  
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3438,7 +3474,7 @@ UTHM-Thesis-authoryear-V-xx.lyx
 
 \begin_layout Subsection
 Numerical
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3448,7 +3484,7 @@ Numerical
 \end_inset
 
  bibliography style
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3490,7 +3526,7 @@ klunum
  The package 
 \family typewriter
 klunum
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3511,7 +3547,7 @@ klunum
 For Ubuntu users, 
 \family typewriter
 kluwer
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3530,7 +3566,7 @@ kluwer
 texlive-publishers
 \family default
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3545,7 +3581,7 @@ texlive-publishers
 kluwer
 \family default
  package must be installed from MikTeX
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3559,7 +3595,7 @@ MikTeX
 
 \begin_layout Subsection
 Author-year
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3601,7 +3637,7 @@ amed
  The package 
 \family typewriter
 klunamed
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3645,7 +3681,7 @@ Natbib (author-year).
 
 \begin_layout Standard
 Please note in V-04, the style has been changed and used a 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3656,7 +3692,7 @@ customized style
 
 customized style.
  The file of this bibliography style
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3694,7 +3730,7 @@ Citation
 \family default
 .
  The citation
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3803,7 +3839,7 @@ There are various of opensource GUI subversions available.
  
 \family sans
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3826,7 +3862,7 @@ reference "sub:Working-with-PySVN"
 ) for Ubuntu and 
 \family sans
 
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -3959,7 +3995,7 @@ UTHM-Thesis-Manual-V-xx.lyx
 UTHM-Thesis-V-xx.lyx
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \family typewriter
@@ -3976,7 +4012,7 @@ thesis.bib
 sample.png
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \family typewriter
@@ -3996,7 +4032,7 @@ sample.png.
 In this template, TOC is written in a fancy style
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \family typewriter
@@ -4005,7 +4041,7 @@ UTHM-Thesis-authoryear-BM-V-xx.lyx
 is the author-year thesis template in Bahasa Melayu
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \family typewriter
@@ -4015,7 +4051,7 @@ is the author-year thesis template in Bahasa Melayu.
  In this template, TOC is written in a fancy style
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \family typewriter
@@ -4032,7 +4068,7 @@ thesis.bib
 sample.png
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \family typewriter
@@ -4045,7 +4081,7 @@ is this document.
 manual-figures
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \family typewriter
@@ -4054,7 +4090,7 @@ UTHM-ref-style-V-xx.bst
 is the biblography style used in author-year version
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \family typewriter
@@ -4063,7 +4099,7 @@ CHANGELOG
  is where modifications are recorded
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \family typewriter
@@ -4072,7 +4108,7 @@ README
  is a general information of the thesis template
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \family typewriter
@@ -4081,7 +4117,7 @@ CREDITS
  is a document where all contributors are listed
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \family typewriter
@@ -4090,7 +4126,7 @@ LICENSE
  provides the license information used for this lyx thesis template
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \family typewriter
@@ -4099,7 +4135,7 @@ manual-figures
  is a folder containing all figures used by the manual (this document)
 \end_layout
 
-\begin_layout List
+\begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \family typewriter
@@ -4107,7 +4143,7 @@ thesis.bib
 \family default
  is a bibliography database file where all bibliography data are documented.
  The format follows the standard BibTeX
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -4118,7 +4154,7 @@ BibTeX
 
  format.
  A reference manager
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -4130,7 +4166,7 @@ reference manager
  
 \family sans
 JabRef
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -4144,7 +4180,7 @@ JabRef
 
 \family default
  is a useful tool to prepare BibTeX database
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -4158,7 +4194,7 @@ BibTeX database
 
 \begin_layout Subsection
 Working with SVN Workbench (Ubuntu)
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -4489,7 +4525,7 @@ reference "sub:LyX-version-control"
 
 \begin_layout Subsection
 Working with TortoiseSVN (Windows)
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -4728,6 +4764,30 @@ name "sec:Modification-records"
 \end_layout
 
 \begin_layout Standard
+Version 0.6: (release date here)
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> Add global information
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> Rename UTHM-Thesis-V-06 to UTHM-Thesis-numerical-V-06
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> Page numbers in front matter are set at centre bottom page
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> fix subfigure error in classic style
+\end_layout
+
+\begin_layout Itemize
+<was.uthm> add Vitae in the last part of the thesis
+\end_layout
+
+\begin_layout Standard
 Version 0.5: (1-Januari-2012) 
 \end_layout
 
@@ -4828,7 +4888,7 @@ Version 0.3: (8-October-2010)
 
 \begin_layout Itemize
 <was.uthm, Agus Anggono> automatic cross references
-\begin_inset Index
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
@@ -4887,6 +4947,7 @@ Version 0.1: (23-September-2010)
 \begin_layout Standard
 \begin_inset CommandInset index_print
 LatexCommand printindex
+type "idx"
 
 \end_inset
 
