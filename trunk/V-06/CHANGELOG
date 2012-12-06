@@ -3,7 +3,7 @@ Version 0.6: (release date)
 <was.uthm> Rename UTHM-Thesis-V-06 to UTHM-Thesis-numerical-V-06
 <was.uthm> Page numbers in front matter are set at centre bottom page
 <was.uthm> fix subfigure error in classic style
-<was.uthm> add vitae in the last part of the thesis
+<was.uthm> add vitae in the last part of the thesis (author-year and numerical)
 
 Version 0.5: (1-Januari-2012)
 <was.uthm> Use smaller vertical space between items in List of Symbols
