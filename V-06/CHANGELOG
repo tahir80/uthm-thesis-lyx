@@ -4,6 +4,8 @@ Version 0.6: (release date)
 <was.uthm> Page numbers in front matter are set at centre bottom page
 <was.uthm> fix subfigure error in classic style
 <was.uthm> add vitae in the last part of the thesis (author-year and numerical)
+<was.uthm> fix incorrect indentation in long chapter/section/subsection
+<arhami>   adjust line spacing in chapter heading
 
 Version 0.5: (1-Januari-2012)
 <was.uthm> Use smaller vertical space between items in List of Symbols
