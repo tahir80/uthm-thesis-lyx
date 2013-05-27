@@ -83,7 +83,8 @@
 
 \renewcommand{\cftchappresnum}{Chapter }
 \renewcommand{\cftchapaftersnum}{}
-\renewcommand{\cftchapaftersnumb}{\qquad\quad\,\,}
+%\renewcommand{\cftchapaftersnumb}{\qquad\quad\,\,}
+\cftsetindents{chap}{0cm}{2.2cm}
 %\renewcommand{\cftsecpresnum}{\qquad\quad\,\,\,\, }
 \cftsetindents{section}{2.2cm}{1.1cm}
 %\renewcommand{\cftsubsecpresnum}{\qquad\quad\,\,\,\,\,\, } %v-06
@@ -1285,9 +1286,7 @@ renewcommand{
 \backslash
 cftchapaftersnumb}{
 \backslash
-qquad
-\backslash
-qquad}
+quad}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1968,7 +1967,8 @@ ff
 \end_layout
 
 \begin_layout Chapter
-Title of Chapter 4
+Title of Chapter 4 long long long long long long long long long long long
+ chapter
 \end_layout
 
 \begin_layout Standard
