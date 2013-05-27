@@ -142,6 +142,22 @@
     \renewcommand*\l@table{\@dottedtocline{0}{1.5em}{4.3em}}
     \renewcommand{\@dotsep}{10000}
 %\makeatother % removed V-06 (fix issue 16)
+
+%Adjusting the line spacing of chapter headings in the book/report class
+\renewcommand\@makechapterhead[1]{%
+  \vspace*{2.5cm}%
+  {\parindent \z@ \raggedright\normalfont
+    \ifnum \c@secnumdepth >\m@ne
+        \Large\bfseries \@chapapp\space \centering\thechapter
+        \par\nobreak
+        \vskip 60\p@
+    \fi
+    \interlinepenalty\@M
+    \Large
+    \renewcommand{\baselinestretch}{0.85}
+     \bfseries #1\par\nobreak
+    \vskip 58\p@
+  }}
 \end_preamble
 \options liststotoc,chapterprefix,tablecaptionabove,bibtotoc,headings=small,numbers=noenddot
 \use_default_options true
