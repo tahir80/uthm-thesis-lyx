@@ -485,6 +485,8 @@ titlelinetwo
 \end_layout
 
 \begin_layout Author
+
+\series bold
 \begin_inset ERT
 status open
 
@@ -497,6 +499,8 @@ studentname
 
 \end_inset
 
+
+\series default
 
 \begin_inset VSpace 2.5cm
 \end_inset
@@ -667,7 +671,7 @@ status open
 \backslash
 titlelineone
 \backslash
-;
+,
 \backslash
 titlelinetwo
 \end_layout
