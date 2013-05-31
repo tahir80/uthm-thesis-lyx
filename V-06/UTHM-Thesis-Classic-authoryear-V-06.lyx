@@ -100,6 +100,9 @@
 \newrefformat{tab}{Table\,\ref{#1}}
 \newrefformat{fig}{Figure\,\ref{#1}}
 \newrefformat{eq}{Eq.\,\textup{(\ref{#1})}}
+\newrefformat{chap}{Chapter\,\ref{#1}}
+\newrefformat{sec}{Section\,\ref{#1}}
+\newrefformat{sub}{Section\,\ref{#1}}
 
 %To remove extra vertical space in List of Symbols [added in V-05]
 %\setlength{\nomitemsep}{-2\parsep}   % another alternative 
