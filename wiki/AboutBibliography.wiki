@@ -43,5 +43,5 @@ The following are general mistakes in bibliography database (saved in thesis.bib
 
   wrong: EasyFEM An object-oriented graphics interface finite element<br>
   why wrong: In the reference list it will be changed to "Easyfem ...."<br>
-  <b>correct:<b> {EasyFEM} An object-oriented graphics interface finite element<br>
+  correct: {EasyFEM} An object-oriented graphics interface finite element<br>
   why correct: use a protection { }. Any word under { } will be written in the reference as it is <br>
