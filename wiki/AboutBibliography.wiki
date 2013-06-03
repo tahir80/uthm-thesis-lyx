@@ -8,7 +8,7 @@ The following are general mistakes in bibliography database (saved in thesis.bib
   wrong: Xuechun Li, Yuying Yang, Yongzhi Wang, Jun Bao, and Shunping Li <br>
   wrong: Xuechun Li; Yuying Yang; Yongzhi Wang; Jun Bao ; Shunping Li <br>
   wrong: Xuechun Li; Yuying Yang; Yongzhi Wang, Jun Bao & Shunping Li <br>
-  correct: Xuechun Li and Yuying Yang and Yongzhi Wang and Jun Bao and Shunping Li <br>
+  *correct:* Xuechun Li and Yuying Yang and Yongzhi Wang and Jun Bao and Shunping Li <br>
 
 *2. Comma "," character in the author field has a special meaning, but you do not know that*
 
@@ -21,14 +21,14 @@ The following are general mistakes in bibliography database (saved in thesis.bib
 
 *3. You are not using space after "." for author's initial. This will consider as one word*
 
-  || wrong: || W.A. Siswanto and B. Omar ||
-  || why wrong: || W.A without space after W. ||
-  || wrong: || Wei Gan and R.H. Wagoner ||
-  ||why wrong: || R.H will be considered as one word ||
-  ||wrong: ||Wei Gan and RH Wagoner ||
-  ||why wrong: ||RH will be considered as one name||
-  ||correct: ||Wei Gan and R. H. Wagoner ||
-  ||why correct: || R. and H. will be considered as two names correctly ||
+  wrong:  W.A. Siswanto and B. Omar <br>
+  why wrong: W.A without space after W. <br>
+  wrong: Wei Gan and R.H. Wagoner <br>
+  why wrong:  R.H will be considered as one word <br>
+  wrong: Wei Gan and RH Wagoner <br>
+  why wrong: RH will be considered as one name <br>
+  correct: Wei Gan and R. H. Wagoner <br>
+  why correct:  R. and H. will be considered as two names correctly <br>
 
 *4. Copying pages directly from internet source and paste it into the page field in jabref*
 
