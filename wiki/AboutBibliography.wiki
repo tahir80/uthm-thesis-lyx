@@ -20,7 +20,7 @@ The following are general mistakes in bibliography database (saved in thesis.bib
   with this: Siswanto, W.A and Omar, B. <br>
 
 == 3. You are not using space after "." for author's initial. This will consider as one word.==
-
+  || *Comments* || *Author field* ||
   || wrong: || W.A. Siswanto and B. Omar ||
   || why wrong: || W.A without space after W. ||
   || wrong: || Wei Gan and R.H. Wagoner ||
