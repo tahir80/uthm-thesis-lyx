@@ -1,0 +1,16 @@
+#summary Suggestion in Setting Graphics
+= Suggestionin Setting Graphics =
+
+*It is not recommended using scale graphis.* <br>
+If you set Scale Graphics, you need to preview pdf several times until you get the best scaling.
+  
+http://jkm.myconferences.org/bheifabi.png
+
+*Using the Set Width (Column Width %) is the recommended one.*<br>
+What you have to do is just to set the percentage of the image will occupy the column page.<br>
+The result will be accurate, you do not need to try several times.
+
+http://jkm.myconferences.org/icdiihef.png
+
+
+
