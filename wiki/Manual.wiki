@@ -1,5 +1,5 @@
 #summary Documentation
-= Access uthm-thesis-template documentation
+= Access uthm-thesis-template documentation =
 Please visit here to read the online User's Manual:
 
 [http://sites.google.com/site/lyxthesistemplate]
