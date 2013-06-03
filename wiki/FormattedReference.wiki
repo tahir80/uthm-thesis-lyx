@@ -2,7 +2,7 @@
 = Using Formatted Reference for cross-refencing =
 
 *Common mistake: Maually type Figure, or Table then using `<reference>` in cross-referencing* <br>
- The thesis-template has already predefined prefixed, so users do not need to type manually.<br>
+ The thesis-template has already predefined prefixes, so users do not need to type manually.<br>
   
    http://jkm.myconferences.org/ddecdgbg.png
 
