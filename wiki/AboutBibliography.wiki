@@ -3,7 +3,7 @@
 
 The following are general mistakes in bibliography database (saved in thesis.bib).
 
-*1. Each author is not separated by "and", but use , or ; or & *
+*1. Each author must be separated by "and", don't use "," or ";" or "&" *
 
   wrong: Xuechun Li, Yuying Yang, Yongzhi Wang, Jun Bao, and Shunping Li <br>
   wrong: Xuechun Li; Yuying Yang; Yongzhi Wang; Jun Bao ; Shunping Li <br>
