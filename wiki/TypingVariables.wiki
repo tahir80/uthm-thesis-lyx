@@ -1,0 +1,18 @@
+#summary Common mistake when typing variables
+= Typing mathematical variables should be in math mode =
+
+*Common mistake: typing a mathematical variable in standard font* <br>
+  
+   http://jkm.myconferences.org/ijeafhaf.png
+
+What's the problem: when you have a mathematical equation typed in standard font, the variable in your text is not consistent with the variables written in your equation<br>
+The correct way: Make sure you use math mode when typing a variable.<br>
+
+   http://jkm.myconferences.org/jdfdjfje.png
+   
+The mathematical variables should appear:<br>
+   
+   http://jkm.myconferences.org/ajjfeggf.png
+
+tips: If you have typed E in normal font, just mark E then click the math mode icon (sigma icon). It will convert E to the correct math variable.
+
