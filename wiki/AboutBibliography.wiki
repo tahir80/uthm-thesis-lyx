@@ -8,7 +8,7 @@ The following are general mistakes in bibliography database (saved in thesis.bib
   wrong: Xuechun Li, Yuying Yang, Yongzhi Wang, Jun Bao, and Shunping Li <br>
   wrong: Xuechun Li; Yuying Yang; Yongzhi Wang; Jun Bao ; Shunping Li <br>
   wrong: Xuechun Li; Yuying Yang; Yongzhi Wang, Jun Bao & Shunping Li <br>
-  *correct:* Xuechun Li and Yuying Yang and Yongzhi Wang and Jun Bao and Shunping Li <br>
+  correct: Xuechun Li and Yuying Yang and Yongzhi Wang and Jun Bao and Shunping Li <br>
 
 *2. Comma "," character in the author field has a special meaning, but you do not know that*
 
