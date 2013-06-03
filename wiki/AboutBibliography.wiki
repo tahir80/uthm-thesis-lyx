@@ -5,19 +5,19 @@ The following are general mistakes in bibliography database (saved in thesis.bib
 
 == 1. Each author is not separated by "and", but use , or ; or & ==
 
-  wrong: Xuechun Li, Yuying Yang, Yongzhi Wang, Jun Bao, and Shunping Li
-  wrong: Xuechun Li; Yuying Yang; Yongzhi Wang; Jun Bao ; Shunping Li
-  wrong: Xuechun Li; Yuying Yang; Yongzhi Wang, Jun Bao & Shunping Li
-  correct: Xuechun Li and Yuying Yang and Yongzhi Wang and Jun Bao and Shunping Li
+  wrong: Xuechun Li, Yuying Yang, Yongzhi Wang, Jun Bao, and Shunping Li <br>
+  wrong: Xuechun Li; Yuying Yang; Yongzhi Wang; Jun Bao ; Shunping Li <br>
+  wrong: Xuechun Li; Yuying Yang; Yongzhi Wang, Jun Bao & Shunping Li <br>
+  *correct:* Xuechun Li and Yuying Yang and Yongzhi Wang and Jun Bao and Shunping Li <br>
 
 == 2. Comma "," character in the author field has a special meaning, but you do not know that.==
 
-  You can write this: Xuechun Li and Yuying Yang and Yongzhi Wang and Jun Bao and Shunping Li
-  with this: Li, Xuechun and Yang, Yuying and Yongzhi Wang and Jun Bao and Shunping Li
-  You can write this: Waluyo Adi Siswanto and Badrul Omar
-  with this: Siswanto, Waluyo Adi and Omar, Badrul
-  You can write this : W. A. Siswanto and B. Omar
-  with this: Siswanto, W.A and Omar, B.
+  You can write this: Xuechun Li and Yuying Yang and Yongzhi Wang and Jun Bao and Shunping Li <br>
+  with this: Li, Xuechun and Yang, Yuying and Yongzhi Wang and Jun Bao and Shunping Li <br>
+  You can write this: Waluyo Adi Siswanto and Badrul Omar <br>
+  with this: Siswanto, Waluyo Adi and Omar, Badrul <br>
+  You can write this : W. A. Siswanto and B. Omar <br>
+  with this: Siswanto, W.A and Omar, B. <br>
 
 == 3. You are not using space after "." for author's initial. This will consider as one word.==
 
@@ -27,21 +27,21 @@ The following are general mistakes in bibliography database (saved in thesis.bib
   why wrong: R.H will be considered as one word<br>
   wrong: Wei Gan and RH Wagoner <br>
   why wrong: RH will be considered as one name<br>
-  correct: Wei Gan and R. H. Wagoner <br>
+  *correct:* Wei Gan and R. H. Wagoner <br>
   why correct: R. and H. will be considered as two names correctly<br>
 
 == 4. Copying pages directly from internet source and paste it into the page field in jabref. ==
 
-  wrong: 1097–1113
-  why wrong: I copied from the internet the page information and pasted it to the page field in jabref. If you compile pdf, you will get an error. The character between the two pages is not plain ascii format.
-  correct: 1097-1113
-  why correct: using the "dash" character from the keyboard
-  correct: 1097--1113
-  why correct: using "dash" twice. This is also a correct way in Jabref.
+  wrong: 1097–1113 <br>
+  why wrong: I copied from the internet the page information and pasted it to the page field in jabref. If you compile pdf, you will get an error. The character between the two pages is not plain ascii format.<br>
+  *correct:* 1097-1113<br>
+  why correct: using the "dash" character from the keyboard<br>
+  *correct:* 1097--1113<br>
+  why correct: using "dash" twice. This is also a correct way in Jabref.<br>
 
 == 5. Special capital word in the title should be maintain as it appears in the original ==
 
-  wrong: EasyFEM An object-oriented graphics interface finite element
-  why wrong: In the reference list it will be changed to "Easyfem ...."
-  correct: {EasyFEM} An object-oriented graphics interface finite element
-  why correct: use a protection { }. Any word under { } will be written in the reference as it is 
+  wrong: EasyFEM An object-oriented graphics interface finite element<br>
+  why wrong: In the reference list it will be changed to "Easyfem ...."<br>
+  *correct:* {EasyFEM} An object-oriented graphics interface finite element<br>
+  why correct: use a protection { }. Any word under { } will be written in the reference as it is <br>
