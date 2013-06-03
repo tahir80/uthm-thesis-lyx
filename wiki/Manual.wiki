@@ -1,4 +1,5 @@
 #summary Documentation
+#labels Featured
 = Access uthm-thesis-template documentation =
 Please visit here to read the online User's Manual:
 
