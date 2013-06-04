@@ -1,6 +1,16 @@
 #summary Documentation
 #labels Featured
 = Access uthm-thesis-template documentation =
-Please visit here to read the online User's Manual:
 
-[http://sites.google.com/site/lyxthesistemplate]
+Some useful tips and notes are documented in 
+[https://code.google.com/p/uthm-thesis-lyx/w/list uthm-thesis-lyx Wiki].<br> 
+You can share your experience and put comments on the relevant topic.
+
+Please visit  the  
+[http://sites.google.com/site/lyxthesistemplate Online User's Manual] if you would like to read detail information. <br>
+
+
+
+-----
+_maintainer: was.uthm(at)gmail.com_
+-----
