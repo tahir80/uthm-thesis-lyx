@@ -34,7 +34,7 @@ The following are general mistakes in bibliography database (saved in thesis.bib
 
 *4. Copying pages directly from internet source and paste it into the page field in jabref*
 
-  wrong: 1097–1113 <br>
+  wrong: 1097ï¿½1113 <br>
   why wrong: I copied from the internet the page information and pasted it to the page field in jabref. If you compile pdf, you will get an error. The character between the two pages is not plain ascii format.<br>
   correct: 1097-1113<br>
   why correct: using the "dash" character from the keyboard<br>
@@ -47,3 +47,7 @@ The following are general mistakes in bibliography database (saved in thesis.bib
   why wrong: In the reference list it will be changed to "Easyfem ...."<br>
   correct: {EasyFEM} An object-oriented graphics interface finite element<br>
   why correct: use a protection { }. Any word under { } will be written in the reference as it is <br>
+-----
+Back to 
+[https://code.google.com/p/uthm-thesis-lyx/w/list uthm-thesis-lyx Wiki List].
+-----
