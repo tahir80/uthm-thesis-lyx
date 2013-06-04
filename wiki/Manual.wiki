@@ -1,6 +1,6 @@
 #summary Documentation
 #labels Featured
-= Access uthm-thesis-template documentation =
+= Access uthm-thesis-lyx template documentation =
 
 Some useful tips and notes are documented in 
 [https://code.google.com/p/uthm-thesis-lyx/w/list uthm-thesis-lyx Wiki].<br> 
