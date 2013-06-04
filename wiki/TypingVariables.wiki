@@ -16,3 +16,8 @@ The mathematical variables should appear:<br>
 
 tips: If you have typed E in normal font, just mark E then click the math mode icon (sigma icon). It will convert E to the correct math variable.
 
+
+-----
+Back to 
+[https://code.google.com/p/uthm-thesis-lyx/w/list uthm-thesis-lyx Wiki List].
+-----
