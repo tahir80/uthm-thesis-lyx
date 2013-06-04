@@ -12,5 +12,7 @@ The result will be accurate, you do not need to try several times.<br>
 
    http://jkm.myconferences.org/icdiihef.png
 
-
-
+-----
+Back to 
+[https://code.google.com/p/uthm-thesis-lyx/w/list uthm-thesis-lyx Wiki List].
+-----
