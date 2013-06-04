@@ -12,4 +12,7 @@ The link should be simple<br>
    
    http://jkm.myconferences.org/gccgihaj.png
 
-
+-----
+Back to 
+[https://code.google.com/p/uthm-thesis-lyx/w/list uthm-thesis-lyx Wiki List].
+-----
