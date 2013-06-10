@@ -20,10 +20,16 @@
 % if you want to modify change the value 1.27cm to your preference
 \setlength{\parindent}{1.27cm}
 
-%This command will change the default Bibliography to References
+%This command will change the default Bibliography to References,
+%Nomenclature to List of Symbols
+%Change the format of subfigure from 1a to 1(a)
 \AtBeginDocument{
         \renewcommand{\bibname}{References}
         \renewcommand{\nomname}{List of Symbols}
+        \renewcommand{\theenumii}{(\alph{enumii})}
+        \renewcommand{\labelenumii}{\theenumii}
+        \renewcommand\thesubfigure{(\alph{subfigure})}
+        \captionsetup[subfigure]{labelformat=simple}
 }
 
 %The following comands center the heading of chapters and
@@ -103,6 +109,7 @@
 \newrefformat{chap}{Chapter\,\ref{#1}}
 \newrefformat{sec}{Section\,\ref{#1}}
 \newrefformat{sub}{Section\,\ref{#1}}
+\newrefformat{enu}{\ref{#1}}
 
 %To remove extra vertical space in List of Symbols [added in V-05]
 %\setlength{\nomitemsep}{-2\parsep}   % another alternative 
@@ -1513,7 +1520,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
