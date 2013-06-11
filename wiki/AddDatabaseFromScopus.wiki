@@ -14,7 +14,7 @@ http://jkm.myconferences.org/scopus-2.png
 
 -----
 == Step 3: Select export citation format BibTeX ==
-It is recommended to select the *_Abstract format_*. The abstract will be saved in your database. <br>
+It is recommended to select the *_Abstract format_*. The abstract will be included in your database. <br>
 Select the *_BibTeX_* format, then hit the *_Export_* button.<br>
 The exported file will be saved as *_scopus.bib_* file.
 
