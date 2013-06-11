@@ -1,5 +1,6 @@
 #summary Add database from ScienceDirect to thesis.bib
-== Step 1: Search articles from ScienceDirect ==
+
+== Step 1: Search articles from ScienceDirect==
 Type the keywords in *_All Fields_* and hit the *_Search_* button. <br>
 You can do advance searching to suit your preference.
 
