@@ -39,3 +39,8 @@ You will see the new articles in thesis.bib. Save your database. <br>
 Now you can cite them in your thesis text.
 
 http://jkm.myconferences.org/sciencedirect-6.png
+
+-----
+Back to 
+[https://code.google.com/p/uthm-thesis-lyx/w/list uthm-thesis-lyx Wiki List].
+-----
