@@ -14,8 +14,8 @@ http://jkm.myconferences.org/sciencedirect-2.png
 
 -----
 == Step 3: Select export citation format ==
-It is recommended to select the *_Citations Abstracts_*. The abstract will be save in your database. <br>
-Since JabRef can import RIS format, you can use the default format (RIS). The hit the *_Export_* button.<br>
+It is recommended to select the *_Citations Abstracts_*. The abstract will be included in your database. <br>
+Since JabRef can import RIS format, you can use the default format (RIS), then hit the *_Export_* button.<br>
 The exported file will be saved as *_science_* file.
 
 http://jkm.myconferences.org/sciencedirect-3.png
