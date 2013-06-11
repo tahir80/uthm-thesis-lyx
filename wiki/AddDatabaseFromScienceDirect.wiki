@@ -1,4 +1,41 @@
-# Add database from ScienceDirect to thesis.bib
-= Introduction =
+#summary Add database from ScienceDirect to thesis.bib
+== Step 1: Search articles from ScienceDirect ==
+Type the keywords in *_All Fields_* and hit the *_Search_* button. <br>
+You can do advance searching to suit your preference.
 
-Will be here ....
+http://jkm.myconferences.org/sciencedirect-1.png
+
+-----
+== Step 2: Select the articles that you want ==
+Thick the selected articles and click *_Export Citations_*. <br>
+
+http://jkm.myconferences.org/sciencedirect-2.png
+
+-----
+== Step 3: Select export citation format ==
+It is recommended to select the *_Citations Abstracts_*. The abstract will be save in your database. <br>
+Since JabRef can import RIS format, you can use the default format (RIS). The hit the *_Export_* button.<br>
+The exported file will be saved as *_science_* file.
+
+http://jkm.myconferences.org/sciencedirect-3.png
+
+-----
+== Step 4: Import to your thesis database (thesis.bib) ==
+Open your _thesis.bib_ file using JabReF.<br>
+From the menu *_File_*, select *_Import into current database_*. Find the exported *_science_* file.
+
+
+http://jkm.myconferences.org/sciencedirect-4.png
+
+-----
+== Step 5: Confirm to import into your database ==
+Select OK button to add new articles into your thesis.bib file.
+
+http://jkm.myconferences.org/sciencedirect-5.png
+
+-----
+== Step 6: You have added new articles in your thesis.bib ==
+You will see the new articles in thesis.bib. Save your database. <br>
+Now you can cite them in your thesis text.
+
+http://jkm.myconferences.org/sciencedirect-6.png
