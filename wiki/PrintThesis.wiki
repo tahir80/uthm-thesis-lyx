@@ -14,7 +14,7 @@ The printview pdf is not for printing, only for viewing purpose. <br><br>
 
 http://uthm-thesis-lyx.googlecode.com/svn/wiki/images/printpdf.png
 
-=== b. Open your the created pdf using your pdf reader software ===
+=== b. Open the created pdf using your pdf reader ===
 <br>
 
 === c. Setting the printer option ===
