@@ -21,3 +21,8 @@ http://uthm-thesis-lyx.googlecode.com/svn/wiki/images/printpdf.png
 Make sure you have the following settings:
  * Paper type : *A4* (The paper used for the thesis is A4, sometimes the default is letter)
  * Page Scaling : *None* (It is a common mistake to select "Fit to printable area", or "Shrink to printable area", or similar. Leave it at "None".)
+
+-----
+Back to 
+[https://code.google.com/p/uthm-thesis-lyx/w/list uthm-thesis-lyx Wiki List].
+-----
