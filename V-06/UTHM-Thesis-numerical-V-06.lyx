@@ -230,7 +230,16 @@ status open
 \backslash
 newcommand{
 \backslash
-titlelineone} {The Thesis Title Line One}
+titlelineone} 
+\end_layout
+
+\begin_layout Plain Layout
+
+{The Thesis Title Line One}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -239,7 +248,16 @@ titlelineone} {The Thesis Title Line One}
 \backslash
 newcommand{
 \backslash
-titlelinetwo} {Thesis Title Line Two}
+titlelinetwo}
+\end_layout
+
+\begin_layout Plain Layout
+
+{Thesis Title Line Two}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -248,7 +266,16 @@ titlelinetwo} {Thesis Title Line Two}
 \backslash
 newcommand{
 \backslash
-studentname}  {Fulan bin Fulan}
+studentname}
+\end_layout
+
+\begin_layout Plain Layout
+
+{Fulan bin Fulan}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -257,7 +284,16 @@ studentname}  {Fulan bin Fulan}
 \backslash
 newcommand{
 \backslash
-studentno}    {AD99999}
+studentno}
+\end_layout
+
+\begin_layout Plain Layout
+
+{AD99999}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -266,29 +302,38 @@ studentno}    {AD99999}
 \backslash
 newcommand{
 \backslash
-supervisor}   {Prof.
+supervisor}
+\end_layout
+
+\begin_layout Plain Layout
+
+{Prof.
  Dr.
  Supervisor} 
 \end_layout
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
 
 \backslash
 newcommand{
 \backslash
-cosupervisor} {A/Prof.
+cosupervisor}
+\end_layout
+
+\begin_layout Plain Layout
+
+{A/Prof.
  Dr.
  Cosupervisor}
 \end_layout
 
 \begin_layout Plain Layout
 
-
-\backslash
-newcommand{
-\backslash
-faculty}      {Faculty of Engineering Science}
 \end_layout
 
 \begin_layout Plain Layout
@@ -297,7 +342,16 @@ faculty}      {Faculty of Engineering Science}
 \backslash
 newcommand{
 \backslash
-university}   {Universiti Tun Hussein Onn Malaysia}
+faculty}
+\end_layout
+
+\begin_layout Plain Layout
+
+{Faculty of Engineering Science}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -306,7 +360,16 @@ university}   {Universiti Tun Hussein Onn Malaysia}
 \backslash
 newcommand{
 \backslash
-loccity}      {Parit Raja}
+university}
+\end_layout
+
+\begin_layout Plain Layout
+
+{Universiti Tun Hussein Onn Malaysia}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -315,7 +378,16 @@ loccity}      {Parit Raja}
 \backslash
 newcommand{
 \backslash
-loccountry}   {Malaysia}
+loccity}
+\end_layout
+
+\begin_layout Plain Layout
+
+{Parit Raja}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -324,7 +396,16 @@ loccountry}   {Malaysia}
 \backslash
 newcommand{
 \backslash
-degree}       {Doctor of Philosophy}
+loccountry}
+\end_layout
+
+\begin_layout Plain Layout
+
+{Malaysia}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -333,7 +414,16 @@ degree}       {Doctor of Philosophy}
 \backslash
 newcommand{
 \backslash
-submitdate}   {1}
+degree}
+\end_layout
+
+\begin_layout Plain Layout
+
+{Doctor of Philosophy}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -342,7 +432,16 @@ submitdate}   {1}
 \backslash
 newcommand{
 \backslash
-submitmonth}  {January}
+submitdate}
+\end_layout
+
+\begin_layout Plain Layout
+
+{18}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -351,7 +450,30 @@ submitmonth}  {January}
 \backslash
 newcommand{
 \backslash
-submityear}   {2012}
+submitmonth}
+\end_layout
+
+\begin_layout Plain Layout
+
+{October}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+submityear}
+\end_layout
+
+\begin_layout Plain Layout
+
+{2014}
 \end_layout
 
 \end_inset
