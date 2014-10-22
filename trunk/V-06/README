@@ -5,10 +5,6 @@ There are two styles (author-year and numerical) available:
 author-year style: (using nice fancy TOC)
                    UTHM-Thesis-Classic-authoryear-V-06.lyx
                    UTHM-Thesis-Classic-authoryear-BM-V-06.lyx (Bahasa Melayu)
-                   
-author-year style: (simple TOC): 
-                   UTHM-Thesis-authoryear-V-06.lyx                  
-                   UTHM-Thesis-authoryear-BM-V-06.lyx (Bahasa Melayu)
 
 numerical style:   UTHM-Thesis-numerical-V-06.lyx
 
