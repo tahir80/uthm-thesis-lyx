@@ -1,4 +1,5 @@
 Version 0.6: (release date)
+<was.uthm> fix document cannot compile if no subfigures found
 <was.uthm> set the second line of reference list to 1.27cm (same with parindent)
 <was.uthm> set the nomenclature to custom width 2cm
 <was.uthm> Add global information
