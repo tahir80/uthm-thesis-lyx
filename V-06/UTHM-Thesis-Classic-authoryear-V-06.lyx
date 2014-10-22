@@ -22,11 +22,11 @@
 
 %This command will change the default Bibliography to References,
 %Nomenclature to List of Symbols
-%Change the format of subfigure from 1a to 1(a)
 \AtBeginDocument{
         \renewcommand{\bibname}{References}
         \renewcommand{\nomname}{List of Symbols}
         \renewcommand{\theenumii}{(\alph{enumii})}
+%Change the format of subfigure from 1a to 1(a)
         \renewcommand{\labelenumii}{\theenumii}
         \renewcommand\thesubfigure{(\alph{subfigure})}
         \captionsetup[subfigure]{labelformat=simple}
@@ -51,7 +51,7 @@
 % The following commands set the vertical space before and after 
 % every chapter entry
 \renewcommand*{\chapterheadendvskip}{\vspace{2cm}}
-\renewcommand*{\chapterheadstartvskip}{\vspace{2.5cm}}
+\renewcommand*{\chapterheadstartvskip}{\vspace{2cm}}
 
 % The following commands set the TOC, LOT, LOF and LOA
 % this employs tocloft package
@@ -113,7 +113,7 @@
 
 %To remove extra vertical space in List of Symbols [added in V-05]
 %\setlength{\nomitemsep}{-2\parsep}   % another alternative 
-\setlength{\nomitemsep}{-\parsep}
+\setlength{\nomitemsep}{0\parsep}
 
 % from koma-script scrbook.cls, then modified [added in V-05]
 % to shift addchap in TOC ro the right: \qquad\qquad\,\,
@@ -155,7 +155,7 @@
 
 %Adjusting the line spacing of chapter headings in the book/report class
 \renewcommand\@makechapterhead[1]{%
-  \vspace*{2.5cm}%
+  \vspace*{2cm}%
   {\parindent \z@ \raggedright\normalfont
     \ifnum \c@secnumdepth >\m@ne
         \Large\bfseries \@chapapp\space \centering\thechapter
@@ -200,8 +200,8 @@
 \pdf_author "Name of Student"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
-\pdf_bookmarksopen false
-\pdf_bookmarksopenlevel 1
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 2
 \pdf_breaklinks false
 \pdf_pdfborder true
 \pdf_colorlinks true
@@ -281,7 +281,11 @@ This is UTHM thesis (Classic) template version 0.6 (release date)
 \end_layout
 
 \begin_layout Plain Layout
-The information below will be automatically written in your thesis
+The information below will be automatically written in your thesis 
+\end_layout
+
+\begin_layout Plain Layout
+Please replace with the correct values 
 \end_layout
 
 \end_inset
@@ -299,7 +303,16 @@ status open
 \backslash
 newcommand{
 \backslash
-titlelineone} {The Thesis Title Line One}
+titlelineone} 
+\end_layout
+
+\begin_layout Plain Layout
+
+{The Thesis Title Line One}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -308,7 +321,16 @@ titlelineone} {The Thesis Title Line One}
 \backslash
 newcommand{
 \backslash
-titlelinetwo} {Thesis Title Line Two}
+titlelinetwo} 
+\end_layout
+
+\begin_layout Plain Layout
+
+{Thesis Title Line Two}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -317,7 +339,16 @@ titlelinetwo} {Thesis Title Line Two}
 \backslash
 newcommand{
 \backslash
-studentname}  {Fulan bin Fulan}
+studentname}  
+\end_layout
+
+\begin_layout Plain Layout
+
+{Fulan bin Fulan}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -326,7 +357,16 @@ studentname}  {Fulan bin Fulan}
 \backslash
 newcommand{
 \backslash
-studentno}    {AD99999}
+studentno}    
+\end_layout
+
+\begin_layout Plain Layout
+
+{AD99999}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -335,29 +375,38 @@ studentno}    {AD99999}
 \backslash
 newcommand{
 \backslash
-supervisor}   {Prof.
+supervisor}   
+\end_layout
+
+\begin_layout Plain Layout
+
+{Prof.
  Dr.
  Supervisor} 
 \end_layout
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
 
 \backslash
 newcommand{
 \backslash
-cosupervisor} {A/Prof.
+cosupervisor} 
+\end_layout
+
+\begin_layout Plain Layout
+
+{A/Prof.
  Dr.
  Cosupervisor}
 \end_layout
 
 \begin_layout Plain Layout
 
-
-\backslash
-newcommand{
-\backslash
-faculty}      {Faculty of Engineering Science}
 \end_layout
 
 \begin_layout Plain Layout
@@ -366,7 +415,16 @@ faculty}      {Faculty of Engineering Science}
 \backslash
 newcommand{
 \backslash
-university}   {Universiti Tun Hussein Onn Malaysia}
+faculty}      
+\end_layout
+
+\begin_layout Plain Layout
+
+{Faculty of Engineering Science}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -375,7 +433,16 @@ university}   {Universiti Tun Hussein Onn Malaysia}
 \backslash
 newcommand{
 \backslash
-loccity}      {Parit Raja}
+university}   
+\end_layout
+
+\begin_layout Plain Layout
+
+{Universiti Tun Hussein Onn Malaysia}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -384,7 +451,16 @@ loccity}      {Parit Raja}
 \backslash
 newcommand{
 \backslash
-loccountry}   {Malaysia}
+loccity}      
+\end_layout
+
+\begin_layout Plain Layout
+
+{Parit Raja}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -393,7 +469,16 @@ loccountry}   {Malaysia}
 \backslash
 newcommand{
 \backslash
-degree}       {Doctor of Philosophy}
+loccountry}   
+\end_layout
+
+\begin_layout Plain Layout
+
+{Malaysia}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -402,7 +487,16 @@ degree}       {Doctor of Philosophy}
 \backslash
 newcommand{
 \backslash
-submitdate}   {1}
+degree}       
+\end_layout
+
+\begin_layout Plain Layout
+
+{Doctor of Philosophy}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -411,7 +505,16 @@ submitdate}   {1}
 \backslash
 newcommand{
 \backslash
-submitmonth}  {January}
+submitdate}   
+\end_layout
+
+\begin_layout Plain Layout
+
+{10}
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -420,7 +523,30 @@ submitmonth}  {January}
 \backslash
 newcommand{
 \backslash
-submityear}   {2012}
+submitmonth}  
+\end_layout
+
+\begin_layout Plain Layout
+
+{January}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+submityear}   
+\end_layout
+
+\begin_layout Plain Layout
+
+{2014}
 \end_layout
 
 \end_inset
@@ -454,7 +580,7 @@ End of basic information
 \series medium
 \size larger
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -481,7 +607,7 @@ titlelineone
 \size larger
 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -509,7 +635,7 @@ titlelinetwo
 
 \series bold
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -542,7 +668,7 @@ fulfillment of the requirement for the award of the
 
 Degree of 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -563,7 +689,7 @@ degree
 
 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -586,7 +712,7 @@ faculty}
 \size normal
 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -610,7 +736,7 @@ university}
 
 \size normal
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -639,7 +765,7 @@ submityear
 
 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -652,7 +778,7 @@ thispagestyle{plain}
 
 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -684,7 +810,7 @@ I hereby declare that this thesis entitled “
 \series bold
 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -800,7 +926,7 @@ Name
 
 \begin_layout Plain Layout
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -841,7 +967,7 @@ Matrix No.
 
 \begin_layout Plain Layout
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -882,7 +1008,7 @@ Date
 
 \begin_layout Plain Layout
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -956,7 +1082,7 @@ Supervisor
 
 \begin_layout Plain Layout
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1018,7 +1144,7 @@ Co-Supervisor
 
 \begin_layout Plain Layout
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1056,7 +1182,7 @@ cosupervisor
 
 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1069,7 +1195,7 @@ thispagestyle{plain}
 
 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1140,7 +1266,7 @@ Thanks to friends...
 \begin_layout Standard
 \align right
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1153,7 +1279,7 @@ studentname
 
 , 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1198,7 +1324,7 @@ Here is the abstract in Malay.
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1227,7 +1353,7 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1266,7 +1392,7 @@ qquad
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1305,7 +1431,7 @@ qquad
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1335,6 +1461,8 @@ cftchapaftersnum}{}
 renewcommand{
 \backslash
 cftchapaftersnumb}{
+\backslash
+qquad
 \backslash
 quad}
 \end_layout
@@ -1372,7 +1500,7 @@ qquad
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1407,7 +1535,7 @@ width "2cm"
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1578,7 +1706,7 @@ name "fig:Example-1"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1783,10 +1911,6 @@ placement h
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2081,16 +2205,46 @@ bla bla bla
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
+do not delete this empty figure float/subfloat
+\end_layout
 
- 
-\backslash
-setlength{
-\backslash
-parskip}{0.3cm}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -2112,7 +2266,7 @@ options "UTHM-ref-style-V-04"
 \begin_layout Part*
 APPENDICES
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2128,7 +2282,7 @@ thispagestyle{empty}
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2155,7 +2309,7 @@ vspace{1cm}}
 \begin_layout Standard
 \start_of_appendix
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2221,7 +2375,11 @@ protect
 \backslash
 numberline{
 \backslash
-thechapter}#1}%
+normalfont
+\backslash
+thechapter}
+\backslash
+normalfont#1}%
 \end_layout
 
 \begin_layout Plain Layout
@@ -2235,7 +2393,9 @@ else
 
 
 \backslash
-addcontentsline{loa}{chapter}{#1}%
+addcontentsline{loa}{chapter}{
+\backslash
+normalfont#1}%
 \end_layout
 
 \begin_layout Plain Layout
@@ -2256,7 +2416,9 @@ else
 
 
 \backslash
-addcontentsline{loa}{chapter}{#1}%
+addcontentsline{loa}{chapter}{
+\backslash
+normalfont#1}%
 \end_layout
 
 \begin_layout Plain Layout
@@ -2277,24 +2439,11 @@ chaptermark{#1}%
 
 
 \backslash
-addtocontents{lot}{
+addtocontents{loa}{
 \backslash
 protect
 \backslash
-addvspace{10
-\backslash
-p@}}%
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-addtocontents{lof}{
-\backslash
-protect
-\backslash
-addvspace{10
+addvspace{-5
 \backslash
 p@}}%
 \end_layout
@@ -2357,7 +2506,7 @@ makeatother
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2442,13 +2591,13 @@ Now second paragraph
 \end_layout
 
 \begin_layout Chapter
-Source Code for Initial Model
+Programming Codes
 \end_layout
 
 \begin_layout Standard
-The following codes are written in LaTe
+The environment below is for codes are written in LaTe
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2508,583 +2657,11 @@ date{}
 
 \begin_layout Plain Layout
 
-% this command set the paragraph indentation
+%etc
 \end_layout
 
 \begin_layout Plain Layout
 
-% if you want to modify change the value 1.5cm to your preference
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-setlength{
-\backslash
-parindent}{1.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-%This command will change the default Bibliography to References
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-AtBeginDocument{
-\backslash
-renewcommand{
-\backslash
-bibname}{References}}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-%The following comands center the heading of chapters and
-\end_layout
-
-\begin_layout Plain Layout
-
-% chapter entries, the default is on the left
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-addtokomafont{chapterentry}{
-\backslash
-centering}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-addtokomafont{chapter}{
-\backslash
-centering}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-% The following commands set the page numbers on the top right
-\end_layout
-
-\begin_layout Plain Layout
-
-% except in the beginning of chapters
-\end_layout
-
-\begin_layout Plain Layout
-
-% using fancyhdr package (page layout>heading style->fancy)
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lhead{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-chead{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-rhead{
-\backslash
-thepage}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lfoot{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-cfoot{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-rfoot{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-headrulewidth}{0pt}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-% The following commands set the vertical space before and after 
-\end_layout
-
-\begin_layout Plain Layout
-
-% every chapter entry
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand*{
-\backslash
-chapterheadendvskip}{
-\backslash
-vspace{2cm}}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand*{
-\backslash
-chapterheadstartvskip}{
-\backslash
-vspace{2.5cm}}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-% The following commands set the TOC, LOT and LOF
-\end_layout
-
-\begin_layout Plain Layout
-
-% this employs tocloft package
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-usepackage{tocloft}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftdot}{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cfttoctitlefont}{
-\backslash
-hfill
-\backslash
-Large
-\backslash
-bfseries
-\backslash
-sffamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftaftertoctitle}{
-\backslash
-hfill}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftaftertoctitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftbeforetoctitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftloftitlefont}{
-\backslash
-hfill
-\backslash
-Large
-\backslash
-bfseries
-\backslash
-sffamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterloftitle}{
-\backslash
-hfill}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterloftitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftbeforeloftitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftlottitlefont}{
-\backslash
-hfill
-\backslash
-Large
-\backslash
-bfseries
-\backslash
-sffamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterlottitle}{
-\backslash
-hfill}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterlottitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftbeforelottitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-usepackage{tocloft}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftdot}{}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cfttoctitlefont}{
-\backslash
-hfill
-\backslash
-Large
-\backslash
-bfseries
-\backslash
-sffamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftaftertoctitle}{
-\backslash
-hfill}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftaftertoctitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftbeforetoctitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftloftitlefont}{
-\backslash
-hfill
-\backslash
-Large
-\backslash
-bfseries
-\backslash
-sffamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterloftitle}{
-\backslash
-hfill}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterloftitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftbeforeloftitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftlottitlefont}{
-\backslash
-hfill
-\backslash
-Large
-\backslash
-bfseries
-\backslash
-sffamily}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterlottitle}{
-\backslash
-hfill}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftafterlottitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftbeforelottitleskip}{2.5cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-usepackage{minitoc}
-\end_layout
-
-\begin_layout Plain Layout
-
-% Redefining automatic label of 
-\end_layout
-
-\begin_layout Plain Layout
-
-% Figure, Table and Eq.
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-usepackage{prettyref}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newrefformat{tab}{Table
-\backslash
-,
-\backslash
-ref{#1}} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newrefformat{fig}{Figure
-\backslash
-,
-\backslash
-ref{#1}}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newrefformat{eq}{Eq.
-\backslash
-,
-\backslash
-textup{(
-\backslash
-ref{#1})}}
 \end_layout
 
 \end_inset
