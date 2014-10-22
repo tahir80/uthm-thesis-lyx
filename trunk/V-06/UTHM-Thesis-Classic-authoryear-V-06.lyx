@@ -168,6 +168,8 @@
      \bfseries #1\par\nobreak
     \vskip 58\p@
   }}
+
+\setlength{\bibhang}{1.27cm}
 \end_preamble
 \options liststotoc,chapterprefix,tablecaptionabove,bibtotoc,headings=small,numbers=noenddot
 \use_default_options true
