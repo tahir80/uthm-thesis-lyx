@@ -114,6 +114,9 @@
 \newrefformat{fig}{Rajah\,\ref{#1}}
 \newrefformat{eq}{Pers.\,\textup{(\ref{#1})}}
 \newrefformat{cha}{Bab\,\ref{#1}}
+\newrefformat{sec}{Bab\,\ref{#1}}
+\newrefformat{sub}{Bab\,\ref{#1}}
+\newrefformat{enu}{\ref{#1}}
 
 %To remove extra vertical space in List of Symbols [added in V-05]
 %\setlength{\nomitemsep}{-2\parsep}   % another alternative 
