@@ -50,8 +50,8 @@
 
 % The following commands set the vertical space before and after 
 % every chapter entry
-\renewcommand*{\chapterheadendvskip}{\vspace{2cm}}
-\renewcommand*{\chapterheadstartvskip}{\vspace{2cm}}
+\renewcommand*{\chapterheadendvskip}{\vspace{2.5cm}}
+\renewcommand*{\chapterheadstartvskip}{\vspace{2.2cm}}
 
 % The following commands set the TOC, LOT, LOF and LOA
 % this employs tocloft package
@@ -85,6 +85,7 @@
 \\[3\baselineskip]{Appendix \hfill Title \hfill Page  \linebreak} 
 \vskip-60pt}
 \renewcommand{\cftbeforeloatitleskip}{2.5cm}
+%\renewcommand{\cftbeforenomcltitleskip}{2.5cm}
 
 
 \renewcommand{\cftchappresnum}{Chapter }
@@ -151,11 +152,11 @@
     \renewcommand*\l@figure{\@dottedtocline{0}{1.5em}{4.3em}}
     \renewcommand*\l@table{\@dottedtocline{0}{1.5em}{4.3em}}
     \renewcommand{\@dotsep}{10000}
-%\makeatother % removed V-06 (fix issue 16)
+
 
 %Adjusting the line spacing of chapter headings in the book/report class
 \renewcommand\@makechapterhead[1]{%
-  \vspace*{2cm}%
+  \vspace*{2.2cm}%
   {\parindent \z@ \raggedright\normalfont
     \ifnum \c@secnumdepth >\m@ne
         \Large\bfseries \@chapapp\space \centering\thechapter
@@ -166,7 +167,7 @@
     \Large
     \renewcommand{\baselinestretch}{0.85}
      \bfseries #1\par\nobreak
-    \vskip 58\p@
+    \vskip 60\p@
   }}
 
 \setlength{\bibhang}{1.27cm}
@@ -308,25 +309,8 @@ titlelineone}
 
 \begin_layout Plain Layout
 
-{The Thesis Title Line One}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-titlelinetwo} 
-\end_layout
-
-\begin_layout Plain Layout
-
-{Thesis Title Line Two}
+{The Thesis Title Line One Title Title Title Title Title Title Title Title
+ Title Title}
 \end_layout
 
 \begin_layout Plain Layout
@@ -568,19 +552,28 @@ End of basic information
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 2.5cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Title
+\align center
 
 \family roman
 \series medium
 \size larger
+\begin_inset VSpace 1.5cm*
+\end_inset
+
+
+\family default
+\series default
+\size large
+
 \begin_inset ERT
 status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -594,46 +587,21 @@ titlelineone
 \end_inset
 
 
-\family default
-\series default
-\size default
-
-\begin_inset Newline newline
-\end_inset
-
-
 \family roman
 \series medium
 \size larger
 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-MakeUppercase
-\backslash
-titlelinetwo
-\end_layout
-
-\end_inset
-
-
-\family default
-\series default
-\size default
-
-\begin_inset VSpace 1.8cm
+\begin_inset VSpace vfill
 \end_inset
 
 
 \end_layout
 
-\begin_layout Author
+\begin_layout Standard
+\align center
 
 \series bold
+\size large
 \begin_inset ERT
 status collapsed
 
@@ -647,15 +615,16 @@ studentname
 \end_inset
 
 
-\series default
+\size default
 
-\begin_inset VSpace 2.5cm
+\begin_inset VSpace vfill
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
+\align center
 
 \size normal
 A thesis submitted in
@@ -680,14 +649,16 @@ degree
 \end_inset
 
  
-\begin_inset VSpace 3.6cm
+\begin_inset VSpace vfill
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
+\align center
 
+\size normal
 \begin_inset ERT
 status collapsed
 
@@ -703,14 +674,12 @@ faculty}
 \end_inset
 
 
-\size default
+\end_layout
 
-\begin_inset Newline newline
-\end_inset
-
+\begin_layout Standard
+\align center
 
 \size normal
-
 \begin_inset ERT
 status collapsed
 
@@ -726,13 +695,14 @@ university}
 \end_inset
 
 
-\begin_inset VSpace 3.1cm
+\begin_inset VSpace 1.5cm*
 \end_inset
 
 
 \end_layout
 
-\begin_layout Publishers
+\begin_layout Standard
+\align center
 
 \size normal
 \begin_inset ERT
@@ -755,7 +725,20 @@ submityear
 
 \end_inset
 
- 
+
+\begin_inset VSpace 1.5cm*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -817,10 +800,6 @@ status collapsed
 
 \backslash
 titlelineone
-\backslash
-,
-\backslash
-titlelinetwo
 \end_layout
 
 \end_inset
@@ -1215,7 +1194,7 @@ qquad
 \end_inset
 
 
-\begin_inset VSpace 2cm
+\begin_inset VSpace vfill
 \end_inset
 
 
@@ -1223,7 +1202,16 @@ qquad
 
 \begin_layout Standard
 \align center
+
+\size large
 For my beloved mother and father 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
 \end_layout
 
 \begin_layout Addchap
@@ -1277,7 +1265,11 @@ studentname
 
 \end_inset
 
-, 
+
+\end_layout
+
+\begin_layout Standard
+\align right
 \begin_inset ERT
 status collapsed
 
@@ -1462,9 +1454,20 @@ renewcommand{
 \backslash
 cftchapaftersnumb}{
 \backslash
-qquad
+,
 \backslash
-quad}
+,}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftchappagefont}{
+\backslash
+normalfont}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1489,10 +1492,6 @@ qquad
 , List of Appendices}
 \end_layout
 
-\end_inset
-
-
-\begin_inset Newpage clearpage
 \end_inset
 
 
@@ -2670,6 +2669,9 @@ date{}
 \end_layout
 
 \begin_layout Addchap
+\begin_inset VSpace 1.2cm
+\end_inset
+
 Vitae
 \end_layout
 

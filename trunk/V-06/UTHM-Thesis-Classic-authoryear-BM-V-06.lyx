@@ -62,8 +62,8 @@
 
 % The following commands set the vertical space before and after 
 % every chapter entry
-\renewcommand*{\chapterheadendvskip}{\vspace{2cm}}
-\renewcommand*{\chapterheadstartvskip}{\vspace{2cm}}
+\renewcommand*{\chapterheadendvskip}{\vspace{2.5cm}}
+\renewcommand*{\chapterheadstartvskip}{\vspace{2.2cm}}
 
 % The following commands set the TOC, LOT, LOF and LOA
 % this employs tocloft package
@@ -99,12 +99,15 @@
 
 \renewcommand{\cftchappresnum}{Bab }
 \renewcommand{\cftchapaftersnum}{}
-\renewcommand{\cftchapaftersnumb}{\qquad\quad\,\,}
-\renewcommand{\cftsecpresnum}{\qquad\quad\,\,\,\, }
-\renewcommand{\cftsubsecpresnum}{\qquad\quad\,\,\,\,\,\, } %v-06
+%\renewcommand{\cftchapaftersnumb}{\qquad\quad\,\,}
+\cftsetindents{chap}{0cm}{2.2cm}
+%\renewcommand{\cftsecpresnum}{\qquad\quad\,\,\,\, }
+\cftsetindents{section}{2.2cm}{1.1cm}
+%\renewcommand{\cftsubsecpresnum}{\qquad\quad\,\,\,\,\,\, } %v-06
+\cftsetindents{subsection}{3.3cm}{1.2cm}
 \renewcommand{\cftsecaftersnum}{}
-\renewcommand{\cftsecaftersnumb}{\qquad\qquad\,}
-\renewcommand{\cftsubsecaftersnumb}{\qquad\quad\,\,\,\,} %v-06
+%\renewcommand{\cftsecaftersnumb}{\qquad\qquad\,}
+%\renewcommand{\cftsubsecaftersnumb}{\qquad\quad\,\,\,\,} %v-06
 
 \usepackage{minitoc}
 
@@ -162,7 +165,7 @@
 
 %Adjusting the line spacing of chapter headings in the book/report class
 \renewcommand\@makechapterhead[1]{%
-  \vspace*{2cm}%
+  \vspace*{2.2cm}%
   {\parindent \z@ \raggedright\normalfont
     \ifnum \c@secnumdepth >\m@ne
         \Large\bfseries \@chapapp\space \centering\thechapter
@@ -173,7 +176,7 @@
     \Large
     \renewcommand{\baselinestretch}{0.85}
      \bfseries #1\par\nobreak
-    \vskip 58\p@
+    \vskip 60\p@
   }}
 
 \setlength{\bibhang}{1.27cm}
@@ -311,25 +314,8 @@ tajukbarissatu}
 
 \begin_layout Plain Layout
 
-{Tajuk Tesis Baris Satu}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-tajukbarisdua}
-\end_layout
-
-\begin_layout Plain Layout
-
-{Tajuk Tesis Baris Dua}
+{Tajuk Tesis Baris Satu Satu Satu Satu Satu Satu Satu Satu Satu Satu Satu
+ Satu}
 \end_layout
 
 \begin_layout Plain Layout
@@ -568,19 +554,25 @@ Akhir dari informasi tesis
 \end_inset
 
 
-\begin_inset VSpace 2.5cm
+\begin_inset VSpace 1.5cm*
 \end_inset
 
 
 \end_layout
 
-\begin_layout Title
+\begin_layout Standard
+\align center
 
-\family roman
-\series medium
-\size larger
+\size large
 \begin_inset ERT
 status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -594,44 +586,19 @@ tajukbarissatu
 \end_inset
 
 
-\family default
-\series default
 \size default
 
-\begin_inset Newline newline
-\end_inset
-
-
-\family roman
-\series medium
-\size larger
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-MakeUppercase
-\backslash
-tajukbarisdua
-\end_layout
-
-\end_inset
-
-
-\family default
-\series default
-\size default
-
-\begin_inset VSpace 1.8cm
+\begin_inset VSpace vfill
 \end_inset
 
 
 \end_layout
 
-\begin_layout Author
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
 \begin_inset ERT
 status collapsed
 
@@ -645,11 +612,10 @@ namapelajar
 \end_inset
 
 
-\begin_inset VSpace 2.5cm
-\end_inset
+\series default
+\size default
 
-
-\begin_inset Newline newline
+\begin_inset VSpace vfill
 \end_inset
 
 
@@ -664,7 +630,7 @@ untuk memenuhi syarat memperoleh ijazah
 
 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -676,11 +642,7 @@ ijazah
 \end_inset
 
 
-\begin_inset VSpace 3.6cm
-\end_inset
-
-
-\begin_inset Newline newline
+\begin_inset VSpace vfill
 \end_inset
 
 
@@ -699,14 +661,12 @@ fakulti}
 \end_inset
 
 
-\size default
+\end_layout
 
-\begin_inset Newline newline
-\end_inset
-
+\begin_layout Standard
+\align center
 
 \size normal
-
 \begin_inset ERT
 status collapsed
 
@@ -722,13 +682,14 @@ universiti}
 \end_inset
 
 
-\begin_inset VSpace 3.1cm
+\begin_inset VSpace 1.5cm
 \end_inset
 
 
 \end_layout
 
-\begin_layout Publishers
+\begin_layout Standard
+\align center
 
 \size normal
 \begin_inset ERT
@@ -749,6 +710,10 @@ bulanhantar}
 tahunhantar
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -806,17 +771,13 @@ Saya akui tesis bertajuk “
 \series bold
 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 
 \backslash
 tajukbarissatu
-\backslash
-;
-\backslash
-tajukbarisdua
 \end_layout
 
 \end_inset
@@ -1210,7 +1171,7 @@ qquad
 \end_inset
 
 
-\begin_inset VSpace 2cm
+\begin_inset VSpace vfill
 \end_inset
 
 
@@ -1218,7 +1179,13 @@ qquad
 
 \begin_layout Standard
 \align center
+
+\size large
 Untuk ayah dan ibu 
+\begin_inset VSpace vfill
+\end_inset
+
+
 \end_layout
 
 \begin_layout Addchap
@@ -1267,7 +1234,11 @@ namapelajar
 
 \end_inset
 
-, 
+,
+\end_layout
+
+\begin_layout Standard
+\align right
 \begin_inset ERT
 status collapsed
 
@@ -1378,7 +1349,7 @@ qquad
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1414,7 +1385,7 @@ qquad
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1445,9 +1416,20 @@ renewcommand{
 \backslash
 cftchapaftersnumb}{
 \backslash
-qquad
+,
 \backslash
-qquad}
+,}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftchappagefont}{
+\backslash
+normalfont}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1475,15 +1457,11 @@ qquad
 \end_inset
 
 
-\begin_inset Newpage clearpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1518,7 +1496,7 @@ width "2cm"
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2702,6 +2680,9 @@ date{}
 \end_layout
 
 \begin_layout Addchap
+\begin_inset VSpace 1.2cm
+\end_inset
+
 Vitae
 \end_layout
 
