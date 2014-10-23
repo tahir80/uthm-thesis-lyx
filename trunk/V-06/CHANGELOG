@@ -1,4 +1,6 @@
 Version 0.6: (release date)
+<was.uthm> revise title page and set the chapter titles toc lof lot los to make it
+consistent
 <was.uthm> UTHM-Thesis-authoryear-V-06 and UTHM-Thesis-authoryear-V-06-BM are removed
 <was.uthm> fix document cannot compile if no subfigures found
 <was.uthm> set the second line of reference list to 1.27cm (same with parindent)
