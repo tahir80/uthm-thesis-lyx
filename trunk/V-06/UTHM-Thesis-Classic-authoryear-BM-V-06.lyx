@@ -630,7 +630,7 @@ untuk memenuhi syarat memperoleh ijazah
 
 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -682,7 +682,7 @@ universiti}
 \end_inset
 
 
-\begin_inset VSpace 1.5cm
+\begin_inset VSpace 1.5cm*
 \end_inset
 
 
@@ -710,6 +710,10 @@ bulanhantar}
 tahunhantar
 \end_layout
 
+\end_inset
+
+
+\begin_inset VSpace 1.5cm*
 \end_inset
 
 
@@ -771,7 +775,7 @@ Saya akui tesis bertajuk “
 \series bold
 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1171,7 +1175,7 @@ qquad
 \end_inset
 
 
-\begin_inset VSpace vfill
+\begin_inset VSpace 10.7cm
 \end_inset
 
 
@@ -1182,10 +1186,6 @@ qquad
 
 \size large
 Untuk ayah dan ibu 
-\begin_inset VSpace vfill
-\end_inset
-
-
 \end_layout
 
 \begin_layout Addchap
@@ -1234,11 +1234,11 @@ namapelajar
 
 \end_inset
 
-,
-\end_layout
 
-\begin_layout Standard
-\align right
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset ERT
 status collapsed
 
@@ -1349,7 +1349,7 @@ qquad
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1385,7 +1385,7 @@ qquad
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1461,7 +1461,7 @@ qquad
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1496,7 +1496,7 @@ width "2cm"
 
 \begin_layout Standard
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2142,7 +2142,7 @@ G=3x^{2}
 \end_layout
 
 \begin_layout Chapter
-Tajuk Bab 4
+Ini Tajuk Bab 4
 \end_layout
 
 \begin_layout Standard
@@ -2184,7 +2184,7 @@ Semua ditulis dalam Bahasa Melayu.
 \end_layout
 
 \begin_layout Chapter
-Tajuk Bab 5
+Ini Tajuk Bab 5
 \end_layout
 
 \begin_layout Standard
@@ -2287,6 +2287,9 @@ options "UTHM-ref-style-V-04"
 \end_layout
 
 \begin_layout Part*
+\begin_inset VSpace vfill
+\end_inset
+
 LAMPIRAN
 \begin_inset ERT
 status collapsed
@@ -2298,6 +2301,10 @@ status collapsed
 thispagestyle{empty}
 \end_layout
 
+\end_inset
+
+
+\begin_inset VSpace vfill
 \end_inset
 
 
