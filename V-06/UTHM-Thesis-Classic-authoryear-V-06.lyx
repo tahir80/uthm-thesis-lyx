@@ -286,7 +286,9 @@ The information below will be automatically written in your thesis
 \end_layout
 
 \begin_layout Plain Layout
-Please replace with the correct values 
+Please replace below the 
+\backslash
+renewcommand with the correct values 
 \end_layout
 
 \end_inset
@@ -309,8 +311,8 @@ titlelineone}
 
 \begin_layout Plain Layout
 
-{The Thesis Title Line One Title Title Title Title Title Title Title Title
- Title Title}
+{The Thesis Title Title Title Title Title Title Title Title Title Title
+ Title}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1194,7 +1196,7 @@ qquad
 \end_inset
 
 
-\begin_inset VSpace vfill
+\begin_inset VSpace 10.7cm
 \end_inset
 
 
@@ -1205,13 +1207,6 @@ qquad
 
 \size large
 For my beloved mother and father 
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace vfill
-\end_inset
-
-
 \end_layout
 
 \begin_layout Addchap
@@ -1266,10 +1261,10 @@ studentname
 \end_inset
 
 
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
-\align right
+
 \begin_inset ERT
 status collapsed
 
@@ -2263,6 +2258,9 @@ options "UTHM-ref-style-V-04"
 \end_layout
 
 \begin_layout Part*
+\begin_inset VSpace vfill
+\end_inset
+
 APPENDICES
 \begin_inset ERT
 status collapsed
@@ -2274,6 +2272,10 @@ status collapsed
 thispagestyle{empty}
 \end_layout
 
+\end_inset
+
+
+\begin_inset VSpace vfill
 \end_inset
 
 
@@ -2442,7 +2444,7 @@ addtocontents{loa}{
 \backslash
 protect
 \backslash
-addvspace{-5
+addvspace{-10
 \backslash
 p@}}%
 \end_layout
@@ -2594,17 +2596,7 @@ Programming Codes
 \end_layout
 
 \begin_layout Standard
-The environment below is for codes are written in LaTe
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-X preamble
+The environment below is for codes environment
 \end_layout
 
 \begin_layout Standard
@@ -2668,10 +2660,33 @@ date{}
 
 \end_layout
 
-\begin_layout Addchap
-\begin_inset VSpace 1.2cm
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadendvskip}{
+\backslash
+vspace{2.5cm}} 
+\backslash
+renewcommand*{
+\backslash
+chapterheadstartvskip}{
+\backslash
+vspace{2.2cm}}
+\end_layout
+
 \end_inset
 
+
+\end_layout
+
+\begin_layout Addchap
 Vitae
 \end_layout
 
