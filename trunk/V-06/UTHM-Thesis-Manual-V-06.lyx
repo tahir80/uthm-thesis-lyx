@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -20,13 +20,13 @@
 \font_roman lmodern
 \font_sans lmss
 \font_typewriter lmtt
+\font_math auto
 \font_default_family rmdefault
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -48,15 +48,24 @@
 \pdf_quoted_options "linkcolor=blue, citecolor=blue, urlcolor=blue,pdfstartview=XYZ,plainpages=false,pdfpagelabels"
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index Index
 \shortcut idx
@@ -98,7 +107,7 @@ status open
 
 \begin_layout Plain Layout
 Other contributors: Richard Heck, Hanani bte Abd Wahab, Agus D.
- Anggono
+ Anggono, Arhami Abd Mutalib
 \end_layout
 
 \end_inset
@@ -328,7 +337,7 @@ Operating system!Ubuntu
 
 \end_inset
 
-, you can install from Synaptic package manager where TexLive
+, you can install from Ubuntu Software Center where TexLive
 \begin_inset Index idx
 status open
 
@@ -963,7 +972,11 @@ Use hyperref support
 \end_layout
 
 \begin_layout Standard
-You need to write optional commands in Additional options field: 
+In the 
+\family sans
+additional options
+\family default
+ field: 
 \family typewriter
 linkcolor=blue
 \family default
@@ -1059,11 +1072,11 @@ plainpages
 \end_layout
 
 \begin_layout Standard
-Once you have finished writing all optional commands in 
+In 
 \family sans
 General
 \family default
- tab, then modify the 
+ tab, the settings for 
 \family sans
 Hyperlinks
 \family default
@@ -1456,7 +1469,7 @@ status open
 
 \begin_layout Plain Layout
 
-% this command prints empty date in title page 
+% this command prints empty date in title page
 \end_layout
 
 \begin_layout Plain Layout
@@ -1472,12 +1485,33 @@ date{}
 
 \begin_layout Plain Layout
 
+% If you want your text paragraph is left justfied
+\end_layout
+
+\begin_layout Plain Layout
+
+% you need to uncomment (delete %) the following command
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+raggedright
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
 % this command set the paragraph indentation
 \end_layout
 
 \begin_layout Plain Layout
 
-% if you want to modify change the value 1.5cm to your preference 
+% if you want to modify change the value 1.27cm to your preference
 \end_layout
 
 \begin_layout Plain Layout
@@ -1486,7 +1520,7 @@ date{}
 \backslash
 setlength{
 \backslash
-parindent}{1.5cm}
+parindent}{1.27cm}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1495,7 +1529,12 @@ parindent}{1.5cm}
 
 \begin_layout Plain Layout
 
-% This command will change the default Bibliography to References
+%This command will change the default Bibliography to References,
+\end_layout
+
+\begin_layout Plain Layout
+
+%Nomenclature to List of Symbols
 \end_layout
 
 \begin_layout Plain Layout
@@ -1507,7 +1546,7 @@ AtBeginDocument{
 
 \begin_layout Plain Layout
 
-    
+        
 \backslash
 renewcommand{
 \backslash
@@ -1516,11 +1555,56 @@ bibname}{References}
 
 \begin_layout Plain Layout
 
-    
+        
 \backslash
 renewcommand{
 \backslash
 nomname}{List of Symbols}
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+renewcommand{
+\backslash
+theenumii}{(
+\backslash
+alph{enumii})}
+\end_layout
+
+\begin_layout Plain Layout
+
+%Change the format of subfigure from 1a to 1(a)
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+renewcommand{
+\backslash
+labelenumii}{
+\backslash
+theenumii}
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+renewcommand
+\backslash
+thesubfigure{(
+\backslash
+alph{subfigure})}
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+captionsetup[subfigure]{labelformat=simple}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1534,7 +1618,7 @@ nomname}{List of Symbols}
 
 \begin_layout Plain Layout
 
-% The following comands center the heading of chapters and 
+%The following comands center the heading of chapters and
 \end_layout
 
 \begin_layout Plain Layout
@@ -1548,7 +1632,7 @@ nomname}{List of Symbols}
 \backslash
 addtokomafont{chapterentry}{
 \backslash
-centering} 
+centering}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1566,31 +1650,31 @@ centering}
 
 \begin_layout Plain Layout
 
-% The following commands set the page numbers on the top right 
+% The following commands set the page numbers on the top right
 \end_layout
 
 \begin_layout Plain Layout
 
-% except in the beginning of chapters 
+% except in the beginning of chapters
 \end_layout
 
 \begin_layout Plain Layout
 
-% using fancyhdr package (page layout>heading style->fancy) 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lhead{} 
+% using fancyhdr package (page layout>heading style->fancy)
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-chead{} 
+lhead{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chead{}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1599,28 +1683,28 @@ chead{}
 \backslash
 rhead{
 \backslash
-thepage} 
+thepage}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-lfoot{} 
+lfoot{}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-cfoot{} 
+cfoot{}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-rfoot{} 
+rfoot{}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1643,7 +1727,7 @@ headrulewidth}{0pt}
 
 \begin_layout Plain Layout
 
-% every chapter entry 
+% every chapter entry
 \end_layout
 
 \begin_layout Plain Layout
@@ -1654,7 +1738,7 @@ renewcommand*{
 \backslash
 chapterheadendvskip}{
 \backslash
-vspace{2cm}}
+vspace{2.5cm}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1665,7 +1749,7 @@ renewcommand*{
 \backslash
 chapterheadstartvskip}{
 \backslash
-vspace{2.5cm}}
+vspace{2.2cm}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1674,12 +1758,12 @@ vspace{2.5cm}}
 
 \begin_layout Plain Layout
 
-% The following commands set the TOC, LOT and LOF 
+% The following commands set the TOC, LOT, LOF and LOA
 \end_layout
 
 \begin_layout Plain Layout
 
-% this employs tocloft package 
+% this employs tocloft package
 \end_layout
 
 \begin_layout Plain Layout
@@ -1693,13 +1777,16 @@ usepackage{tocloft}
 
 
 \backslash
-renewcommand{
-\backslash
-cftdot}{} 
+cftpagenumbersoff{part}
 \end_layout
 
 \begin_layout Plain Layout
 
+
+\backslash
+renewcommand{
+\backslash
+cftdot}{}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1727,7 +1814,7 @@ renewcommand{
 \backslash
 cftaftertoctitle}{
 \backslash
-hfill} 
+hfill}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1736,7 +1823,7 @@ hfill}
 \backslash
 renewcommand{
 \backslash
-cftaftertoctitleskip}{2.5cm} 
+cftaftertoctitleskip}{2.5cm}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1746,6 +1833,22 @@ cftaftertoctitleskip}{2.5cm}
 renewcommand{
 \backslash
 cftbeforetoctitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+cftsetindents{section}{0in}{0cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setlength{
+\backslash
+cftsecnumwidth}{0in}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1777,16 +1880,43 @@ renewcommand{
 \backslash
 cftafterloftitle}{
 \backslash
-hfill}
+hfill 
+\backslash
+hfill 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+renewcommand{
+\backslash
+cftafterloftitle}{
+\backslash
+hfill 
+\backslash
+hfill 
+\backslash
+hfill
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-renewcommand{
+
 \backslash
-cftafterloftitleskip}{2.5cm} 
+[3
+\backslash
+baselineskip]{Figure No 
+\backslash
+hfill Title 
+\backslash
+hfill Page 
+\backslash
+linebreak} 
+\backslash
+vskip-50pt}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1827,7 +1957,48 @@ renewcommand{
 \backslash
 cftafterlottitle}{
 \backslash
-hfill} 
+hfill 
+\backslash
+hfill
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+renewcommand{
+\backslash
+cftafterlottitle}{
+\backslash
+hfill 
+\backslash
+hfill
+\backslash
+hfill
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[3
+\backslash
+baselineskip]{Table No 
+\backslash
+hfill Title 
+\backslash
+hfill Page 
+\backslash
+linebreak }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip-50pt}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1836,16 +2007,7 @@ hfill}
 \backslash
 renewcommand{
 \backslash
-cftafterlottitleskip}{2.5cm} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-cftbeforelottitleskip}{2.5cm} 
+cftbeforelottitleskip}{2.5cm}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1884,16 +2046,48 @@ renewcommand{
 \backslash
 cftafterloatitle}{
 \backslash
-hfill}
+hfill 
+\backslash
+hfill
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+renewcommand{
+\backslash
+cftafterloatitle}{
+\backslash
+hfill 
+\backslash
+hfill
+\backslash
+hfill 
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-renewcommand{
+
 \backslash
-cftafterloatitleskip}{2.5cm}
+[3
+\backslash
+baselineskip]{Appendix 
+\backslash
+hfill Title 
+\backslash
+hfill Page  
+\backslash
+linebreak} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vskip-60pt}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1903,6 +2097,170 @@ cftafterloatitleskip}{2.5cm}
 renewcommand{
 \backslash
 cftbeforeloatitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+renewcommand{
+\backslash
+cftbeforenomcltitleskip}{2.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftchappresnum}{Chapter }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftchapaftersnum}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+renewcommand{
+\backslash
+cftchapaftersnumb}{
+\backslash
+qquad
+\backslash
+quad
+\backslash
+,
+\backslash
+,}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cftsetindents{chap}{0cm}{2.2cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+renewcommand{
+\backslash
+cftsecpresnum}{
+\backslash
+qquad
+\backslash
+quad
+\backslash
+,
+\backslash
+,
+\backslash
+,
+\backslash
+, }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cftsetindents{section}{2.2cm}{1.1cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+renewcommand{
+\backslash
+cftsubsecpresnum}{
+\backslash
+qquad
+\backslash
+quad
+\backslash
+,
+\backslash
+,
+\backslash
+,
+\backslash
+,
+\backslash
+,
+\backslash
+, } %v-06
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cftsetindents{subsection}{3.3cm}{1.2cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+cftsecaftersnum}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+renewcommand{
+\backslash
+cftsecaftersnumb}{
+\backslash
+qquad
+\backslash
+qquad
+\backslash
+,}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+renewcommand{
+\backslash
+cftsubsecaftersnumb}{
+\backslash
+qquad
+\backslash
+quad
+\backslash
+,
+\backslash
+,
+\backslash
+,
+\backslash
+,} %v-06
 \end_layout
 
 \begin_layout Plain Layout
@@ -1967,6 +2325,552 @@ textup{(
 ref{#1})}}
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{chap}{Chapter
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{sec}{Section
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{sub}{Section
+\backslash
+,
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newrefformat{enu}{
+\backslash
+ref{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%To remove extra vertical space in List of Symbols [added in V-05]
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+setlength{
+\backslash
+nomitemsep}{-2
+\backslash
+parsep}   % another alternative 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+nomitemsep}{0
+\backslash
+parsep}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% from koma-script scrbook.cls, then modified [added in V-05]
+\end_layout
+
+\begin_layout Plain Layout
+
+% to shift addchap in TOC ro the right: 
+\backslash
+qquad
+\backslash
+qquad
+\backslash
+,
+\backslash
+,
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+addchap{
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+if@openright
+\backslash
+cleardoublepage
+\backslash
+else
+\backslash
+clearpage
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+thispagestyle{plain}
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+global
+\backslash
+@topnum
+\backslash
+z@
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+@afterindentfalse
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+secdef
+\backslash
+@addchap
+\backslash
+@saddchap}
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+def
+\backslash
+@addchap[#1]#2{
+\end_layout
+
+\begin_layout Plain Layout
+
+           
+\backslash
+typeout{#2}
+\end_layout
+
+\begin_layout Plain Layout
+
+           
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+qquad
+\backslash
+qquad
+\backslash
+,
+\backslash
+, #1}
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+if@twoside
+\backslash
+@mkboth{#1}{}
+\backslash
+else
+\backslash
+@mkboth{}{#1}
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+addtocontents{lof}{
+\backslash
+protect
+\backslash
+addvspace{10
+\backslash
+p@}}
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+addtocontents{lot}{
+\backslash
+protect
+\backslash
+addvspace{10
+\backslash
+p@}}
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+if@twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+                         
+\backslash
+@topnewpage[
+\backslash
+@makeschapterhead{#2}]
+\end_layout
+
+\begin_layout Plain Layout
+
+                         
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+                         
+\backslash
+@makeschapterhead{#2}
+\end_layout
+
+\begin_layout Plain Layout
+
+                         
+\backslash
+@afterheading
+\end_layout
+
+\begin_layout Plain Layout
+
+                    
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+                    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+def
+\backslash
+@saddchap#1{
+\backslash
+@mkboth{}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+            
+\backslash
+if@twocolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+@topnewpage[
+\backslash
+@makeschapterhead{#1}]
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+@makeschapterhead{#1}
+\end_layout
+
+\begin_layout Plain Layout
+
+                      
+\backslash
+@afterheading
+\end_layout
+
+\begin_layout Plain Layout
+
+             
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+makeatletter  % removed V-06 (fix issue 16)
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+renewcommand*
+\backslash
+l@figure{
+\backslash
+@dottedtocline{0}{1.5em}{4.3em}}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+renewcommand*
+\backslash
+l@table{
+\backslash
+@dottedtocline{0}{1.5em}{4.3em}}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+renewcommand{
+\backslash
+@dotsep}{10000}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%Adjusting the line spacing of chapter headings in the book/report class
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand
+\backslash
+@makechapterhead[1]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+vspace*{2.2cm}%
+\end_layout
+
+\begin_layout Plain Layout
+
+  {
+\backslash
+parindent 
+\backslash
+z@ 
+\backslash
+raggedright
+\backslash
+normalfont
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+ifnum 
+\backslash
+c@secnumdepth >
+\backslash
+m@ne
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+Large
+\backslash
+bfseries 
+\backslash
+@chapapp
+\backslash
+space 
+\backslash
+centering
+\backslash
+thechapter
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+par
+\backslash
+nobreak
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+vskip 60
+\backslash
+p@
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+interlinepenalty
+\backslash
+@M
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+Large
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+renewcommand{
+\backslash
+baselinestretch}{0.85}
+\end_layout
+
+\begin_layout Plain Layout
+
+     
+\backslash
+bfseries #1
+\backslash
+par
+\backslash
+nobreak
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+vskip 60
+\backslash
+p@
+\end_layout
+
+\begin_layout Plain Layout
+
+  }}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+bibhang}{1.27cm}
+\end_layout
+
 \end_inset
 
 
@@ -2004,7 +2908,7 @@ date{}
 
 \begin_layout Standard
 The indentation of the paragraph is set 
-\begin_inset Formula $\unit[1.5]{cm}$
+\begin_inset Formula $\unit[1.27]{cm}$
 \end_inset
 
 .
@@ -2022,36 +2926,7 @@ status open
 \backslash
 setlength{
 \backslash
-parindent}{1.5cm}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-If you want to set the vertical space in exact measurement (for example
- 
-\begin_inset Formula $\unit[1]{cm}$
-\end_inset
-
-), then you need to insert an additional command 
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "basicstyle={\small\ttfamily}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setlength{
-\backslash
-parskip}{1cm}
+parindent}{1.27cm}
 \end_layout
 
 \end_inset
@@ -2078,9 +2953,13 @@ Bibliography
 References
 \family default
 .
- In this case you need to change the default name defined by 
+ In this case you need to change the default name defined by
+\family typewriter
+ 
 \backslash
-bibname, by using the following command
+bibname
+\family default
+, by using the following command
 \end_layout
 
 \begin_layout Standard

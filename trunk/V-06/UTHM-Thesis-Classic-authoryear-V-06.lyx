@@ -49,9 +49,9 @@
 \renewcommand{\headrulewidth}{0pt}
 
 % The following commands set the vertical space before and after 
-% every chapter entry
-\renewcommand*{\chapterheadendvskip}{\vspace{2.5cm}}
+% Acknowledgment, Abstract, Abstrak, List of Symbols, References
 \renewcommand*{\chapterheadstartvskip}{\vspace{2.2cm}}
+\renewcommand*{\chapterheadendvskip}{\vspace{2.5cm}}
 
 % The following commands set the TOC, LOT, LOF and LOA
 % this employs tocloft package
@@ -676,12 +676,10 @@ faculty}
 \end_inset
 
 
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
-\align center
 
-\size normal
 \begin_inset ERT
 status collapsed
 
