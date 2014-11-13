@@ -67,23 +67,27 @@
 
 \renewcommand{\cftloftitlefont}{\hfill\Large\bfseries\sffamily}
 \renewcommand{\cftafterloftitle}{\hfill \hfill 
-%\renewcommand{\cftafterloftitle}{\hfill \hfill \hfill
-\\[3\baselineskip]{Figure No \hfill Title \hfill Page \linebreak} \vskip-50pt}
+% Below the setting to display Figure No  Title   Page in LOF
+\\[3\baselineskip] {Figure No \hfill Title \hfill Page \linebreak}\vskip-50pt}
+% Below the setting without Figure No  Title   Page in LOF
+%\\[3\baselineskip] \vskip-50pt}
 \renewcommand{\cftbeforeloftitleskip}{2.5cm}
 
 \renewcommand{\cftlottitlefont}{\hfill\Large\bfseries\sffamily}
 \renewcommand{\cftafterlottitle}{\hfill \hfill
-%\renewcommand{\cftafterlottitle}{\hfill \hfill\hfill
-\\[3\baselineskip]{Table No \hfill Title \hfill Page \linebreak }
-\vskip-50pt}
+% Below the setting to display Table No  Title   Page in LOF
+\\[3\baselineskip]{Table No \hfill Title \hfill Page \linebreak }\vskip-50pt}
+% Below the setting without Table No  Title   Page in LOF
+%\\[3\baselineskip] \vskip-50pt}
 \renewcommand{\cftbeforelottitleskip}{2.5cm}
 
 \newlistof{appendices}{loa}{List of Appendices}
 \renewcommand{\cftloatitlefont}{\hfill\Large\bfseries\sffamily}
 \renewcommand{\cftafterloatitle}{\hfill \hfill
-%\renewcommand{\cftafterloatitle}{\hfill \hfill\hfill 
-\\[3\baselineskip]{Appendix \hfill Title \hfill Page  \linebreak} 
-\vskip-60pt}
+% Below the setting to display Appendix  Title   Page in LOA
+\\[3\baselineskip]{Appendix \hfill Title \hfill Page  \linebreak} \vskip-60pt}
+% Below the setting without Appendix No  Title   Page in LOF
+%\\[3\baselineskip] \vskip-60pt}
 \renewcommand{\cftbeforeloatitleskip}{2.5cm}
 %\renewcommand{\cftbeforenomcltitleskip}{2.5cm}
 
@@ -152,6 +156,10 @@
     \renewcommand*\l@figure{\@dottedtocline{0}{1.5em}{4.3em}}
     \renewcommand*\l@table{\@dottedtocline{0}{1.5em}{4.3em}}
     \renewcommand{\@dotsep}{10000}
+%TOC : page number width
+    \renewcommand{\@pnumwidth}{1cm}
+%TOC: content right margin
+    \renewcommand{\@tocrmarg}{2.5cm}
 
 
 %Adjusting the line spacing of chapter headings in the book/report class
@@ -169,6 +177,10 @@
      \bfseries #1\par\nobreak
     \vskip 60\p@
   }}
+
+
+% To avoid hyphenation globally
+\hyphenpenalty=10000
 \end_preamble
 \options liststotoc,chapterprefix,tablecaptionabove,bibtotoc,headings=small,numbers=noenddot
 \use_default_options true
@@ -1731,7 +1743,8 @@ name "fig:Example-2"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-S-rail geometry
+S-rail geometry test test test test test test test test test test test test
+ test test test
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:R-rail-geometry"
