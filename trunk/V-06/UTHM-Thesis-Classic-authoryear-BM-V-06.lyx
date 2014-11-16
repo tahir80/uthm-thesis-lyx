@@ -39,8 +39,8 @@
         \captionsetup[subfigure]{labelformat=simple}
 }
 
-%The following comands center the heading of chapters and
-% chapter entries, the default is on the left
+% The following comands center the heading of AddChap:
+% Acknowledgment, Abstract, Abstract, List of Symbols, References, Vitae
 \addtokomafont{chapterentry}{\centering}
 \addtokomafont{chapter}{\centering}
 
@@ -58,6 +58,7 @@
 % The following commands set the vertical space before and after 
 %  Acknowledgment, Abstract, Abstrak, List of Symbols, References
 \renewcommand*{\chapterheadendvskip}{\vspace{2.5cm}}
+% if you are using parskip=ful in document class option, replace 2.2 cm to 1.6.cm
 \renewcommand*{\chapterheadstartvskip}{\vspace{2.2cm}}
 
 % The following commands set the TOC, LOT, LOF and LOA
@@ -112,8 +113,8 @@
 
 % Redefining automatic label of Figure, Table and Eq.
 \usepackage{prettyref}
-\newrefformat{tab}{Jadual\,\ref{#1}}
-\newrefformat{fig}{Rajah\,\ref{#1}}
+\newrefformat{tab}{Jadual\,\,\ref{#1}}
+\newrefformat{fig}{Rajah\,\,\ref{#1}}
 \newrefformat{eq}{Pers.\,\textup{(\ref{#1})}}
 \newrefformat{cha}{Bab\,\ref{#1}}
 \newrefformat{sec}{Bab\,\ref{#1}}
@@ -125,7 +126,7 @@
 \setlength{\nomitemsep}{0\parsep}
 
 % from koma-script scrbook.cls, then modified [added in V-05]
-% to shift addchap in TOC ro the right: \qquad\qquad\,\,
+% to shift addchap in TOC to the right: \qquad\qquad\,\,
 \renewcommand\addchap{
    \if@openright\cleardoublepage\else\clearpage
    \fi
@@ -167,8 +168,9 @@
 %\makeatother % removed V-06 (fix issue 16)
 
 %Adjusting the line spacing of chapter headings in the book/report class
-\renewcommand\@makechapterhead[1]{%
-  \vspace*{2.2cm}%
+\renewcommand\@makechapterhead[1]{
+% if you are using parskip=ful in document class option, replace 2.2 cm to 1.6.cm
+  \vspace*{2.2cm}
   {\parindent \z@ \raggedright\normalfont
     \ifnum \c@secnumdepth >\m@ne
         \Large\bfseries \@chapapp\space \centering\thechapter
@@ -298,7 +300,9 @@ Ini templet Tesis UTHM (Klasik) Bahasa Melayu versi 0.6 (release date)
 \end_layout
 
 \begin_layout Plain Layout
-Sila lengkapkan informasi dibawah ini, tukar sesuai informasi sebenar
+Sila lengkapkan informasi dibawah ini (bawah 
+\backslash
+newcommand), tukar sesuai informasi sebenar
 \end_layout
 
 \end_inset
@@ -552,7 +556,7 @@ tahunhantar}
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Akhir dari informasi tesis
@@ -2639,7 +2643,7 @@ Dibawah adalah lingkungan untuk lampiran program.
 \begin_inset listings
 lstparams "basicstyle={\small\ttfamily},breaklines=true,numbers=left"
 inline false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2692,10 +2696,43 @@ date{}
 
 \end_layout
 
-\begin_layout Addchap
-\begin_inset VSpace 1.2cm
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadendvskip}{
+\backslash
+vspace{2.5cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+% replace 2.2 cm to 1.6.cm for parskip=full
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+chapterheadstartvskip}{
+\backslash
+vspace{2.2cm}}
+\end_layout
+
 \end_inset
 
+
+\end_layout
+
+\begin_layout Addchap
 Vitae
 \end_layout
 

@@ -32,8 +32,8 @@
         \captionsetup[subfigure]{labelformat=simple}
 }
 
-%The following comands center the heading of chapters and
-% chapter entries, the default is on the left
+% The following comands center the heading of AddChap:
+% Acknowledgment, Abstract, Abstract, List of Symbols, References, Vitae
 \addtokomafont{chapterentry}{\centering}
 \addtokomafont{chapter}{\centering}
 
@@ -51,6 +51,7 @@
 % The following commands set the vertical space before and after 
 %  Acknowledgment, Abstract, Abstrak, List of Symbols, References
 \renewcommand*{\chapterheadendvskip}{\vspace{2.5cm}}
+% if you are using parskip=ful in document class option, replace 2.2 cm to 1.6.cm
 \renewcommand*{\chapterheadstartvskip}{\vspace{2.2cm}}
 
 % The following commands set the TOC, LOT, LOF and LOA
@@ -108,8 +109,8 @@
 
 % Redefining automatic label of Figure, Table and Eq.
 \usepackage{prettyref}
-\newrefformat{tab}{Table\,\ref{#1}}
-\newrefformat{fig}{Figure\,\ref{#1}}
+\newrefformat{tab}{Table\,\,\ref{#1}}
+\newrefformat{fig}{Figure\,\,\ref{#1}}
 \newrefformat{eq}{Eq.\,\textup{(\ref{#1})}}
 \newrefformat{chap}{Chapter\,\ref{#1}}
 \newrefformat{sec}{Section\,\ref{#1}}
@@ -121,7 +122,7 @@
 \setlength{\nomitemsep}{0\parsep}
 
 % from koma-script scrbook.cls, then modified [added in V-05]
-% to shift addchap in TOC ro the right: \qquad\qquad\,\,
+% to shift addchap in TOC to the right: \qquad\qquad\,\,
 \renewcommand\addchap{
    \if@openright\cleardoublepage\else\clearpage
    \fi
@@ -163,8 +164,9 @@
 
 
 %Adjusting the line spacing of chapter headings in the book/report class
-\renewcommand\@makechapterhead[1]{%
-  \vspace*{2.2cm}%
+\renewcommand\@makechapterhead[1]{
+% if you are using parskip=ful in document class option, replace 2.2 cm to 1.6.cm
+  \vspace*{2.2cm}
   {\parindent \z@ \raggedright\normalfont
     \ifnum \c@secnumdepth >\m@ne
         \Large\bfseries \@chapapp\space \centering\thechapter
@@ -298,7 +300,7 @@ The information below will be automatically written in your thesis
 \begin_layout Plain Layout
 Please replace below the 
 \backslash
-renewcommand with the correct values 
+newcommand with the correct values 
 \end_layout
 
 \end_inset
@@ -2635,7 +2637,17 @@ renewcommand*{
 \backslash
 chapterheadendvskip}{
 \backslash
-vspace{2.5cm}} 
+vspace{2.5cm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+% replace 2.2 cm to 1.6.cm for parskip=full
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 renewcommand*{
 \backslash
