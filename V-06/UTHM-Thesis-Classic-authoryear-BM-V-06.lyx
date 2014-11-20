@@ -1421,13 +1421,9 @@ renewcommand{
 \backslash
 cftchapaftersnum}{} 
 \backslash
-renewcommand{
+setlength
 \backslash
-cftchapaftersnumb}{
-\backslash
-,
-\backslash
-,}
+cftchapnumwidth{2.4cm}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1496,7 +1492,7 @@ qquad
 \begin_inset CommandInset nomencl_print
 LatexCommand printnomenclature
 set_width "custom"
-width "2cm"
+width "2.2cm"
 
 \end_inset
 
@@ -2565,7 +2561,7 @@ setcounter{tocdepth}{0}}
 \end_layout
 
 \begin_layout Chapter
-Tajuk Lampiran A
+Tajuk Lampiran A panjang panjang panjang panjang panjang
 \end_layout
 
 \begin_layout Standard
